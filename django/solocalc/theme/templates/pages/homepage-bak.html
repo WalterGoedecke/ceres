@@ -1,0 +1,197 @@
+{% extends "pages/page.html" %}
+
+{% load mezzanine_tags static blog_tags %}
+
+{% block all_content %}
+    <!-- Showcase
+    ================ -->
+    <div id="wrap" style="background-image: url('{{ MEDIA_URL }}{% thumbnail page.homepage.header_background 1000 500 %}');">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-12">
+                    {% editable page.homepage.heading %}
+                    <h1 class="animated slideInDown">{{ page.homepage.heading }}</h1>
+                    {% endeditable %}
+                    {% editable page.homepage.slide_in_one_icon page.homepage.slide_in_one page.homepage.slide_in_two_icon page.homepage.slide_in_two page.homepage.slide_in_three_icon page.homepage.slide_in_three %}
+                    <div class="list">
+                        <ul>
+                            {% if page.homepage.slide_in_one or page.homepage.slide_in_one_icon %}
+                            <li class="animated slideInLeft first"><span class="li-bg"><i class="fa {{ page.homepage.slide_in_one_icon }}"></i> <span>{{ page.homepage.slide_in_one }}</span></span></li>
+                            {% endif %}
+                            {% if page.homepage.slide_in_two or page.homepage.slide_in_two_icon %}
+                            <li class="animated slideInLeft second"><span class="li-bg"><i class="fa {{ page.homepage.slide_in_two_icon }}"></i> <span>{{ page.homepage.slide_in_two }}</span></span></li>
+                            {% endif %}
+                            {% if page.homepage.slide_in_three or page.homepage.slide_in_three_icon %}
+                            <li class="animated slideInLeft third"><span class="li-bg"><i class="fa {{ page.homepage.slide_in_three_icon }}"></i> <span>{{ page.homepage.slide_in_three }}</span></span></li>
+                            {% endif %}
+                        </ul>
+                    </div>
+                    {% endeditable %}
+                </div>
+                <div class="col-md-6 hidden-sm hidden-xs">
+                    <div class="showcase">
+                        <div class="iMac animated fadeInDown"><img src="{{ MEDIA_URL }}{% thumbnail page.homepage.header_image 351 0 %}" /></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        {% if page.homepage.boxes.all %}
+        <div class="row">
+            <div class="col-md-12">
+                <div class="services">
+                    <ul>
+                        {% for box in page.homepage.boxes.all %}
+                        <li>
+                            {% editable box.icon box.title box.link_text box.link %}
+                            <i class="fa {{ box.icon }} fa-3x"></i>
+                            <p>{{ box.title }}<br /><a href="{{ box.link }}">{{ box.link_text }}</a></p>
+                            {% endeditable %}
+                        </li>
+                        {% endfor %}
+                    </ul>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+        {% endif %}
+        <div class="row">
+            <div class="col-md-8">
+                {% editable page.homepage.welcome_heading %}
+                <div class="block-header">
+                    <h2>
+                        <span class="title">{{ page.homepage.welcome_heading }}</span><span class="decoration"></span><span class="decoration"></span><span class="decoration"></span>
+                    </h2>
+                </div>
+                {% endeditable %}
+                {% editable page.homepage.content %}
+                {{ page.homepage.content|richtext_filters|safe }}
+                {% endeditable %}
+            </div>
+
+			<!------------------------------ -->
+			<!-- ----- Blog post block ----- -->
+			<!--
+            <div class="col-md-4">
+                {% editable page.homepage.recent_blog_heading page.homepage.number_recent_posts %}
+                <div class="block-header">
+                    <h2>
+                        <span class="title">{{ page.homepage.recent_blog_heading }}</span><span class="decoration"></span><span class="decoration"></span><span class="decoration"></span>
+                    </h2>
+                </div>
+                {% endeditable %}
+                {% blog_recent_posts page.homepage.number_recent_posts as recent_posts %}
+
+                <div class="tab-content">
+                    <div class="tab-pane active" id="blog">
+                        {% if recent_posts %}
+                        {% for post in recent_posts %}
+                        <div class="media">
+                            {% if settings.BLOG_USE_FEATURED_IMAGE and post.featured_image %}
+                            <a class="pull-left" href="{{ post.get_absolute_url }}">
+                                <img class="media-object" src="{{ MEDIA_URL }}{% thumbnail post.featured_image 64 64 %}" alt="post featured image">
+                            </a>
+                            {% endif %}
+                            <div class="media-body">
+                                <h4 class="media-heading"><a href="{{ post.get_absolute_url }}">{{ post.title }}</a></h4>
+                                {{ post.description_from_content|truncatewords_html:15|safe }}
+                            </div>
+                        </div>
+                        {% endfor %}
+                        <a href="{% url 'blog_post_list' %}" class="read-more">Read more stories...</a>
+                        {% else %}
+                        <p>We haven't posted anything yet, check back soon!</p>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+ 			-->
+			<!------------------------------ -->
+
+        </div>
+        
+        {% comment %}
+        <!-- Recent Works
+            =================== -->
+        <div class="row">
+            <div class="col-md-12 block-header">
+                <h2>
+                    <span class="title">Recent Works</span><span class="decoration"></span><span class="decoration"></span><span class="decoration"></span>
+                </h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 col-sm-6">
+                <div class="thumbnail">
+                    <img src="{% static "img/works1.jpg" %}" class="img-responsive" alt="...">
+                    <div class="visit"><a href="#"><i class="fa fa-question-circle"></i> More details...</a></div>
+                    <div class="caption">
+                        <h4>Project #1</h4>
+                            <div class="rating">
+                                <i class="fa fa-star"></i> 
+                                <i class="fa fa-star"></i> 
+                                <i class="fa fa-star"></i> 
+                                <i class="fa fa-star"></i> 
+                                <i class="fa fa-star"></i>
+                            </div>
+                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="thumbnail">
+                    <img src="{% static "img/works2.jpg" %}" class="img-responsive" alt="...">
+                    <div class="visit"><a href="#"><i class="fa fa-question-circle"></i> More details...</a></div>
+                    <div class="caption">
+                        <h4>Project #2</h4>
+                            <div class="rating">
+                                <i class="fa fa-star"></i> 
+                                <i class="fa fa-star"></i> 
+                                <i class="fa fa-star"></i> 
+                                <i class="fa fa-star"></i> 
+                            </div>
+                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix visible-sm"></div>
+            <div class="col-md-3 col-sm-6">
+                <div class="thumbnail">
+                    <img src="{% static "img/works3.jpg" %}" class="img-responsive" alt="...">
+                    <div class="visit"><a href="#"><i class="fa fa-question-circle"></i> More details...</a></div>
+                    <div class="caption">
+                        <h4>Project #3</h4>
+                            <div class="rating">
+                                <i class="fa fa-star"></i> 
+                                <i class="fa fa-star"></i> 
+                                <i class="fa fa-star"></i> 
+                                <i class="fa fa-star"></i> 
+                                <i class="fa fa-star-half"></i>
+                            </div>
+                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="thumbnail">
+                    <img src="{% static "img/works4.jpg" %}" class="img-responsive" alt="...">
+                    <div class="visit"><a href="#"><i class="fa fa-question-circle"></i> More details...</a></div>
+                    <div class="caption">
+                        <h4>Project #4</h4>
+                            <div class="rating">
+                                <i class="fa fa-star"></i> 
+                                <i class="fa fa-star"></i> 
+                                <i class="fa fa-star"></i> 
+                                <i class="fa fa-star"></i> 
+                                <i class="fa fa-star"></i>
+                            </div>
+                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endcomment %}
+    </div>
+    
+{% endblock %}

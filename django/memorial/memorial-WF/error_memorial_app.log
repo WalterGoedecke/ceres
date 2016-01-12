@@ -1,0 +1,21 @@
+[Tue Dec 29 16:46:56.517480 2015] [mpm_worker:error] [pid 17645:tid 140245807171456] AH00287: server is within MinSpareThreads of MaxRequestWorkers, consider raising the MaxRequestWorkers setting
+[Tue Dec 29 09:46:57.036572 2015] [wsgi:error] [pid 17654:tid 140245556954880] Not Found: /
+[Tue Dec 29 09:46:57.651272 2015] [wsgi:error] [pid 17653:tid 140245582132992] /home/solarfs/webapps/memorial_app/lib/python3.4/Django-1.8.6-py3.4.egg/django/template/base.py:827: RemovedInDjango19Warning: `request.REQUEST` is deprecated, use `request.GET` or `request.POST` instead.
+[Tue Dec 29 09:46:57.651299 2015] [wsgi:error] [pid 17653:tid 140245582132992]   current = getattr(current, bit)
+[Tue Dec 29 09:46:57.651304 2015] [wsgi:error] [pid 17653:tid 140245582132992] 
+[Tue Dec 29 09:46:57.651712 2015] [wsgi:error] [pid 17653:tid 140245582132992] /home/solarfs/webapps/memorial_app/lib/python3.4/Django-1.8.6-py3.4.egg/django/core/handlers/wsgi.py:126: RemovedInDjango19Warning: `MergeDict` is deprecated, use `dict.update()` instead.
+[Tue Dec 29 09:46:57.651722 2015] [wsgi:error] [pid 17653:tid 140245582132992]   self._request = datastructures.MergeDict(self.POST, self.GET)
+[Tue Dec 29 09:46:57.651726 2015] [wsgi:error] [pid 17653:tid 140245582132992] 
+[Tue Dec 29 09:46:57.681544 2015] [wsgi:error] [pid 17653:tid 140245582132992] /home/solarfs/webapps/memorial_app/lib/python3.4/Django-1.8.6-py3.4.egg/django/templatetags/future.py:25: RemovedInDjango19Warning: Loading the `url` tag from the `future` library is deprecated and will be removed in Django 1.9. Use the default `url` tag instead.
+[Tue Dec 29 09:46:57.681558 2015] [wsgi:error] [pid 17653:tid 140245582132992]   RemovedInDjango19Warning)
+[Tue Dec 29 09:46:57.681563 2015] [wsgi:error] [pid 17653:tid 140245582132992] 
+[Tue Dec 29 09:47:01.882567 2015] [wsgi:error] [pid 17654:tid 140245598918400] /home/solarfs/webapps/memorial_app/lib/python3.4/Django-1.8.6-py3.4.egg/django/template/base.py:827: RemovedInDjango19Warning: `request.REQUEST` is deprecated, use `request.GET` or `request.POST` instead.
+[Tue Dec 29 09:47:01.882593 2015] [wsgi:error] [pid 17654:tid 140245598918400]   current = getattr(current, bit)
+[Tue Dec 29 09:47:01.882599 2015] [wsgi:error] [pid 17654:tid 140245598918400] 
+[Tue Dec 29 09:47:01.882897 2015] [wsgi:error] [pid 17654:tid 140245598918400] /home/solarfs/webapps/memorial_app/lib/python3.4/Django-1.8.6-py3.4.egg/django/core/handlers/wsgi.py:126: RemovedInDjango19Warning: `MergeDict` is deprecated, use `dict.update()` instead.
+[Tue Dec 29 09:47:01.882906 2015] [wsgi:error] [pid 17654:tid 140245598918400]   self._request = datastructures.MergeDict(self.POST, self.GET)
+[Tue Dec 29 09:47:01.882911 2015] [wsgi:error] [pid 17654:tid 140245598918400] 
+[Tue Dec 29 09:47:01.899252 2015] [wsgi:error] [pid 17654:tid 140245598918400] /home/solarfs/webapps/memorial_app/lib/python3.4/Django-1.8.6-py3.4.egg/django/templatetags/future.py:25: RemovedInDjango19Warning: Loading the `url` tag from the `future` library is deprecated and will be removed in Django 1.9. Use the default `url` tag instead.
+[Tue Dec 29 09:47:01.899277 2015] [wsgi:error] [pid 17654:tid 140245598918400]   RemovedInDjango19Warning)
+[Tue Dec 29 09:47:01.899284 2015] [wsgi:error] [pid 17654:tid 140245598918400] 
+[Tue Dec 29 09:51:10.050474 2015] [wsgi:error] [pid 17654:tid 140245556954880] Not Found: /favicon.ico/

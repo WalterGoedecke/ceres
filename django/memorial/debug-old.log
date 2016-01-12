@@ -1,0 +1,640 @@
+Internal Server Error: /accounts/login/
+Traceback (most recent call last):
+  File "/var/www/venv/lib/python3.4/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/var/www/venv/lib/python3.4/site-packages/django/db/backends/sqlite3/base.py", line 318, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: unable to open database file
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/var/www/venv/lib/python3.4/site-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/venv/lib/python3.4/site-packages/mezzanine/accounts/views.py", line 30, in login
+    auth_login(request, authenticated_user)
+  File "/var/www/venv/lib/python3.4/site-packages/django/contrib/auth/__init__.py", line 110, in login
+    request.session.cycle_key()
+  File "/var/www/venv/lib/python3.4/site-packages/django/contrib/sessions/backends/base.py", line 285, in cycle_key
+    self.create()
+  File "/var/www/venv/lib/python3.4/site-packages/django/contrib/sessions/backends/db.py", line 41, in create
+    self.save(must_create=True)
+  File "/var/www/venv/lib/python3.4/site-packages/django/contrib/sessions/backends/db.py", line 65, in save
+    obj.save(force_insert=must_create, using=using)
+  File "/var/www/venv/lib/python3.4/site-packages/django/db/models/base.py", line 734, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/var/www/venv/lib/python3.4/site-packages/django/db/models/base.py", line 762, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "/var/www/venv/lib/python3.4/site-packages/django/db/models/base.py", line 846, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "/var/www/venv/lib/python3.4/site-packages/django/db/models/base.py", line 885, in _do_insert
+    using=using, raw=raw)
+  File "/var/www/venv/lib/python3.4/site-packages/django/db/models/manager.py", line 127, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/var/www/venv/lib/python3.4/site-packages/django/db/models/query.py", line 920, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/var/www/venv/lib/python3.4/site-packages/django/db/models/sql/compiler.py", line 974, in execute_sql
+    cursor.execute(sql, params)
+  File "/var/www/venv/lib/python3.4/site-packages/django/db/backends/utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/var/www/venv/lib/python3.4/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/var/www/venv/lib/python3.4/site-packages/django/db/utils.py", line 98, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/var/www/venv/lib/python3.4/site-packages/django/utils/six.py", line 658, in reraise
+    raise value.with_traceback(tb)
+  File "/var/www/venv/lib/python3.4/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/var/www/venv/lib/python3.4/site-packages/django/db/backends/sqlite3/base.py", line 318, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: unable to open database file
+Internal Server Error: /accounts/login/
+Traceback (most recent call last):
+  File "/var/www/venv/lib/python3.4/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/var/www/venv/lib/python3.4/site-packages/django/db/backends/sqlite3/base.py", line 318, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: unable to open database file
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/var/www/venv/lib/python3.4/site-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/venv/lib/python3.4/site-packages/mezzanine/accounts/views.py", line 30, in login
+    auth_login(request, authenticated_user)
+  File "/var/www/venv/lib/python3.4/site-packages/django/contrib/auth/__init__.py", line 110, in login
+    request.session.cycle_key()
+  File "/var/www/venv/lib/python3.4/site-packages/django/contrib/sessions/backends/base.py", line 285, in cycle_key
+    self.create()
+  File "/var/www/venv/lib/python3.4/site-packages/django/contrib/sessions/backends/db.py", line 41, in create
+    self.save(must_create=True)
+  File "/var/www/venv/lib/python3.4/site-packages/django/contrib/sessions/backends/db.py", line 65, in save
+    obj.save(force_insert=must_create, using=using)
+  File "/var/www/venv/lib/python3.4/site-packages/django/db/models/base.py", line 734, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/var/www/venv/lib/python3.4/site-packages/django/db/models/base.py", line 762, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "/var/www/venv/lib/python3.4/site-packages/django/db/models/base.py", line 846, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "/var/www/venv/lib/python3.4/site-packages/django/db/models/base.py", line 885, in _do_insert
+    using=using, raw=raw)
+  File "/var/www/venv/lib/python3.4/site-packages/django/db/models/manager.py", line 127, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/var/www/venv/lib/python3.4/site-packages/django/db/models/query.py", line 920, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/var/www/venv/lib/python3.4/site-packages/django/db/models/sql/compiler.py", line 974, in execute_sql
+    cursor.execute(sql, params)
+  File "/var/www/venv/lib/python3.4/site-packages/django/db/backends/utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/var/www/venv/lib/python3.4/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/var/www/venv/lib/python3.4/site-packages/django/db/utils.py", line 98, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/var/www/venv/lib/python3.4/site-packages/django/utils/six.py", line 658, in reraise
+    raise value.with_traceback(tb)
+  File "/var/www/venv/lib/python3.4/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/var/www/venv/lib/python3.4/site-packages/django/db/backends/sqlite3/base.py", line 318, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: unable to open database file
+Not Found: /favicon.ico/
+Not Found: /
+Internal Server Error: /accounts/login/
+Traceback (most recent call last):
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/db/backends/sqlite3/base.py", line 318, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: unable to open database file
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/mezzanine/accounts/views.py", line 30, in login
+    auth_login(request, authenticated_user)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/contrib/auth/__init__.py", line 110, in login
+    request.session.cycle_key()
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/contrib/sessions/backends/base.py", line 285, in cycle_key
+    self.create()
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/contrib/sessions/backends/db.py", line 41, in create
+    self.save(must_create=True)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/contrib/sessions/backends/db.py", line 65, in save
+    obj.save(force_insert=must_create, using=using)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/db/models/base.py", line 734, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/db/models/base.py", line 762, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/db/models/base.py", line 846, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/db/models/base.py", line 885, in _do_insert
+    using=using, raw=raw)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/db/models/manager.py", line 127, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/db/models/query.py", line 920, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/db/models/sql/compiler.py", line 974, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/db/backends/utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/db/utils.py", line 98, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/utils/six.py", line 658, in reraise
+    raise value.with_traceback(tb)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/db/backends/sqlite3/base.py", line 318, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: unable to open database file
+Internal Server Error: /accounts/login/
+Traceback (most recent call last):
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/db/backends/sqlite3/base.py", line 318, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: unable to open database file
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/mezzanine/accounts/views.py", line 30, in login
+    auth_login(request, authenticated_user)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/contrib/auth/__init__.py", line 110, in login
+    request.session.cycle_key()
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/contrib/sessions/backends/base.py", line 285, in cycle_key
+    self.create()
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/contrib/sessions/backends/db.py", line 41, in create
+    self.save(must_create=True)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/contrib/sessions/backends/db.py", line 65, in save
+    obj.save(force_insert=must_create, using=using)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/db/models/base.py", line 734, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/db/models/base.py", line 762, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/db/models/base.py", line 846, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/db/models/base.py", line 885, in _do_insert
+    using=using, raw=raw)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/db/models/manager.py", line 127, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/db/models/query.py", line 920, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/db/models/sql/compiler.py", line 974, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/db/backends/utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/db/utils.py", line 98, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/utils/six.py", line 658, in reraise
+    raise value.with_traceback(tb)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/db/backends/sqlite3/base.py", line 318, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: unable to open database file
+Internal Server Error: /accounts/login/
+Traceback (most recent call last):
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/db/backends/sqlite3/base.py", line 318, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: unable to open database file
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/mezzanine/accounts/views.py", line 30, in login
+    auth_login(request, authenticated_user)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/contrib/auth/__init__.py", line 110, in login
+    request.session.cycle_key()
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/contrib/sessions/backends/base.py", line 285, in cycle_key
+    self.create()
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/contrib/sessions/backends/db.py", line 41, in create
+    self.save(must_create=True)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/contrib/sessions/backends/db.py", line 65, in save
+    obj.save(force_insert=must_create, using=using)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/db/models/base.py", line 734, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/db/models/base.py", line 762, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/db/models/base.py", line 846, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/db/models/base.py", line 885, in _do_insert
+    using=using, raw=raw)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/db/models/manager.py", line 127, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/db/models/query.py", line 920, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/db/models/sql/compiler.py", line 974, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/db/backends/utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/db/utils.py", line 98, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/utils/six.py", line 658, in reraise
+    raise value.with_traceback(tb)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/db/backends/sqlite3/base.py", line 318, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: unable to open database file
+Internal Server Error: /accounts/login/
+Traceback (most recent call last):
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/db/backends/sqlite3/base.py", line 318, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: unable to open database file
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/mezzanine/accounts/views.py", line 30, in login
+    auth_login(request, authenticated_user)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/contrib/auth/__init__.py", line 110, in login
+    request.session.cycle_key()
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/contrib/sessions/backends/base.py", line 285, in cycle_key
+    self.create()
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/contrib/sessions/backends/db.py", line 41, in create
+    self.save(must_create=True)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/contrib/sessions/backends/db.py", line 65, in save
+    obj.save(force_insert=must_create, using=using)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/db/models/base.py", line 734, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/db/models/base.py", line 762, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/db/models/base.py", line 846, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/db/models/base.py", line 885, in _do_insert
+    using=using, raw=raw)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/db/models/manager.py", line 127, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/db/models/query.py", line 920, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/db/models/sql/compiler.py", line 974, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/db/backends/utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/db/utils.py", line 98, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/utils/six.py", line 658, in reraise
+    raise value.with_traceback(tb)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/db/backends/sqlite3/base.py", line 318, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: unable to open database file
+Internal Server Error: /accounts/login/
+Traceback (most recent call last):
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/db/backends/sqlite3/base.py", line 318, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: unable to open database file
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/mezzanine/accounts/views.py", line 30, in login
+    auth_login(request, authenticated_user)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/contrib/auth/__init__.py", line 110, in login
+    request.session.cycle_key()
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/contrib/sessions/backends/base.py", line 285, in cycle_key
+    self.create()
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/contrib/sessions/backends/db.py", line 41, in create
+    self.save(must_create=True)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/contrib/sessions/backends/db.py", line 65, in save
+    obj.save(force_insert=must_create, using=using)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/db/models/base.py", line 734, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/db/models/base.py", line 762, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/db/models/base.py", line 846, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/db/models/base.py", line 885, in _do_insert
+    using=using, raw=raw)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/db/models/manager.py", line 127, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/db/models/query.py", line 920, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/db/models/sql/compiler.py", line 974, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/db/backends/utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/db/utils.py", line 98, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/utils/six.py", line 658, in reraise
+    raise value.with_traceback(tb)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/db/backends/sqlite3/base.py", line 318, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: unable to open database file
+Internal Server Error: /admin/login/
+Traceback (most recent call last):
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/db/backends/sqlite3/base.py", line 318, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: unable to open database file
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/core/handlers/base.py", line 125, in get_response
+    response = middleware_method(request, callback, callback_args, callback_kwargs)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/mezzanine/core/middleware.py", line 59, in process_view
+    response = view_func(request, *view_args, **view_kwargs)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/contrib/admin/sites.py", line 394, in login
+    return login(request, **defaults)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/views/decorators/debug.py", line 76, in sensitive_post_parameters_wrapper
+    return view(request, *args, **kwargs)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/utils/decorators.py", line 110, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/contrib/auth/views.py", line 51, in login
+    auth_login(request, form.get_user())
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/contrib/auth/__init__.py", line 110, in login
+    request.session.cycle_key()
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/contrib/sessions/backends/base.py", line 285, in cycle_key
+    self.create()
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/contrib/sessions/backends/db.py", line 41, in create
+    self.save(must_create=True)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/contrib/sessions/backends/db.py", line 65, in save
+    obj.save(force_insert=must_create, using=using)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/db/models/base.py", line 734, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/db/models/base.py", line 762, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/db/models/base.py", line 846, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/db/models/base.py", line 885, in _do_insert
+    using=using, raw=raw)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/db/models/manager.py", line 127, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/db/models/query.py", line 920, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/db/models/sql/compiler.py", line 974, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/db/backends/utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/db/utils.py", line 98, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/utils/six.py", line 658, in reraise
+    raise value.with_traceback(tb)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/db/backends/sqlite3/base.py", line 318, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: unable to open database file
+Internal Server Error: /admin/login/
+Traceback (most recent call last):
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/db/backends/sqlite3/base.py", line 318, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: unable to open database file
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/core/handlers/base.py", line 125, in get_response
+    response = middleware_method(request, callback, callback_args, callback_kwargs)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/mezzanine/core/middleware.py", line 59, in process_view
+    response = view_func(request, *view_args, **view_kwargs)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/contrib/admin/sites.py", line 394, in login
+    return login(request, **defaults)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/views/decorators/debug.py", line 76, in sensitive_post_parameters_wrapper
+    return view(request, *args, **kwargs)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/utils/decorators.py", line 110, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/contrib/auth/views.py", line 51, in login
+    auth_login(request, form.get_user())
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/contrib/auth/__init__.py", line 110, in login
+    request.session.cycle_key()
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/contrib/sessions/backends/base.py", line 285, in cycle_key
+    self.create()
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/contrib/sessions/backends/db.py", line 41, in create
+    self.save(must_create=True)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/contrib/sessions/backends/db.py", line 65, in save
+    obj.save(force_insert=must_create, using=using)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/db/models/base.py", line 734, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/db/models/base.py", line 762, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/db/models/base.py", line 846, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/db/models/base.py", line 885, in _do_insert
+    using=using, raw=raw)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/db/models/manager.py", line 127, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/db/models/query.py", line 920, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/db/models/sql/compiler.py", line 974, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/db/backends/utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/db/utils.py", line 98, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/utils/six.py", line 658, in reraise
+    raise value.with_traceback(tb)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/db/backends/sqlite3/base.py", line 318, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: unable to open database file
+Internal Server Error: /admin/login/
+Traceback (most recent call last):
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/db/backends/base/base.py", line 130, in ensure_connection
+    self.connect()
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/db/backends/base/base.py", line 119, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/db/backends/sqlite3/base.py", line 204, in get_new_connection
+    conn = Database.connect(**conn_params)
+sqlite3.OperationalError: unable to open database file
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/core/handlers/base.py", line 125, in get_response
+    response = middleware_method(request, callback, callback_args, callback_kwargs)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/mezzanine/core/middleware.py", line 59, in process_view
+    response = view_func(request, *view_args, **view_kwargs)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/contrib/admin/sites.py", line 394, in login
+    return login(request, **defaults)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/views/decorators/debug.py", line 76, in sensitive_post_parameters_wrapper
+    return view(request, *args, **kwargs)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/utils/decorators.py", line 110, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/contrib/auth/views.py", line 44, in login
+    if form.is_valid():
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/forms/forms.py", line 184, in is_valid
+    return self.is_bound and not self.errors
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/forms/forms.py", line 176, in errors
+    self.full_clean()
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/forms/forms.py", line 393, in full_clean
+    self._clean_form()
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/forms/forms.py", line 417, in _clean_form
+    cleaned_data = self.clean()
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/contrib/auth/forms.py", line 157, in clean
+    password=password)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/contrib/auth/__init__.py", line 74, in authenticate
+    user = backend.authenticate(**credentials)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/mezzanine/core/auth_backends.py", line 34, in authenticate
+    user = User.objects.get(username_or_email, **kwargs)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/db/models/manager.py", line 127, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/db/models/query.py", line 328, in get
+    num = len(clone)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/db/models/query.py", line 144, in __len__
+    self._fetch_all()
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/db/models/query.py", line 965, in _fetch_all
+    self._result_cache = list(self.iterator())
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/db/models/query.py", line 238, in iterator
+    results = compiler.execute_sql()
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/db/models/sql/compiler.py", line 838, in execute_sql
+    cursor = self.connection.cursor()
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/db/backends/base/base.py", line 162, in cursor
+    cursor = self.make_debug_cursor(self._cursor())
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/db/backends/base/base.py", line 135, in _cursor
+    self.ensure_connection()
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/db/backends/base/base.py", line 130, in ensure_connection
+    self.connect()
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/db/utils.py", line 98, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/utils/six.py", line 658, in reraise
+    raise value.with_traceback(tb)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/db/backends/base/base.py", line 130, in ensure_connection
+    self.connect()
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/db/backends/base/base.py", line 119, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/db/backends/sqlite3/base.py", line 204, in get_new_connection
+    conn = Database.connect(**conn_params)
+django.db.utils.OperationalError: unable to open database file
+Not Found: /home/
+Not Found: /home/
+Not Found: /home/
+Internal Server Error: /admin/media-library/upload_file/
+Traceback (most recent call last):
+  File "/var/www/venv/lib/python3.4/site-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/venv/lib/python3.4/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/var/www/venv/lib/python3.4/site-packages/filebrowser_safe/decorators.py", line 25, in decorator
+    return function(request, *args, **kwargs)
+  File "/var/www/venv/lib/python3.4/site-packages/django/contrib/auth/decorators.py", line 22, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/var/www/venv/lib/python3.4/site-packages/filebrowser_safe/views.py", line 333, in _upload_file
+    uploadedfile = default_storage.save(file_path, filedata)
+  File "/var/www/venv/lib/python3.4/site-packages/django/core/files/storage.py", line 63, in save
+    name = self._save(name, content)
+  File "/var/www/venv/lib/python3.4/site-packages/django/core/files/storage.py", line 248, in _save
+    fd = os.open(full_path, flags, 0o666)
+PermissionError: [Errno 13] Permission denied: '/home/dv8000/virtualenv/memorial/static/media/uploads/pix2-rock_house_and_car_ca50Deu.jpg'
+Internal Server Error: /admin/media-library/upload_file/
+Traceback (most recent call last):
+  File "/var/www/venv/lib/python3.4/site-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/venv/lib/python3.4/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/var/www/venv/lib/python3.4/site-packages/filebrowser_safe/decorators.py", line 25, in decorator
+    return function(request, *args, **kwargs)
+  File "/var/www/venv/lib/python3.4/site-packages/django/contrib/auth/decorators.py", line 22, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/var/www/venv/lib/python3.4/site-packages/filebrowser_safe/views.py", line 333, in _upload_file
+    uploadedfile = default_storage.save(file_path, filedata)
+  File "/var/www/venv/lib/python3.4/site-packages/django/core/files/storage.py", line 63, in save
+    name = self._save(name, content)
+  File "/var/www/venv/lib/python3.4/site-packages/django/core/files/storage.py", line 239, in _save
+    file_move_safe(content.temporary_file_path(), full_path)
+  File "/var/www/venv/lib/python3.4/site-packages/django/core/files/move.py", line 60, in file_move_safe
+    (os.O_EXCL if not allow_overwrite else 0)))
+PermissionError: [Errno 13] Permission denied: '/home/dv8000/virtualenv/memorial/static/media/uploads/pix5-west_cole_home_8tdNiVH.jpg'
+Internal Server Error: /admin/media-library/upload_file/
+Traceback (most recent call last):
+  File "/var/www/venv/lib/python3.4/site-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/venv/lib/python3.4/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/var/www/venv/lib/python3.4/site-packages/filebrowser_safe/decorators.py", line 25, in decorator
+    return function(request, *args, **kwargs)
+  File "/var/www/venv/lib/python3.4/site-packages/django/contrib/auth/decorators.py", line 22, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/var/www/venv/lib/python3.4/site-packages/filebrowser_safe/views.py", line 333, in _upload_file
+    uploadedfile = default_storage.save(file_path, filedata)
+  File "/var/www/venv/lib/python3.4/site-packages/django/core/files/storage.py", line 63, in save
+    name = self._save(name, content)
+  File "/var/www/venv/lib/python3.4/site-packages/django/core/files/storage.py", line 248, in _save
+    fd = os.open(full_path, flags, 0o666)
+PermissionError: [Errno 13] Permission denied: '/home/dv8000/virtualenv/memorial/static/media/uploads/pb98kinetics3.gif'
+Not Found: /favicon.ico/
+Internal Server Error: /admin/media-library/upload_file/
+Traceback (most recent call last):
+  File "/var/www/venv/lib/python3.4/site-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/venv/lib/python3.4/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/var/www/venv/lib/python3.4/site-packages/filebrowser_safe/decorators.py", line 25, in decorator
+    return function(request, *args, **kwargs)
+  File "/var/www/venv/lib/python3.4/site-packages/django/contrib/auth/decorators.py", line 22, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/var/www/venv/lib/python3.4/site-packages/filebrowser_safe/views.py", line 333, in _upload_file
+    uploadedfile = default_storage.save(file_path, filedata)
+  File "/var/www/venv/lib/python3.4/site-packages/django/core/files/storage.py", line 63, in save
+    name = self._save(name, content)
+  File "/var/www/venv/lib/python3.4/site-packages/django/core/files/storage.py", line 248, in _save
+    fd = os.open(full_path, flags, 0o666)
+PermissionError: [Errno 13] Permission denied: '/home/dv8000/virtualenv/memorial/static/media/uploads/pb98kinetics3.gif'
+Internal Server Error: /admin/media-library/upload_file/
+Traceback (most recent call last):
+  File "/var/www/venv/lib/python3.4/site-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/var/www/venv/lib/python3.4/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/var/www/venv/lib/python3.4/site-packages/filebrowser_safe/decorators.py", line 25, in decorator
+    return function(request, *args, **kwargs)
+  File "/var/www/venv/lib/python3.4/site-packages/django/contrib/auth/decorators.py", line 22, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/var/www/venv/lib/python3.4/site-packages/filebrowser_safe/views.py", line 333, in _upload_file
+    uploadedfile = default_storage.save(file_path, filedata)
+  File "/var/www/venv/lib/python3.4/site-packages/django/core/files/storage.py", line 63, in save
+    name = self._save(name, content)
+  File "/var/www/venv/lib/python3.4/site-packages/django/core/files/storage.py", line 248, in _save
+    fd = os.open(full_path, flags, 0o666)
+PermissionError: [Errno 13] Permission denied: '/home/dv8000/virtualenv/memorial/static/media/uploads/pb98kinetics3.gif'
+Not Found: /favicon.ico/

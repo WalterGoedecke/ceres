@@ -1,0 +1,68 @@
+AddHandler fcgid-script .fcgi
+Options +FollowSymLinks
+RewriteEngine On
+RewriteBase /
+
+# Works! - redirects www.snowbears.org/mysite.fcgi to 
+#  www.snowbears.org/DjangoPB/myproject/mysite.fcgi 
+# Also preserves css formatting! 
+# - - - - - - - - - - - - - - - - - - - - - - - -
+#RewriteCond %{REQUEST_FILENAME} !-f
+# Keeps 'DjangoPB/myproject/' from repeating. 
+#RewriteCond %{REQUEST_URI} !(DjangoPB/myproject/)
+#RewriteRule ^(.*)$ /DjangoPB/myproject/$1 [QSA,L,R]
+# ------------------------------------------
+# Redirects with "mysite" after URL, i.e., www.snowbears.org/mysite 
+# Set "STATIC_URL = '/django/myproject/static/'" in settings.py
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_URI} (mysite)
+# The "[R]" shows the URL redirected location; leaving it out hides it. 
+# The "[L]" means this is the last rule. 
+#RewriteRule ^.*$ /django/myproject/mysite.fcgi/ [QSA,R]
+RewriteRule ^.*$ /django/myproject/mysite.fcgi/ [QSA,L]
+#RewriteRule ^.*$ /django/myproject/mysite.fcgi/ [QSA]
+# ------------------------------------------
+
+# ------------------------------------------
+# ---- snowbears.org redirect ---- #
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_URI} (polarbear)
+#RewriteRule ^polarbear/(.*)$ http://www.snowbears.org/django/polarbear/polarbear.fcgi/$1 [L]
+RewriteRule ^.*$ /django/polarbear/polarbear.fcgi/ [L]
+# ------------------------------------------
+# ---- academicgrader.org redirect ---- #
+RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteCond %{HOST_URI} !snowbears\.org
+RewriteCond %{REQUEST_URI} (academicgrader) [OR]
+RewriteCond %{REQUEST_URI} (academicgrader/)
+RewriteRule ^academicgrader/(.*)$ http://snowbears.org/django/academicgrader/academicgrader.fcgi/$1 [L]
+# ------------------------------------------
+# ---- memorial redirect ---- #
+RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteCond %{HOST_URI} !snowbears\.org
+RewriteCond %{REQUEST_URI} (memorial) [OR]
+RewriteCond %{REQUEST_URI} (memorial/)
+RewriteRule ^memorial/(.*)$ http://snowbears.org/django/memorial/memorial.fcgi/$1 [L]
+
+# ------------------------------------------
+# ---- ~spacescience redirect ---- #
+#RewriteCond %{REQUEST_FILENAME} !-f   
+RewriteCond %{REQUEST_URI} (spacescience)
+RewriteRule ^.*$ /spacescience/ [L]
+# ------------------------------------------
+# ---- phenocryst.com redirects ---- #
+RewriteCond %{REQUEST_FILENAME} !-f   
+RewriteCond %{REQUEST_URI} (phenocryst) [OR]
+RewriteCond %{HTTP_HOST} ^phenocryst\.com [NC,OR]
+RewriteCond %{HTTP_HOST} ^www\.phenocryst\.com [NC]
+RewriteRule ^phenocryst/(.*)$ http://www.phenocryst.com/phenocryst.fcgi/$1 [L,R]
+
+# ------------------------------------------
+# ---- final snowbears.org redirect ---- #
+RewriteCond %{REQUEST_FILENAME} !-f   
+# Redirects with "" after URL, i.e., www.snowbears.org/ 
+RewriteCond %{REQUEST_URI} ()
+#RewriteCond %{HTTP_HOST} ^www.snowbears.org [NC,OR]
+#RewriteCond %{HTTP_HOST} ^snowbears.org [NC] 
+RewriteRule ^(.*)$ http://www.snowbears.org/django/polarbear/polarbear.fcgi/$1 [QSA,R=301,L]
+# ------------------------------------------
