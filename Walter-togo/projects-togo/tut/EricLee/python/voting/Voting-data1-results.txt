@@ -1,0 +1,10 @@
+Candidates    Votes    Percent
+==========    =====    =======
+Oriah Zhang     213       19 %
+John Black      319       29 %
+Lee Alder       286       26 %
+Zoe Lester      263       24 %
+
+The winner is John Black with 319 votes!
+
+Total votes polled: 1081

@@ -1,0 +1,150 @@
+#!/usr/bin/python3
+
+import os
+import sys
+
+#Create file object, and write to club file form. 
+#objFile = open(filePath, 'w')
+
+def main(): 
+
+# Create a static class of boolean Asian country flags, and initialize to True. 
+  class ASflags(object):
+    flgCN, flgKR, flgRU = (True,)*3
+    
+  tagDiabetes = '00'
+  tagSkin = '00'
+  flgDiabetes = 0
+  flgSkin = 0
+  tag4994 = '00'
+  flg4994 = 0
+  # -------------------------------
+  # Input command line arguments. 
+  # - - - - - - - - - - - - - - - -
+  total = len(sys.argv)
+  cmdargs = str(sys.argv)
+  #print ("The total numbers of args passed to the script: %d " % total)
+  #print ("Args list: %s " % cmdargs)
+  # -------------------------------
+
+  # -------------------------------
+  # Open file and read. 
+  # - - - - - - - - - - - - - - - -
+  try:
+    objFile = open(sys.argv[1], 'r')
+    inputfile = sys.argv[1]
+  except IndexError: 
+    objFile = open('dna1.txt', 'r')
+    inputfile = 'dna1.txt'
+  #strLine = objFile.readline() 
+  print ("\nParsing " + inputfile)
+  # -------------------------------
+
+  # -------------------------------
+  # Read lines. 
+  # - - - - - - - - - - - - - - - -
+  # # print strLine
+  # # strPiece = strLine.split( )
+  # # print strPiece
+  # # print strPiece[0]
+  # # if strPiece[0] == "#":
+  # #   print "Commented line found:\n"
+  # #   print strLine
+  # # objFile.close 
+
+  for strLine in objFile:
+    strPiece = strLine.split( )
+    #if strPiece[0] != "#":
+      #print "Uncommented line found:\n"
+      #print strLine
+    # - - - - - - - - - - - - - - - -
+    # Type-2 diabetes test:
+    (tagDiabetes, flgDiabetes) = rs7754840(strLine, tagDiabetes, flgDiabetes)
+    # - - - - - - - - - - - - - - - -
+    # Skin type test:
+    (tagSkin, flgSkin) = rs1426654(strLine, tagSkin, flgSkin)
+    # - - - - - - - - - - - - - - - -
+    # RS4994 test:
+    (tag4994, flg4994) = rs4994(strLine, tag4994, flg4994)
+
+
+  objFile.close 
+
+  if flgDiabetes == 1:
+    if tagDiabetes == "CG" or tagDiabetes == "CC":
+      print ("1.3x Increased risk for Type-2 Diabetes")
+    elif tagDiabetes == "GG":
+      print ("Normal risk for type-2 diabetes")
+    else:
+      print ("No DNA info on type-2 diabetes")
+  elif flgDiabetes == 0:
+    print ("No info on type-2 diabetes")
+
+  if flgSkin == 1:
+    if tagSkin == "AA":
+      print ("Probably light-skinned, European ancestry")
+    elif tagSkin == "AG":
+      print ("Probably mixed African/European ancestry")
+    elif tagSkin == "GG":
+      print ("Probably darker-skinned, Asian or African ancestry")
+    else:
+      print ("No DNA info on skin type")
+    elif flgSkin == 0:
+      print ("No info on skin type\n")
+
+  if flg4994 == 1:
+    print ("tag4994: " + tag4994)
+
+  print ("\n")
+
+# - - - - - - - - - - - - - - - -
+# Type-2 diabetes test:
+def rs7754840(strLine, tagDiabetes, flgDiabetes):
+  strPiece = strLine.split( )
+  if strPiece[0] == "rs7754840":
+    flgDiabetes = 1
+    tagDiabetes = strPiece[3]
+  return (tagDiabetes, flgDiabetes);      
+# - - - - - - - - - - - - - - - -
+
+# - - - - - - - - - - - - - - - -
+# Skin type test:
+def rs1426654(strLine, tagSkin, flgSkin):
+  strPiece = strLine.split( )
+  if strPiece[0] == "rs1426654":
+    flgSkin = 1
+    tagSkin = strPiece[3]
+  return (tagSkin, flgSkin);      
+# - - - - - - - - - - - - - - - -
+
+# - - - - - - - - - - - - - - - -
+# RS4994 test:
+def rs4994(strLine, tag4994, flg4994):
+  strPiece = strLine.split( )
+  if strPiece[0] == "rs4994":
+    flg4994 = 1
+    tag4994 = strPiece[3]
+  return (tag4994, flg4994);      
+# - - - - - - - - - - - - - - - -
+
+# # # -------------------------------
+# # # Extras
+# # # - - - - - - - - - - - - - - - -
+# # #print 'We are the {} who say "{}!"'.format('knights', 'Ni')
+
+# # #from array import *
+# # #a=array('i',[1,2,3,4,5])
+# # #for i in a:
+# # #  print(i)
+
+# # # split the text
+# # #words = strContents.split()
+# # # for each word in the line:
+# # #for word in words:
+# #   # prints each word on a line
+# #   #print(word)
+# #   
+# # #lines = [line.strip() for line in open('filename')]
+# -------------------------------
+
+main() 

@@ -1,0 +1,93 @@
+From nicole.dina@ngc.com Wed Oct 08 06:26:03 2014
+Date: Wed, 8 Oct 2014 08:25:54 -0400 (EDT)
+From: nicole.dina@ngc.com
+To: walter@snowbears.org
+Cc: nicole.dina@ngc.com
+Subject: IMPORTANT: Northrop Grumman Interview Confirmation, Req. ID 14018255 Sr. Tracking Algorithm Engineer (9+ years experience)
+
+Dear Walter,
+
+Thank you for your interest in Northrop Grumman. We hope that your interview will be successful. This email is to confirm your interview for the position of Sr. Tracking Algorithm Engineer (9+ years experience), requisition ID 14018255, is scheduled for Tuesday, October 14, 2014 at 9:00 AM Mountain Time.
+
+Please reply to this emai to confim that you have received it and let me know if you have any questions.
+
+Your interview will take place at 6120 Longbow Drive, Boulder, CO 80301. Please ask for Michelle Magnetti ext. 6246 or Suzanna Diener ext. 2916
+
+Due to heightened security, you must bring a government issued picture ID (such as a driver's license or passport).
+
+EMPLOYMENT APPLICATION: All applicants who interview with Northrop Grumman need to fully complete our Employment Application. Please click here to login and access the information you will need to complete. It is extremely important that you complete the information prior to your interview date.
+
+SECURITY REQUIREMENTS: In an effort to protect Northrop Grumman's competitive edge and protect employee privacy, our Security Staff prohibits the use of cellular phones with digital camera capabilities in our facilities as well as personal digital assistants (PDAs) with digital camera capabilities. The use of
+cell phones without digital camera capabilities is also prohibited without prior authorization from our Security Organization. Your cooperation is greatly appreciated.
+
+Job Description:
+
+Northrop Grumman is seeking applicants for a position in Algorithm Development for applications in tracking, motion prediction, and modeling from space-based platforms, across multiple reference frames.
+
+The engineer will be responsible for researching and identifying complex,
+multi-disciplinary problems, breaking into components, and designing and
+implementing algorithm solutions for a broad range of sensor exploitation
+activities. Sensor output shall be used for identification, characterization,
+interpretation, and change detection of objects and events. Work will include
+planning and executing team projects, developing work packages, developing
+prototypes and customer demonstrations, in addition to analyzing algorithm
+performance, subsystems, and interfaces. The engineer will also be expected to
+report status to colleagues, including customers and management.
+
+The engineer must have a working knowledge of overhead, non-imaging sensors
+(ONIR), as well as an awareness of electro-optic infrared (EOIR) sensors, with
+respect to focal plane resolution, sensitivity, and line of sight considerations
+for the purpose of tracking. Existing general knowledge of visible or IR focal
+planes and other sensor systems engineering experience is desirable. Development
+is in C/C++ in a spiral development framework, using Integrated Development
+Environments (IDEs) across multiple operating systems.
+
+The engineer will participate in technical peer reviews and work with various Integrated Product Teams (IPTs) as well as be cognizant of algorithm development and integration issues. The engineer must communicate effectively and clearly present technical approaches and findings. S/He will represent the organization as a technical POC and may have frequent inter-organizational and customer contacts.
+
+
+This position is located in Boulder, CO, and includes:
+
+ *  Tool and software development using C/C++ in a spiral development framework.
+ *  Experience with configuration management software, including
+    ClearCase/ClearQuest.
+ *  Generation of applicable documentation.
+ *  Interfacing with customers, program management and cross-functional
+    technical staff, strong presentation skills combined with an awareness of
+    leadership roles and responsibilities.
+ *  Providing problem resolution and improvement recommendations with strong
+    time management skills.
+ *  Travel to NG and Government locations within U.S.
+ *  Additional responsibilities which may be assigned commensurate with
+    performance or due to business needs.
+
+We invite you to learn more about our company at www.northropgrumman.com.
+
+If you have any questions or require further information, please contact me via
+email at nicole.dina@ngc.com or via phone at 224-625-5317.
+
+Best regards,
+Nicole Dina
+
+nicole.dina@ngc.com
+Talent Acquisition
+Northrop Grumman
+
+[company_logo_02.gif]
+
+Northrop Grumman is committed to hiring and retaining a diverse workforce. We
+are proud to be an Equal Opportunity/Affirmative Action Employer, making
+decisions without regard to race, color, religion, creed, sex, sexual
+orientation, gender identity, marital status, national origin, age, veteran
+status, disability, or any other protected class. For our complete EEO/AA
+statement, please visit http://www.northropgrumman.com/EEO.  U.S. Citizenship is
+required for most positions.
+
+
+    [ Part 2, Application/OCTET-STREAM (Name: "Instructions for completing ]
+    [ Employment Application_If Applicable.doc") 63 KB. ]
+    [ Unable to print this part. ]
+
+
+    [ Part 3, Application/OCTET-STREAM (Name: "this_message_in_html.html") ]
+    [ 7.3 KB. ]
+    [ Unable to print this part. ]

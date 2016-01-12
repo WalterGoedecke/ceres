@@ -1,0 +1,34 @@
+Mid-Level Scientific Programmer
+If you are a Mid-Level Scientific Programmer with experience, please read on!
+
+Based in Boulder, CO, we are a certified small independent company that has been performing research and development for a wide range of products and services for the Department of Defense, other government agencies, and industrial system development firms for the past 30 years. Currently, we are looking to hire an extremely bright Mid-Level Scientific Programmer with a strong background in algorithm implementation and understands all aspects of the software development life cycle to join our team.
+
+If you are strong with C, C++, Python or similar open-source technology, and have development experience in the LINUX environment, we would love the opportunity to tell you more about this amazing opportunity.
+
+What's In It for You
+We offer an excellent compensation package including a competitive base salary, Bonuses, Benefits, a 401k program with company contribution, an amazing vacation and holiday policy.
+What You Need for this Position
+Requirements:
+- BS Degree in Computer Science, Electrical/Computer/Aerospace/Mechanical Engineering
+- Advanced Knowledge of C, C++ and Python
+- Working knowledge of Linux
+- Excellent written and verbal communication skills
+- Department of Defense Clearance
+
+Nice to have skills:
+- Prior experience in remote sensing systems
+- Prior experience in signal processing techniques
+So, if you are a Mid-Level Scientific Programmer with experience, please apply today!
+
+Please read the job description and tell me why you would be an amazing fit.
+(1000 characters)
+I have a very good physics and math background, working on science and engineering projects most of my career. I have competant computing skills to bring projects to fruition. 
+
+I've worked on algorithm development especially for tracking and surveillance instruments at the Navy using MatLab, creating streamlined GUI applications, and then converting these to C# for stand-alone use. I created a quality assurance program, and I streamlined GPS processing techniques, using GUI HTML forms and VB scripts. I became the math SME for others to consult with, and I also created a website to document our department's processing codes and other documents. 
+
+I've taught space science classes, including remote sensing to Air Force students, so I believe I present subject matter well to others. I also created a GPS class, with positive reviews from faculty and staff. I've recently worked on a website to add user submitted information to a MySQL database with Python control at the server. 
+
+Please tell me the details of your most recent hourly wage (base, bonus, commission, etc.) and your ideal hourly wage for this position?
+At China Lake Naval Base, I made about $74k/yr. I would be open to negotiation, since we are back home in Boulder, especially to start out with. 
+
+

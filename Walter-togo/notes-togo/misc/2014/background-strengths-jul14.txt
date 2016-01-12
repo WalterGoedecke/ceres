@@ -1,0 +1,17 @@
+strong background in EM 
+
+worked with CubeSats 
+
+strong math background - inverting data, KF for tracking instruments, 
+
+PhD thesis in solar wind interactions with geomagnetic field 
+
+early interest in ionosphere and effect on radionwave propagation 
+
+worked on GPS scattering and taught GPS and navagation classes 
+
+Taught space science classes: orbital dynamics, space environment, propulsion, spacecraft design, 
+
+craeted QA program for tracking instrument data, working on data algorithms, and fusing datasets with Kalman filters
+
+strong computer programming skills. 

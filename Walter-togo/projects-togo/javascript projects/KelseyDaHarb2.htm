@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>kelsey daHarb</title>
+        <link href='http://fonts.googleapis.com/css?family=Megrim' rel='stylesheet' type='text/css'>
+        <link href="css/style.css" rel="stylesheet" type="text/css">
+        <script> 
+            var num;
+            var attempts = 0;
+            var score = 0;
+            var state;
+            var clue
+            var dictionary = {}; //intializes code and then we input values down the code
+            dictionary["The world's first Electric Trolly System was introduced in this state's capital in 1886."]="Alabama";
+            dictionary["Just about 1/3 of this state lies within the Arctic Circle."]="Alaska";
+            dictionary["Home of the Grand Canyon."]="Arizona";
+            dictionary["Officially known as The Natural State."]="Arkansas";
+            dictionary["This state produces more than 17 million gallons of wine each year."]="California";
+            dictionary["This state has more microbreweries per capita than any other state."]="Colorado";
+            dictionary["Harvard is located here."]="Conneticut";
+            dictionary["The Lady Bug is this state's official insect."]="Delaware";
+            dictionary["Home to the most popular amusement park in the US."]="Florida";
+            dictionary["Known as the Peach State."]="Georgia";
+            dictionary["This is the only US state that grows coffee."]="Hawaii";
+            dictionary["Home to the deepest gorge in the US."]="Idaho";
+            dictionary["The first Aquarium opened in this state's popular city in 1885."]="Illinois";
+            dictionary["The name of this state means Land of the Indians."]="Indiana";
+            dictionary["This is the only state name that starts with two vowels."]="Iowa";
+            dictionary["This state contains Smith County, the geographical center of the 48 continental US states."]="Kansas";
+            dictionary["Home to the oldest continuously held horse race in the country."]="Kentucky";
+            dictionary["This state annually hosts one of the country's biggest parties, Mardi Gras."]="Louisiana";
+            dictionary["This is the only state in the US whose name is a single syllable."]="Maine";
+            dictionary["The United States Naval Academy was founded in this state on October 10, 1845."]="Maryland";
+            dictionary["The American Industrial Revolution began in this state."]="Massachusetts";
+            dictionary["This state holds a popular US city known as the car capital of the world."]="Michigan";
+            dictionary["Home to the Mall of America."]="Minnesota";
+            dictionary["Rootbeer was invented in this state."]="Mississippi";
+            dictionary["The state animal is the Mule."]="Missouri";
+            dictionary["This state hosts the largest migratory elk herd in the nation."]="Montana";
+            dictionary["This state's motto is, Equality before the Law."]="Nebraska";
+            dictionary["Home to Sin City as they call it."]="Nevada";
+            dictionary["The first free public library was established in this state in 1833."]="New Hampshire";
+            dictionary["Home to the city that is known as the Green Chile capital of the World."]="New Mexico";
+            dictionary["This state has 722 miles of subway track."]="New York";
+            dictionary["This state holds the most dense system of highways and railroads in the country."]="New Jersey";
+            dictionary["Pepsi was invented here."]="North Carolina";
+            dictionary["This state grows more sunflowers than anyother."]="North Dakota";
+            dictionary["Hang On Sloopy is this states official rock song."]="Ohio";
+            dictionary["The National Cowboy Hall of Fame is located in this state's capital."]="Oklahoma";
+            dictionary["This state has more ghost towns than any other."]="Oregon";
+            dictionary["Home to Hershey's."]="Pennsylvania";
+            dictionary["The smallest of all 50 states."]="Rhode Island";
+            dictionary["The first battle of the Civil War took place in this state."]="South Carolina";
+            dictionary["rocky mountains are here"]="South Dakota";
+            dictionary["This state holds a popular city known as the Birthplace of Country Music."]="Tennessee";
+            dictionary["They say everything is bigger."]="Texas";
+            dictionary["Home to five national parks (Arches, Canyonlands, Zion, Bryce, and Capitol Reef)."]="Utah";
+            dictionary["Ben and Jerry's anyone?"]="Vermont";
+            dictionary["This state is number 10 of the 13 original colonies."]="Virginia";
+            dictionary["Starbucks was founded in this state."]="Washington";
+            dictionary["Nearly 2/3 of this state is covered by forests."]="West Virginia";
+            dictionary["Nicknamed the Badger State."]="Wisconsin";
+            dictionary["This was the first state to grant women the right to vote."]="Wyoming"; 
+
+            //function retrieves clue to be put in corresponding form
+            function getclue () {
+                var clue = [
+                "The world's first Electric Trolly System was introduced in this state's capital in 1886.", 
+                "Just about 1/3 of this state lies within the Arctic Circle.", 
+                "Home of the Grand Canyon.", 
+                "Officially known as The Natural State.", 
+                "This state produces more than 17 million gallons of wine each year.", 
+                "This state has more microbreweries per capita than any other state.", 
+                "The Lady Bug is this state's official insect.", 
+                "Home to the most popular amusement park in the US.",
+                "Known as the Peach State.", 
+                "This is the only US state that grows coffee.", 
+                "Home to the deepest gorge in the US.", 
+                "The first Aquarium opened in this state's popular city in 1885.", 
+                "The name of this state means Land of the Indians.", 
+                "This is the only state name that starts with two vowels.", 
+                "This state contains Smith County, the geographical center of the 48 continental US states.", 
+                "Home to the oldest continuously held horse race in the country.", 
+                "This state annually hosts one of the country's biggest parties, Mardi Gras.", 
+                "This is the only state in the US whose name is a single syllable.", 
+                "The United States Naval Academy was founded in this state on October 10, 1845.", 
+                "The American Industrial Revolution began in this state.", 
+                "This state holds a popular US city known as the car capital of the world.", 
+                "Home to the Mall of America.", 
+                "Rootbeer was invented in this state.", 
+                "The state animal is the Mule.", 
+                "This state hosts the largest migratory elk herd in the nation.", 
+                "This state's motto is, Equality before the Law.", 
+                "Home to Sin City as they call it.", 
+                "The first free public library was established in this state in 1833.", 
+                "Home to the city that is known as the Green Chile capital of the World.", 
+                "This state has 722 miles of subway track.", 
+                "This state holds the most dense system of highways and railroads in the country.", 
+                "Pepsi was invented here.", 
+                "This state grows more sunflowers than anyother.", 
+                "Hang On Sloopy is this states official rock song.", 
+                "The National Cowboy Hall of Fame is located in this state's capital.", 
+                "This state has more ghost towns than any other.", 
+                "Home to Hershey's.", 
+                "The smallest of all 50 states.", 
+                "The first battle of the Civil War took place in this state.", 
+                "This state holds a popular city known as the Birthplace of Country Music.", 
+                "They say everything is bigger.", 
+                "Home to five national parks (Arches, Canyonlands, Zion, Bryce, and Capitol Reef).", 
+                "Ben and Jerry's anyone?", 
+                "This state is number 10 of the 13 original colonies.", 
+                "Starbucks was founded in this state.", 
+                "Nearly 2/3 of this state is covered by forests.", 
+                "Nicknamed the Badger State.", 
+                "This was the first state to grant women the right to vote."
+                ];
+                        
+                //Clear the state text field for next guess. 
+                document.stategame.txtAnswer.value = '';  
+                
+                //Random number generator: integer between 0 - 5; rarely if ever "5."
+                num = Math.floor(Math.random()*50);
+                document.stategame.txtClue.value = clue[num];	
+            }	
+
+            function compare() {
+                //alert("Mark 1");
+                attempts = attempts + 1;
+                //alert("attempts = " + attempts);
+                clue = document.stategame.txtClue.value;
+                //alert("clue = " + clue);
+                state = document.stategame.txtAnswer.value;
+                //alert("state = " + state);
+                alert("Answer: " + dictionary[clue]);
+                if (state == dictionary[clue]) {
+                    document.stategame.txtCheck.value = 'True';
+                    document.stategame.txtCheck.style.color = 'blue';
+                    score = score + 1;
+                    //alert("score = " + score);                    
+                }
+                else {
+                    document.stategame.txtCheck.value = 'False';
+                    document.stategame.txtCheck.style.color = 'red';	
+                }
+                document.stategame.txtScore.value = score; 
+                document.stategame.txtAttempts.value = attempts; 
+                if (attempts >= 10) {
+                    percent = 100*score/attempts;
+                    alert ("Your final score is " + percent + "%");
+                    score = 0;
+                    attempts = 0;
+                    document.stategame.txtCheck.value = '';
+                    document.stategame.txtScore.value = "";
+                    document.stategame.txtAttempts.value = "";	
+                }
+                getclue();
+            }	
+        </script> 
+    </head>
+
+    <body onLoad="getclue()"> <!--loads "getclue" on initialization-->>
+        <a href="index.html"> BACK TO PORTAL </a>
+        <div id="projectone">
+        <h2>Name That State</h2>
+        <p>Based off the clue, guess the state. You get ten clues, majority of correct answers wins the game!</p>
+
+        <form name="stategame" method="post">
+            <b>Clue:</b>
+            <input type=text name=txtClue size=65 value="" style="text-align:center" />
+            <br>
+            <input id="clueButton" type="button" onClick="getclue()" value="Get The Clue!" />
+            <br>
+
+            <b>Answer:</b>
+            <input type=text name=txtAnswer size=25 style="text-align:center" />
+            <input id="answerButton" type="button" onClick="compare()" value="Submit" />
+            <br>
+
+            <b>Score:</b>
+            <input type=text name=txtScore size=10 style="text-align:center" />
+            <br>
+
+            <b>Attempts:</b>
+            <input type=text name=txtAttempts size=10 style="text-align:center" />
+            <br>
+
+            <b>Check Answer:</b>
+            <input type=text name=txtCheck size=12 style="text-align: center" /> 
+
+        </form>
+
+        </div>
+    </body>
+</html>

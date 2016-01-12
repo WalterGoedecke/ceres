@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>Radio Button onClick Handler</title>
+        <script language="Javascript">
+            var myOption = false
+            function initvalue() {
+                myOption = document.forms[0].songs[3].checked
+            }
+             function fullname(form) {
+                for (var i = 0; i < form.songs.length; i++) {
+                    if (form.songs[i].checked) {
+                        break
+                    }
+                }
+                alert("You chose " + form.songs[i].value + ".")
+                form.myScore.value = form.songs[i].value
+            }
+            function setShemp(setting) {
+                myOption = setting
+            }
+            function exitMsg() {
+                if (myOption) {
+                    alert("You like My Option?")
+                }
+            }
+        </script>
+    </head>
+    <body onLoad="initvalue()" onUnload="exitMsg()">
+        <form>
+            <B>Select your favorite song:</B><P>
+            <input type="radio" name="songs" value="A" checked onClick="setShemp(false)">A
+            <input type="radio" name="songs" value="B" onClick="setShemp(false)">B
+            <input type="radio" name="songs" value="C" onClick="setShemp(false)">C
+            <input type="radio" name="songs" value="D" onClick="setShemp(true)">D<P>
+            <input type="button" name="Viewer" value="View Full name..." onClick="fullname(this.form)">
+            <br>
+            <input type="TEXT" name="myScore" size="4">
+            
+        </form>
+    </body>
+</html>

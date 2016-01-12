@@ -1,0 +1,30 @@
+Last 5 days
+transactions table
+Loading Last 5 days of transactions for SHARE DRAFT ACCTS.
+date	description	amount
+Pending
+	
+THE HOTEL FULLE / Ref1:7011882932 Ref3:518207882932 33 Expires:20150704
+-$126.50
+Pending
+	
+Hobie's Sand Ba / Ref1:5812910553 Ref3:518222910553 33 Expires:20150704
+-$21.58
+07/02/2015
+	
+Withdrawal / NATIONAL CAR RENTAL ONTARIO CA Date 07/01/15 060350337190 3393
+-$69.70
+07/02/2015
+	
+Withdrawal / UNITED 0162609673571 800-932-2732 TX Date 06/30/15 000457195695 3000
+-$25.00
+06/30/2015
+	
+Withdrawal at ATM #000000007924 / ELEVATIONS CU 611 S BROADWAY BOULDER CO
+-$100.00
+06/28/2015
+	
+Withdrawal at ATM #000000006300 / ELEVATIONS CU 4760 BASELINE RD BOULDER CO
+-$60.00
+Make a transfer
+Go to account history

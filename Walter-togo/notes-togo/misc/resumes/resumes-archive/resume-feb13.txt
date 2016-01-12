@@ -1,0 +1,108 @@
+Walter Goedecke, PhD, PE 
+612 Weiman Ave
+Ridgecrest, CA  93555
+Tel: 760-446-2310 
+walter.goedecke@navy.mil, walter@snowbears.org
+
+SUMMARY 
+* Background in physics, geophysics, and electrical engineering. 
+* Physics specialty in space physics and aerospace. 
+* Geophysics specialty in electrical methods, potential fields, and instrumentation. 
+* EE with specialty in electromagnetic scattering and wave propagation. 
+* Knowledgeable in statistical and data analysis. 
+* Technical writing and communication skills. 
+* Excellent problem solving skills. 
+
+HIGHLIGHTS  
+* Registered Professional Engineer (PE) in the State of Colorado. 
+* Proficient with MatLab, Fortran, C#, C++, HTML and other scripts. 
+* Knowledgeable in geology and geophysics, and skilled in instrumentation. 
+* Advanced German language skills, and intermediate Spanish skills. 
+* Taught classes to a variety of audiences, at their level of understanding. 
+* Subject matter expert in many math fields, including estimation. 
+
+EXPERIENCE
+Physicist and Tracking Instrument Analyst 			(02/09-present) 
+US Naval Air Warfare Station, China Lake, CA
+* Created and operate a quality assurance program for tracking instrument data in the test and evaluation group. 
+* Designed data analysis flow plan, along with easy to use GUI analysis programs in MatLab, C#, HTML and VB applets. 
+* Analyze tracking and surveillance instrumentation datasets. 
+* Created methods and algorithms to track trajectory positions, and estimate multiple tracking data with Kalman filtering techniques. 
+* Improved and streamlined existing analysis programs and methodologies. 
+* General subject matter expert in math, physics, and systems engineering. 
+* Proficient in writing documentation and publishing it on websites. 
+
+Adjunct Professor 						(07/04-06/08)
+Embry-Riddle Aeronautical University, F.E. Warren Air Force Base, Cheyenne, WY 
+Schriever Air Force Base, Colorado Springs, CO., Metropolitan State College, Denver, CO
+Webster University, at Ball Aerospace Corp. 
+Subjects included: 
+* Undergraduate classes in navigation and map use, including integrated GPS and GIS structure. 
+* Graduate classes in: space applications; Earth observation and remote sensing; space mission and launch operations, and advanced GPS/GIS. 
+* Faculty course development award from the Wyoming NASA Space Grant Consortium to develop a GPS course for Embry-Riddle. 
+* Project development awards from the Wyoming NASA Space Grant Consortium and Embry-Riddle, to design and build a nano-satellite to demonstrate active orbital modification by including a thruster on it. 
+* Project development award from Embry-Riddle to design and build a navigation system with IMU for tracking launched payloads. Managed students to assist on project development. 
+* Serve on graduate capstone project committees, advise students, and referee results. 
+
+Scientist and Engineer 						(05/04-05/05)
+Electromagnetic Applications, Inc., Lakewood, CO
+* Investigated GPS multipath problems for FAA LAAS proto-system intended for auto-land feasibility and suggested solutions. Examined signal to noise characteristics from ground and built interference. Compared code and carrier errors (CMC) from numerous GPS satellites in an airport environment. 
+* Evaluated GPS antenna characteristics such as gain patterns and phase centers on linear and polarized models. Modeled GPS wave scattering on rough surface as random dipole distributions to evaluate errors and noise. 
+
+Consultant 							(10/02-10/03) 
+QuakeFinder, LLC, Palo Alto, CA
+* Wrote proposal to NASA to build and deploy ELF/ULF magnetometers along fault zones to investigate tectonic events such as earthquake magneto-seismic emissions and possible ionospheric effects. 
+* Recommended ELF bands for a CubeSat magnetometer, and assisted in calibration for this satellite prior to launch. 
+
+Researcher and Systems Engineer 				(07/97-05/01)
+University of California at Los Angeles, 
+Institute of Geophysics and Planetary Physics, Los Angeles, CA 
+* Designed, built, and deployed several GPS-synchronized magnetometer data acquisition systems to observe global electromagnetic resonances. 
+* Planned and organized research and engineering for scientific goal of project. 
+* Expanded network of research collaborators to include NOAA Space Environment Center, the US Air Force Academy, Los Alamos National Labs, and two Eastern European research institutes. Negotiated with private landowners to host remote observatory systems. 
+* Programmed acquisition system and wrote a real-time signal monitor program. 
+* Set up computer networks for the acquisition systems to communicate to the Internet for fast data retrieval. Created data analysis routines in C++ and MatLab. Mentored groups to create additional routines. 
+* Compared results with spacecraft data. Instructed groups on use of hardware and software, and analyzed data for space physics and weather conditions. 
+
+
+ADDITIONAL NOTEWORTHY PROJECTS 
+* Cross-borehole EM detection of tunnels, including building model water tank for antennas. 
+* Acoustic detection of fluid levels to monitor levels in borehole fracture tanks. 
+* Conducted geophysical surveys that included EM, electrical, seismic, and potential field methods for mining and environmental concerns. 
+* Built radiometers and infrared hygrometers. 
+* Repaired electronic instrumentation and equipment. 
+* Wrote C++ program from Basic that translates an input language into another language. 
+* Wrote machine language program for microprocessor board to monitor printing press operations.  
+* Taught and assisted geophysics field class, Fortran, electrical engineering, and AutoCAD classes. 
+* Extensive geology and mineralogy experience from lapidary work. 
+* Managed a sole-proprietorship business and a partnership. 
+
+CERTIFICATIONS & SPECIAL TRAINING 
+OSHA Hazardous Waste Operations and Emergency Response 40-Hour Training Program class 
+NavTech GPS Classes: fundamentals and Kalman filtering. 
+
+PROFESSIONAL ASSOCIATIONS 
+American Geophysical Union, American Institute of Physics 
+ 
+VOLUNTEER EXPERIENCE & LEADERSHIP 
+Organized and webhosted a large annual event in Boulder, Colo., with over 500 participants for several years. The event is now a fundraiser for Alzheimer's disease. 
+
+EDUCATION 
+PhD in Geophysical Engineering, Minor in physics
+Colorado School of Mines / UCLA, Los Angeles, CA 
+
+MS in Engineering Management & Aerospace Eng
+Florida Inst. of Technology, Melbourne, FL
+
+MS in Geophysical / Electrical Engineering
+University of Arizona, Tucson, AZ 
+
+BS in Geophysical Engineering, Minors: electrical engineering and geology
+Colorado School of Mines, Golden, CO 
+ 
+
+References available upon request
+
+
+
+

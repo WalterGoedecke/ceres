@@ -1,0 +1,414 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title>Geophysics Questions</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- - - - - - - - - - - - - - - - - -->
+    <!--CSS link.-->
+    <link rel="stylesheet" type="text/css" href="geophysics.css">
+    <!-- - - - - - - - - - - - - - - - - -->
+    <!-- ---------------------------- -->
+    <!--Javascript -->
+    <script type="text/javascript" language="JavaScript"><!--
+        <!-- ---------------------------- -->
+        function checkAnswer(form) {
+            var myScore = 0;
+            <!-- - - - - - - - - - - - - - - - - -->
+            for (var i = 0; i < form.rdQuestion1.length; i++) {
+                if (form.rdQuestion1[i].checked) {
+                    break
+                }
+            }
+            //alert("You chose " + form.rdQuestion1[i].value + ".")
+            answer = form.rdQuestion1[i].value;
+            if (answer == 'd') {
+                myScore = myScore + 1;
+            }
+            <!-- - - - - - - - - - - - - - - - - -->
+            for (var i = 0; i < form.rdQuestion2.length; i++) {
+                if (form.rdQuestion2[i].checked) {
+                    break
+                }
+            }
+            answer = form.rdQuestion2[i].value;
+            if (answer == 'c') {
+                myScore = myScore + 1;
+            }
+            <!-- - - - - - - - - - - - - - - - - -->
+            for (var i = 0; i < form.rdQuestion3.length; i++) {
+                if (form.rdQuestion3[i].checked) {
+                    break
+                }
+            }
+            answer = form.rdQuestion3[i].value;
+            if (answer == 'a') {
+                myScore = myScore + 1;
+            }
+            <!-- - - - - - - - - - - - - - - - - -->
+            for (var i = 0; i < form.rdQuestion4.length; i++) {
+                if (form.rdQuestion4[i].checked) {
+                    break
+                }
+            }
+            answer = form.rdQuestion4[i].value;
+            if (answer == 'b') {
+                myScore = myScore + 1;
+            }
+            <!-- - - - - - - - - - - - - - - - - -->
+            for (var i = 0; i < form.rdQuestion5.length; i++) {
+                if (form.rdQuestion5[i].checked) {
+                    break
+                }
+            }
+            answer = form.rdQuestion5[i].value;
+            if (answer == 'd') {
+                myScore = myScore + 1;
+            }
+            <!-- - - - - - - - - - - - - - - - - -->
+            for (var i = 0; i < form.rdQuestion6.length; i++) {
+                if (form.rdQuestion6[i].checked) {
+                    break
+                }
+            }
+            answer = form.rdQuestion6[i].value;
+            if (answer == 'd') {
+                myScore = myScore + 1;
+            }
+            <!-- - - - - - - - - - - - - - - - - -->
+            for (var i = 0; i < form.rdQuestion7.length; i++) {
+                if (form.rdQuestion7[i].checked) {
+                    break
+                }
+            }
+            answer = form.rdQuestion7[i].value;
+            if (answer == 'b') {
+                myScore = myScore + 1;
+            }
+            <!-- - - - - - - - - - - - - - - - - -->
+            for (var i = 0; i < form.rdQuestion8.length; i++) {
+                if (form.rdQuestion8[i].checked) {
+                    break
+                }
+            }
+            answer = form.rdQuestion8[i].value;
+            if (answer == 'a') {
+                myScore = myScore + 1;
+            }
+            <!-- - - - - - - - - - - - - - - - - -->
+            for (var i = 0; i < form.rdQuestion9.length; i++) {
+                if (form.rdQuestion9[i].checked) {
+                    break
+                }
+            }
+            answer = form.rdQuestion9[i].value;
+            if (answer == 'b') {
+                myScore = myScore + 1;
+            }
+            <!-- - - - - - - - - - - - - - - - - -->
+            for (var i = 0; i < form.rdQuestion10.length; i++) {
+                if (form.rdQuestion10[i].checked) {
+                    break
+                }
+            }
+            answer = form.rdQuestion10[i].value;
+            if (answer == 'd') {
+                myScore = myScore + 1;
+            }
+
+            myGrade = 100*myScore/10.0;
+            form.grade.value = 'Your score is: ' + myGrade.toFixed(1) + '%';
+
+            //form.grade.value = "A"; 
+            
+        /*function OnChange(dropdown) {
+          var myindex  = dropdown.selectedIndex
+          var SelValue = dropdown.options[myindex].value
+          var baseURL  = <Some value based on SelValue>
+          top.location.href = baseURL;
+
+          document.geophysics_js.txtFirstNumber.value = 'Yes'
+          return true;
+        }*/
+        function calculate() {
+          A = document.frmOne.txtFirstNumber.value
+          B = document.frmOne.txtSecondNumber.value
+          C = (A + B)
+          document.frmOne.txtThirdNumber.value = C
+        }
+        function transfer() {
+          alert("button");
+          //A = document.geophysics_js.select1.value
+          //document.geophysics_js.txtFirstNumber.value = A
+        }
+        function OnChange(dropdown) {
+          var A = dropdown.selectedIndex
+          alert(A)
+          document.geophysics_js.txtFirstNumber.value = A
+        }
+        function myFunction() {
+            alert("I am an alert box!");
+        }
+    }
+    //--></script>
+
+    <!-- ---------------------------- -->
+  </head>
+  <body>
+    <!--This is a comment line-->
+    <ul id="dd">
+      <!-- <li><a href="#" class="menu" id="mmenu1" 
+          onmouseover="mopen(1);"
+          onmouseout="mclosetime();">Home</a>
+        <div class="submenu" id="menu1"
+          onmouseover="mcancelclosetime()"
+          onmouseout="mclosetime();">
+            <a href="#">HTML Tutorials</a>
+            <a href="#">DHTML Tutorials</a>
+            <a href="#">JavaScript Tutorials</a>
+            <a href="#">CSS Tutorials</a>
+        </div>
+      </li> -->
+      <!-- <li><a href="#" class="menu" id="mmenu2" 
+          onmouseover="mopen(2);"
+          onmouseout="mclosetime();">Download</a>
+        <div class="submenu" id="menu2"
+          onmouseover="mcancelclosetime()"
+          onmouseout="mclosetime();">
+            <a href="#">ASP Scripts</a>
+            <a href="#">PHP Scripts</a>
+            <a href="#">Ajax Scripts</a>
+            <a href="#">Perl Scripts</a>
+        </div>
+      </li> -->
+      <li><a href="#" class="menu">Order</a></li>
+      <li><a href="#" class="menu">Help</a></li>
+      <li><a href="#" class="menu" id="mmenu3" 
+          onmouseover="mopen(3);"
+          onmouseout="mclosetime();">Contact</a>
+        <div class="submenu" id="menu3"
+          onmouseover="mcancelclosetime()"
+          onmouseout="mclosetime();">
+            <a href="#">Office</a>
+            <a href="#">Sales</a>
+            <a href="#">Customer Service</a>
+            <a href="#">Shipping</a>
+        </div>
+      </li>
+    </ul>
+
+
+    <form name="geophysics_js" method="post">
+      <center> <br>
+      <h3>Geophysics Questions</h3>
+      Please select the correct answer.<br>
+      <br>
+      <div class="container1">
+        <div class="row">
+          <blockquote>
+            <div class="col"> 
+              <a href="#" class="menu" id="mmenu1" onmouseover="mopen(1);"
+                onmouseout="mclosetime();">State Indicies</a>
+              <div class="submenu" id="menu1"
+                onmouseover="mcancelclosetime()"
+                onmouseout="mclosetime();">
+                  <a href="#">1</a>
+                  <a href="#">2</a>
+                  <a href="#">3</a>
+                  <a href="#">4</a>
+              </div>
+            </div>
+            <div class="col"> 
+              <a href="#" class="menu" id="mmenu2" onmouseover="mopen(2);"
+                onmouseout="mclosetime();">States</a>
+              <div class="submenu" id="menu2"
+                onmouseover="mcancelclosetime()"
+                onmouseout="mclosetime();">
+                  <a href="#">Arizona</a>
+                  <a href="#">California</a>
+                  <a href="#">Colorado</a>
+                  <a href="#">New Mexico</a>
+              </div>
+            </div>
+          </blockquote>
+        </div>
+        <div class="row">
+          <blockquote>
+            <div class="col"> 
+              <!-- <select name=select1> -->
+              <select name=select1 onchange='OnChange(this.form.select1);'>
+                <option>Value 1</option>
+                <option>Value 2</option>
+                <option>Value 3</option>
+              </select>
+            </div>
+            <div class="col"> 
+              Number One: <INPUT TYPE=Text NAME=txtFirstNumber SIZE=5 value=""> 
+            </div>
+            <div class="col"> 
+              <Input Type=Button NAME=btn1 VALUE="Transfer value" onClick='transfer()'>
+              <button onclick="myFunction()">Try it</button>
+            </div>
+          </blockquote>
+        </div>
+
+        <div class="row">
+          <blockquote>
+            <div class="col"> 
+              1) Rock media can support what type or types of accoustic waves:<br>
+              <input name="rdQuestion1" id="a" value="a" type="radio">
+                a) compression waves <br>
+              <input name="rdQuestion1" id="b" value="b" type="radio">
+                b) shear waves<br>
+              <input name="rdQuestion1" id="c" value="c" type="radio">
+                c) electromagnetic waves<br>
+              <input name="rdQuestion1" id="d" value="d" type="radio">
+                d) a and b <br>
+            </div>
+          </blockquote>
+        </div>
+        <div class="row">
+          <blockquote>
+            <div class="col"> 
+              2) Geophones are typically spaced how far apart from each other on the surface:<br>
+              <input name="rdQuestion2" value="a" type="radio">
+                a) 10 meters<br>
+              <input name="rdQuestion2" value="b" type="radio">
+                b) a multiple of a quarter wavelength of the expected accoustic wavelength<br>
+              <input name="rdQuestion2" value="c" type="radio">
+                c) a multiple of a half wavelength of the expected accoustic wavelength<br>
+              <input name="rdQuestion2" value="d" type="radio">
+                d) no particular distance apart from each other<br>
+            </div>
+          </blockquote>
+        </div>
+        <div class="row">
+          <blockquote>
+            <div class="col"> 
+              3) The Normal Moveout (NMO) time offset of a reflected wave off of horizontal strata relative to the surface distance from the source is:<br>
+              <input name="rdQuestion3" value="a" type="radio">
+                a) hyperbolic<br>
+              <input name="rdQuestion3" value="b" type="radio">
+                b) linear<br>
+              <input name="rdQuestion3" value="c" type="radio">
+                c) parabolic<br>
+              <input name="rdQuestion3" value="d" type="radio">
+                d) irregular<br>
+            </div>
+          </blockquote>
+        </div>
+        <div class="row">
+          <blockquote>
+            <div class="col"> 
+              4) What seismic field procedure minimizes the noise to signal for a seismic survey​?<br>
+              <input name="rdQuestion4" value="a" type="radio">
+                a) NMO<br>
+              <input name="rdQuestion4" value="b" type="radio">
+                b) Stacking<br>
+              <input name="rdQuestion4" value="c" type="radio">
+                c) Kalman filtering<br>
+              <input name="rdQuestion4" value="d" type="radio">
+                d) Refraction<br>
+            </div>
+          </blockquote>
+        </div>
+        <div class="row">
+          <blockquote>
+            <div class="col"> 
+              5) Subsurface oil and gas deposits usually are trapped within:<br>
+              <input name="rdQuestion5" value="a" type="radio">
+                a) shale deposits<br>
+              <input name="rdQuestion5" value="b" type="radio">
+                b) limestone deposits<br>
+              <input name="rdQuestion5" value="c" type="radio">
+                c) schist rock<br>
+              <input name="rdQuestion5" value="d" type="radio">
+                d) sandstone deposits<br>
+            </div>
+          </blockquote>
+        </div>
+        <div class="row">
+          <blockquote>
+            <div class="col"> 
+              6) Migration is related to:<br>
+              <input name="rdQuestion6" value="a" type="radio">
+                a) hydrocarbon deposits moving from an organic rich layer to a host trapping layer<br>
+              <input name="rdQuestion6" value="b" type="radio">
+                b) seismic waves traveling from one layer to another<br>
+              <input name="rdQuestion6" value="c" type="radio">
+                c) seismic processing that corrects measured data to its true geometric representation<br>
+              <input name="rdQuestion6" value="d" type="radio">
+                d) both a and c<br>
+            </div>
+          </blockquote>
+        </div>
+        <div class="row">
+          <blockquote>
+            <div class="col"> 
+              7) An mining adit is:<br>
+              <input name="rdQuestion7" value="a" type="radio">
+                a) a vertical shaft<br>
+              <input name="rdQuestion7" value="b" type="radio">
+                b) a horizontal mine tunnel<br>
+              <input name="rdQuestion7" value="c" type="radio">
+                c) an inclined mine tunnel<br>
+              <input name="rdQuestion7" value="d" type="radio">
+                d) a large void<br>
+            </div>
+          </blockquote>
+        </div>
+        <div class="row">
+          <blockquote>
+            <div class="col"> 
+              8) A resistivity well-log would show a hydrocarbon saturated sandstone stratum as more resistive than a hydrous saturated sandstone?<br>
+              <input name="rdQuestion8" value="a" type="radio">
+                a) True.<br>
+              <input name="rdQuestion8" value="b" type="radio">
+                b) False.<br>
+              <input name="rdQuestion8" value="c" type="radio">
+                c) Depends upon the sandstone.<br>
+              <input name="rdQuestion8" value="d" type="radio">
+                d) Depends upon the porosity.<br>
+            </div>
+          </blockquote>
+        </div>
+        <div class="row">
+          <blockquote>
+            <div class="col"> 
+              9) Refractive waves originating on the surface will return to the surface if:<br>
+              <input name="rdQuestion9" value="a" type="radio">
+                a) the sub-surface has generally decreasing density with depth<br>
+              <input name="rdQuestion9" value="b" type="radio">
+                b) the sub-surface has generally increasing density with depth<br>
+              <input name="rdQuestion9" value="c" type="radio">
+                c) has alternating low and high density rock material<br>
+              <input name="rdQuestion9" value="d" type="radio">
+                d) does not depend on strata density<br>
+            </div>
+          </blockquote>
+        </div>
+        <div class="row">
+          <blockquote>
+            <div class="col"> 
+              10) Sandstone resistivity generally depends upon:<br>
+              <input name="rdQuestion10" value="a" type="radio">
+                a) water content<br>
+              <input name="rdQuestion10" value="b" type="radio">
+                b) porosity<br>
+              <input name="rdQuestion10" value="c" type="radio">
+                c) permeability.<br>
+              <input name="rdQuestion10" value="d" type="radio">
+                d) all of the above<br>
+            </div>
+          </blockquote>
+        </div>
+      </div>
+      <br>
+      <p>
+        <input TYPE="button" VALUE="Check Answers" onClick="checkAnswer(this.form)">
+        <br>
+        <input TYPE="TEXT" NAME="grade" SIZE="12">
+      </p><br>
+      </center>
+    </form>
+  </body>
+</html>

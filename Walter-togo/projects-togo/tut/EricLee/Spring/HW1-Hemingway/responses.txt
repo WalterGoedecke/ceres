@@ -1,0 +1,7 @@
+syntax@C++ is case-­‐sensitive. 
+loops@There are 3 types of loops in C++: while, do...while, and for loops. 
+loop@A loop is used for repeating statements multiple times. 
+array@An array is designated using square brackets. 
+list@A list is represented as an array in C++. 
+switch@Switch statements are another form of an if-­‐else if-­‐else type statement. 
+variable@A variable must be declared with a data type.

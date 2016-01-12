@@ -1,0 +1,1 @@
+loops@There are 3 types of loops in C++: while, do...while, and for loops. 

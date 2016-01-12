@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>kelsey daHarb</title>
+    <link href='http://fonts.googleapis.com/css?family=Megrim' rel='stylesheet' type='text/css'>
+    <link href="css-style.css" rel="stylesheet" type="text/css">
+    <script> 
+        var num;
+        var tally = 0;
+        var score = 0;
+        var state;
+
+        var dictionary = {}; //initializes code and then we put things into it later
+        dictionary["rocky mountains are here"]="Colorado";
+        dictionary["where i grew up"]="Washington";
+        dictionary["never been here"]="Alabama";
+        dictionary["family is from here"]="Kansas";
+        dictionary["where dad grew up"]="California";
+        //num = Math.floor(Math.random()*5);
+        //document.write ("<b>Clue: </b>" + clue[num]);
+        //document.stategame.txtClue.value = clue[num];
+        function getclue () {
+            var clue = [
+                "rocky mountains are here", 
+                "where i grew up", 
+                "never been here", 
+                "family is from here", 
+                "where dad grew up"
+            ];
+            //alert("test");
+            //Clear the state text field for next guess. 
+            document.stategame.txtAnswer.value = '';  
+            //Random number generator: integer between 0 - 5; rarely if ever "5."
+            num = Math.floor(Math.random()*5);
+            document.stategame.txtClue.value = clue[num];
+            //document.stategame.txtClue.value = arrClue[num];
+            //alert (num + "/" + clue[num]);
+        }	
+        function compare () {
+            tally = tally + 1;
+            //alert("test");
+            //alert ("tally=" + tally);
+            clue = document.stategame.txtClue.value;
+            state = document.stategame.txtAnswer.value;
+            if (state == dictionary[clue]) {
+                //alert ("correct!");
+                document.stategame.txtCheck.value = 'True';
+                document.stategame.txtCheck.style.color = 'blue';
+                score = score + 1;
+                //alert ("score=" + score);
+            }
+            else {
+                //alert ("incorrect!");
+                document.stategame.txtCheck.value = 'False';
+                document.stategame.txtCheck.style.color = 'red';
+            }
+            document.stategame.txtScore.value = score; 
+            document.stategame.txtTally.value = tally; 
+            if (tally >= 5) {
+                percent = 100.0*score/tally;
+                alert('Your final scorc is ' + percent + '%')
+                score = 0;
+                tally = 0;
+                document.stategame.txtScore.value = '';            
+                document.stategame.txtTally.value = '';       
+            }
+            getclue();
+        }	
+
+    </script> 
+</head>
+
+    <body onLoad="getclue()"> // Load 'getclue' on initillization. 
+        <a href="index.html"> BACK TO PORTAL </a>
+        <div id="projectone">
+            <h2 align='center'>Guess The State</h2>
+            <p align='center'> Based off the clue, guess the state. Score ten points to win the game!</p>
+
+            <form name="stategame" method="post">
+                <!-- Table added. -->
+                <div class='table'>
+
+                    <div class='row'>
+                        <div class='cell'>
+                            <b>Clue:</b> 
+                            <!-- <input id="clueButton" type="button" onClick="getclue()" value="Get The Clue!" /> -->
+                        </div>
+                        <div class='cell'>
+                            <input type=text NAME=txtClue size=25 value=""  style="text-align:center"/>
+                        </div>
+
+                        <div class='cell'>
+                            <input id="answerButton" type="button"  onClick="compare()" value="Submit" />
+                        </div>
+                        <div class='cell'>
+
+                        </div>
+                    </div>
+                    <div class='row'>
+                        <div class='cell'>
+                            <b>Answer:</b>
+                        </div>
+                        <div class='cell'>
+                            <input type=text NAME=txtAnswer size=25 style="text-align:center" />
+                        </div>
+                    </div>
+                    <div class='row'>
+                        <div class='cell'>
+                            <br>
+                        </div>
+                        <div class='cell'>
+                            <br>
+                        </div>
+                    </div>
+                    <div class='row'>
+                        <div class='cell'>
+                            <b>Score:</b>
+                        </div>
+                        <div class='cell'>
+                            <input type=text NAME=txtScore size=10 value="" style="text-align:center" />
+                        </div>
+                        <div class='cell'>
+                            Check Answer:
+                        </div>
+                    </div>
+                    <div class='row'>
+                        <div class='cell'>
+                            <b>Tally:</b>
+                        </div>
+                        <div class='cell'>
+                            <input type=text NAME=txtTally size=10 style="text-align:center" />
+                        </div>
+                        <div class='cell'>
+                            <input type=text NAME=txtCheck SIZE=12 style="text-align: center" /> 
+                        </div>
+                    </div>
+                    
+                </div>
+                
+            </form>
+        </div>
+    </body>
+</html>
+
+<!-- STILL NEED:
+-keep track of score and notify the user that they've won or lost based on score---10 questions per round, 6 correct questions wins the game
+-prompt player if they want to play again -->
+

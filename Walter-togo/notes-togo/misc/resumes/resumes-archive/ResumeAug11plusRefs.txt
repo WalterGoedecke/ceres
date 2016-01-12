@@ -1,0 +1,142 @@
+Walter Goedecke, PhD, PE
+732 W Wasp Ave
+Ridgecrest, CA  93555
+Tel: 760-384-2925
+E-mail: walter@snowbears.org
+	
+SUMMARY 
+Background in physics, geophysics, and electrical engineering. Physics specialty in space physics and aerospace. Geophysics specialty in electrical methods, potential fields, and instrumentation. EE specialty in electromagnetic scattering and wave propagation. Registered Professional Engineer (PE) in Colorado. Knowledgeable in tracking and surveillance instruments and data analysis. Experience with analyzing trajectory datasets, including filtering and estimation. Created a test and evaluation data quality assurance program. Computer programming with many language types, and GUI usage to streamline applications. Skilled in documentation, and also in HTML for easy access. Communicate well to a variety of audiences, and taught classes in navigation and space science. 
+
+EXPERIENCE
+Physicist and Tracking Instrument Analyst 	 (2/2009-present)
+US Naval Air Warfare Station  	China Lake, California 
+Created a data quality assurance program for data test and evaluation, and applied these techniques to other development projects. Analyzed tracking and surveillance instrumentation datasets. Created methods and algorithms to triangulate trajectory positions, fuse datasets, and estimate trajectory paths with Kalman filtering techniques. Wrote many computer programs with easy to use GUI to streamline data analysis and processing. Became very proficient in MatLab, and HTML interface programs that use VB applets. Used knowledge of GPS and GIS to create maps for visualizing trajectories. Documented all procedures in very functional internal website created for easy user access and understanding. 
+
+Adjunct Professor	 (7/2004-6/2008)
+Embry-Riddle Aeronautical University at the Cheyenne Center, F.E. Warren Air Force Base, Cheyenne, WY; and at Colorado Springs Center, Schriever Air Force Base, Colorado Springs, CO; Webster University at Ball Aerospace Corp., and Metropolitan State College, Denver, CO
+* Teach undergraduate classes in Navigation and Map Use in the Department of Earth and Atmospheric Sciences. Integrated GPS and GIS into the structure of both. 
+* Teach graduate aerospace classes in Space Applications, Earth Observation and Remote Sensing, Space Mission and Launch Operations, and GPS/GIS. 
+* Won a Faculty Course Development award from the Wyoming NASA Space Grant Consortium in 2005 to develop a Global Positioning System (GPS) course for Embry-Riddle. 
+* Won project development awards in 2006 and 2007, from the Wyoming NASA Space Grant Consortium and Embry-Riddle, to design, build, and launch a nano-satellite to demonstrate active orbital modification by including a thruster on it. 
+* 2008 - Won another project development award from Embry-Riddle to design and build a navigation system with IMU for tracking launched payloads; managed students to assist on project development. 
+* Serve on graduate capstone project committees, advise students, and referee results. 
+
+Scientist and Engineer	 (5/2004-5/2005)
+Electromagnetic Applications, Inc. 	Lakewood, Colorado
+Investigated GPS multipath problems for FAA LAAS proto-system intended for auto-land feasibility, and suggested solutions. Examined signal to noise characteristics from ground and building interference. Compared code and carrier errors (CMC) from numerous GPS satellites in airport environment. Evaluated GPS antenna characteristics, such as gain patterns, phase centers, linear and polarized (RHCP) types. Ran receiver computer models to evaluate errors and scattering from rough surface and random dipole distribution models. 
+
+Consultant		(2002-2003)
+QuakeFinder, LLC 	Palo Alto, California
+Wrote proposal to NASA to build and deploy ELF/ULF magnetometers along fault zones to investigate tectonic events such as earthquake magneto-seismic emissions, and possible ionospheric effects. Recommended ELF bands for a CubeSat magnetometer, and assisted in calibration for this satellite prior to launch. 
+
+Researcher and Systems Engineer	(7/1997-5/2001)
+University of California at Los Angeles, Institute of Geophysics and Planetary Physics. 
+Designed, built, and deployed GPS-synchronized magnetometer data acquisition systems to observe global electromagnetic resonances. Planned and organized research & engineering to accomplish scientific objective of project. Designed digital and analog interfacing hardware and managed construction implementation. Programmed acquisition system, and processed signal in real-time to visually monitor. Set up LANs and networked acquisition systems to the Internet for fast data retrieval for group. Created data analysis routines in C++ and MatLab programs, also mentored groups to create additional routines. Compared results with spacecraft data. 
+ 
+Consultant		(1997)
+Entente, Inc. 	Boulder, Colorado
+Translated a Basic program to C++ that translates the user's input language into another language. 
+
+Instructor		(1994-1996)
+Colorado School of Mines	Golden, Colorado
+* Taught FORTRAN programming for two semesters, and taught AutoCAD for two semesters for the Engineering Practices Introductory Course Sequence (EPICS) program (1995-1996). 
+* Taught electrical engineering lab class and managed experiments for Engineering Department (1994). 
+
+Research Intern 	(10/1993-8/1997)
+USGS 		Golden, Colorado 
+Designed & built GPS-synchronized remote magnetometer data acquisition systems for magnetospheric data, analog and digital interfacing hardware. Responsible for expanding network of research collaborators by including UCLA and NOAA Space Environment Center. Planned, organized, and coordinated with US Air Force Academy, Los Alamos National Labs, and two Eastern European research institutes, and negotiated with private land owners to deploy and host remote observatory systems to deliver data for long periods. Wrote programming software for both the various acquisition systems and subsequent data processing. Instructed groups on use of hardware and software, and analyzed data for space physics and weather conditions. 
+
+Research Assistant	(9/1988-11/1990) 
+University of Arizona	Tucson, Arizona 
+Engineered and tested cross-borehole electromagnetic systems, in the field and models, for Army project. Built dipole antennas for boreholes. Tested antennas and propagated high frequencies in lossy geologic media to analyze attenuation and phase. Constructed 2200-gallon saline water tank to test radio wave propagation with model borehole antennas. Analyzed data to generate antenna patterns. 
+
+Teaching Assistant	(1987)
+Colorado School of Mines	Golden, Colorado 
+Assisted with geophysics field class. Organized and conducted gravity and magnetics potential field mapping, to determine basement rocks (Colorado School of Mines, 1987). 
+
+Consultant & Independent Contractor 	(1985-1988)
+Researched projects and conducted various geophysical surveys, such as: 
+* External acoustic detection of fluid levels, to monitor levels in borehole fracture tanks. Worked on mathematical propagation models of compression and shear waves. 
+* Wrote machine language program for microprocessor board to monitor operations for a printing press. 
+* Assisted electrical loop-on-loop surveys to determine the extent of contaminant flows from both the Rocky Mountain Arsenal and a gold mining heap-leach site in California. 
+* Conducted a magnetometer and seismic refraction survey in Nevada to map subsurface structures for mining interests. 
+* Conducted a magnetic gradiometer survey to find potential aquifer-polluting drilled and abandoned boreholes near a waste depository. 
+* Induced polarization (IP) survey to determine the depth to a permeable limestone layer hydrothermal source in Italy. 
+* Ground penetrating radar (GPR) to delineate subsurface soil disturbances at Casa Grande Nat'l Park.
+* A VLF survey to map a landfill boundary.
+
+Electronics Technician and Engineer	(7/1984-5/1987) 
+Ophir Corporation	Lakewood, Colorado 
+Designed and built proto-devices, e.g., radiometers. Designed and built model infrared hygrometer to measure water vapor in helium for nuclear power plant. Designed and built capacitive ice sensor device to measure liquid and solid components of ice, for use on aircraft. Evaluated additional projects. 
+	
+EDUCATION 
+Florida Inst. of Technology 
+MS in Engineering Management & Aerospace Eng 	(Spring 08)
+
+Colorado School of Mines / UCLA	Golden, Colorado
+PhD in Geophysical Engineering	(1999)
+
+University of Arizona	Tucson, Arizona
+MS in Geophysical / Electrical Engineering 	(1990)
+
+Colorado School of Mines	Golden, Colorado
+BS in Geophysical Engineering	(1987) 
+Minors: electrical engineering and geology.
+	
+CERTIFICATIONS & SPECIAL TRAINING 
+* Registered Professional Engineer (PE) in the State of Colorado (Electrical Engineering). 
+* OSHA Hazardous Waste Operations and Emergency Response 40-Hour Training Program class. 
+* Languages: German (advanced), Spanish, and some Russian. 
+	
+PROFESSIONAL ASSOCIATIONS 
+American Geophysical Union, American Inst. of Physics 
+ 
+REFERENCES
+Lester Phillips
+240 S Holly Canyon Dr
+Ridgecrest, CA  93555
+760-939-6618, home:760-372-4232
+Lester.phillips@navy.mil, phillips@sysmatrix.net
+
+Don Bell
+Don.bell@navy.mil
+760-939-8609
+
+Richard Edmundson
+2078 Lake Grove Ln 
+Crofton, MD 21114
+CP: 631-682-5255, home: 410-721-5332, 
+Richard.edmundson@navy.mil, redmun@gmail.com
+
+Kenneth Engelbrecht, Chair, or Diane Hollenbeck, Director of Academic Support
+Earth & Atmospheric Sciences
+Metropolitan State College
+P.O. Box 173362-22, Denver, CO 80217-3362
+303-556-3143, fax: 303-556-4436
+Main Office: Science 231
+303-556-3679
+engelbrk@mscd.edu, hollenbd@mscd.edu
+
+Howard Singer, Chief of Research and Development Division 
+NOAA, SEC, Space Environment Center R/SE
+325 Broadway
+Boulder CO 80305, USA
+303-497-6959
+Howard.Singer@noaa.gov
+	
+ 
+PUBLICATIONS AND PRESENTATIONS
+
+Publications
+Le, G., P. J. Chi, W. Goedecke, C. T. Russell, A. Szabo, S. M. Petrinec, V. Angelopolous, G. D. Reeves, and F. K. Chun, Magnetosphere on May 11, 1999, the day the solar wind almost disappeared: II. Magnetic pulsations in space and on the ground, Geophysical Research Letters, 27, no. 14, 2165-2168, July 15, 2000.
+Russell, C. T., P. J. Chi, V. Angelopoulos, W. Goedecke, F. K. Chun, G. Le, M. B. Moldwin, and G. Reeves, Comparison of three techniques of determining the resonant frequency of geomagnetic pulsations, J. Atmos. Solar Terr. Phys., 61, 1289-1297, 1999.
+Green, A. W., E. W. Worthington, T. A. Plyasova-Bakounina*, A. Kormendi*, L. Hegymegi*, W. Goedecke* and Z. Voros*. Field line resonance studies in North America and Central Europe. Geophysical Transactions = Geofizikai Kozlemenyek = Geofizicheskiy Byulletin', 42, no. 3-4, 181-193, 1999.
+
+Presentations
+Goedecke, W., Nano-Satellite De-orbiting Project, presentation given to University of Wyoming Student Chapter of the American Institute of Aeronautics and Astronautics, Cheyenne, Wyoming, October 26, 2006.  
+Chi, P. J., C. T. Russell, W. Goedecke, and H. Kawano, Comparison of the Cross-phase Spectrograms of Ground ULF Waves and the Field Line Resonance Theory, Poster presentation given to American Geophysical Union (AGU), Boston, MA, Spring 1999.  
+Goedecke, W. and C.T. Russell, Validation of the Phase Gradient Technique for Inferring Magnetospheric Resonance Frequencies, presentation given at the International Union of Geodesy and Geophysics (IUGG), University of Birmingham, UK, July 26, 1999. 
+Goedecke, W., Z. Voros, A. Kormendi, and C.T. Russell, Simultaneous Dayside Broad-Band Spectra Observed over Two Different Magnetic Latitudes in Eastern Europe, poster presentation at the Geomagnetic Environment Modeling Conference (GEM), Snowmass, Colorado, June 23, 1999. 
+Chi, P., W. Goedecke, and C. Russell, Initial Results from the IGPP/LANL Ground Magnetometer Array, poster presentation, American Geophysical Union (AGU), Boston, MA, Spring 1998. 
+Goedecke, W., P. Chi, J. Clemmons, and C. Russell, Simultaneous Measurements of Pc3-4 Pulsations on the Ground Using the Phase Gradient Technique from Magnetometer Pairs and in Space Using the POLAR Spacecraft, presentation given at the annual National Radio Science Meeting (URSI), University of Colorado, January 7, 1998. 
+Goedecke, W., Comparison of Pc3-4 Pulsations Observed at Two Magnetometer Station Pairs in Colorado and Eastern Europe, using the Phase Gradient Technique, poster presentation, American Geophysical Union (AGU), San Francisco, California, December 9, 1997. 

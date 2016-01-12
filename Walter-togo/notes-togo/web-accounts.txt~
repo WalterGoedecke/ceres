@@ -1,0 +1,120 @@
+###################
+# Github
+# # # # # # # # # #
+WalterGoedecke Oxygen16
+###################
+
+###################
+# Tech-X
+# # # # # # # # # #
+Wal,2015
+Mail: 
+Oxygen18*
+
+Redmine:
+redmine@txcorp.com
+Login: goedecke
+Password: abcd1234 - old
+goedecke Ferrum26
+
+Ivy:
+goedecke@ivy.txcorp.com
+Login: goedecke
+Password: Wal,2015
+
+Quality control:
+qar@txcorp.com
+
+VPN:
+Connection & group name: Tech-X
+Gateway: txg.txcorp.com
+Group password: $!$3em0te1
+# # # # # # # # # #
+# Laptop:
+
+# # # # # # # # # #
+# SVN:
+#  volt is a login node.
+#  Check connection:
+ssh goedecke@volt
+# password: 
+Wal,2015
+
+# Create empty directory "marketing"
+cd ~/Documents/SolarFS/AGU_poster/marketing/solarfs
+
+# Copy file from volt to local pc, e.g.:
+scp goedecke@volt:/home/research/fillmore/tarballs/DesignModo.tar .
+
+# Update local repository:
+svn update
+
+# List remote repository:
+svn list
+svn list svn+ssh://goedecke@volt.txcorp.com/svnrepos/marketing/marketprod/prepared_graphics
+
+# Check out: 
+svn co --depth empty  svn+ssh://goedecke@volt.txcorp.com/svnrepos/marketing marketing
+cd marketing
+#  co - CheckOut, or download repository:
+svn co --depth infinity svn+ssh://goedecke@volt.txcorp.com/svnrepos/marketing/marketprod/prepared_graphics/solarfs
+# also: 
+svn co --depth immediates svn+ssh://volt.txcorp.com/svnrepos/commrevenue/Products/SolarFS/Posters
+
+# Delete local files:
+svn rm file
+
+# Add file to local repository (after copied into directory):
+svn add filename
+
+# Commit (upload) file or files with comment:
+svn commit -m "Comment stuff"
+
+###################
+
+###################
+# Bluehost:
+# # # # # # # # # #
+snowbear Arctodus1618#
+SSH: 
+SFTP: 
+
+# Check server errors:
+www.snowbears.org/error_log
+
+###################
+
+###################
+# Python anywhere (PA):
+# # # # # # # # # #
+solarfs Carbon12
+SSH: ssh.pythonanywhere.com
+SFTP: sftp://solarfs@ssh.pythonanywhere.com
+###################
+
+###################
+# Webfaction:
+# # # # # # # # # #
+# webpage:
+solarfs Carbon12
+server:
+solarfs Arctodus1618#
+SSH: solarfs.web506.webfaction.com
+SFTP: sftp://solarfs@web506.webfaction.com
+Account email (?): 
+solarfs Carbon12  or  Arctodus1618#
+
+# Community forum:
+solarfs 1wEpWm1I
+
+# Determination of "threads":
+ps -m -u solarfs | wc -l
+# where, ps is processes, with -m = threads, -u = user(?), 
+# and wc is word count, with -l = number of newlines.
+
+# Kill or suspend processes:
+# (opens editor on cron file, put "#" in front to comment out process)
+crontab -e
+
+###################
+

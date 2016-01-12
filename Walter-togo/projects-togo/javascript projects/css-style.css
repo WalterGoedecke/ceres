@@ -1,0 +1,146 @@
+*{
+color:black;
+    font-family: avenir,helvetica;
+}
+a:hover{
+color:rgb(44, 45, 114);
+}
+a{
+text-decoration: none;
+    float-bottom: 0px;
+}
+header{
+text-decoration: none;
+    width: 150px;
+}
+/* controls that special font  */
+.specialfont{
+font-family:'Amatic SC', avenir;
+color:rgb(44, 45, 114);
+    font-size: 36px;
+    font-weight: bold;
+    padding-top: 10px;
+}
+nav{
+margin-top: -30px;
+    margin-left: -38px;
+    color:rgb(15,21,59);
+    list-style: none;
+    line-height: 25px;
+}
+#wrapabout, #worknav, #wrapwork, #wrapresume, #wrapcontact{
+    margin-top: -90px; 
+    /* margin-left: 230px;  */
+    margin-left: 120px;  
+}
+/* about page styling */
+#wrapabout{
+background-color: #e8e8e8;
+    padding: 10px;
+    width: 780px;
+    line-height: 20px;
+}
+.aboutfont{
+font-family:'Amatic SC', avenir;
+    color:rgb(44, 45, 114);
+    font-weight: bold;
+    font-size: 18pt;  
+}
+/* work styling */
+#worknav{
+    width: 940px; 
+}	
+.workfont{
+    font-family:'Amatic SC', avenir;
+    color:rgb(44, 45, 114);
+    font-size: 32px;
+        }
+.workfont1{
+    font-family:'Amatic SC', avenir;
+    color:rgb(44, 45, 114);
+    font-size: 32px;
+    font-weight: bold;
+        }
+.workfont2{
+    font-family:'Amatic SC', avenir;
+    color:rgb(44, 45, 114);
+    font-size: 18px;
+    margin-left: 200px;
+        }
+#feature{	
+background-color: #e8e8e8;
+width: 940px;
+overflow: auto;
+margin-right: 20px;
+}
+.img{
+    width: 110px;
+    float: left;
+    margin: 10px;
+    }
+.desc{
+    text-align: center;
+    font-size: 12px;
+    width: 100px;
+    }
+#gallerythumbs{
+width: 200px;
+height: 100%;
+margin: 20px 0px 20px 20px;
+    padding: 10px;
+float: left;
+}
+#gallerymain{
+width: 550px;
+height: 550px;
+margin: 20px 20px 20px 350px;
+border: 3px solid black;
+position: relative;
+padding: 5px;
+}
+iframe{
+border: none;
+}
+/* end work styling */
+
+/* start contact page controls */
+#contactinfo{
+width: 620px;
+        background-color: #e8e8e8;
+        padding: 10px;
+        text-align: center;
+}
+.contactfont{
+font-family:'Amatic SC', avenir;
+    color:rgb(44, 45, 114);
+    font-size: 28px; 
+    padding: 20px;
+}
+/* end cotnact page controls */
+footer{
+    font-size: 9pt;
+    margin-top: 200px;
+}
+
+/**** Table construct ****/
+.table {
+  display: table;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 1.0em; 
+  margin-bottom: 30px; 
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.row {
+  display: table-row;
+  margin: 0px;
+  padding: 0px;
+}
+.cell {
+  display: table-cell;
+  {# border: solid; border-width: thin; #}
+  padding-left: 0px; 
+  padding-right: 4px;
+  text-align: center; 
+}

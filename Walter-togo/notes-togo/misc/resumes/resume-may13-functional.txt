@@ -1,0 +1,112 @@
+Walter Goedecke, PhD, PE 
+3210 Dartmouth Ave
+Boulder, CO  80305 
+Tel: 303-494-3348 
+walter[at]phenocryst.com, walter@snowbears.org
+
+OBJECTIVE 
+Engineering or computer position allowing for parlay of multi-talented and knowledgeable individual.  
+
+SUMMARY 
+* Proficient at oral and written communication. 
+* Project management training and experience. 
+* Excellent problem solving skills. 
+* Education in physics, geophysics, and electrical engineering. 
+* Knowledgeable and skilled in computer science and several programming languages.  
+* Skilled in electronics and instrumentation. 
+* Knowledgeable and experienced in GPS; worked on several projects. 
+* Experienced in statistics and data analysis. 
+* Registered Professional Engineer (PE) in the State of Colorado. 
+
+EXPERIENCE
+Oral and Written Communication 
+* Proficient in writing documentation and posting material on websites for easy access. 
+* Taught many classes, such as undergraduate classes in navigation and map use, and   graduate classes in space science and engineering to US Air Force officers. 
+* Present technical material to a variety of audiences, at their level of   understanding. 
+* Taught and assisted geophysics field class and electrical engineering classes. 
+  - Wrote several proposals. 
+* Advanced German language skills, and intermediate Spanish skills. 
+
+Project Management and Systems Engineering Training and Experience 
+* MS in Engineering Project Management. 
+* Created and operated a quality assurance program for the US Navy to evaluate   instrument data. 
+* Improved Navy GPS processing operations, and created computer applications to   streamline processing. 
+* Organized and managed an annual event in Boulder for 13 years that drew over 500   participants, finally handing it over to the local Alzheimer Association for use as   a fund raiser. 
+* Operated a sole-proprietorship business in electronic repair and a partnership in a   gem cutting business. 
+* Collaborated with many groups for graduate work and other projects to exchange ideas   for mutual benefit. 
+
+Computer Knowledge and Skills 
+* Extensive use of MatLab for algorithm development, evaluation of tracking data, and aid for streamlining   data processing. Created GUIs for quick processing. 
+* Use of C++ & C# for various projects, such as: 
+  - Data and numerical analysis and graphical displays. 
+  - Convert legacy Fortran scripts to C++. 
+  - Convert Basic language translation program into C++
+  - Converting MatLab scripts and GUIs to C# standalone applications. 
+* Visual Basic projects: 
+  - Create a VB GUI to display ionospheric ELF signals from analog to digital converter, with digital     filters. 
+o HTML scripts controlling VB scripts to streamline GPS data processing. 
+* Extensive Fortran experience, such as: 
+  - PhD thesis to process data from magnetometer acquisition stations. 
+  - Taught Fortran during PhD. 
+* UNIX and Linux experience during undergraduate and graduate school, and Navy applications. 
+* Wrote machine language program for microprocessor board to monitor printing press operations.  
+* Experimentation with Perl and Python for controlling GPS processing. 
+* Used AutoCAD and taught classes during PhD. 
+
+Electrical and Electronic Engineering Knowledge and Skills 
+* MS thesis specialty in electromagnetic wave propagation through various rock media. 
+  - Skilled in RF equipment and on ham radio components. Interfaced radio instruments and designed borehole     antennas to propagate EM energy through rock. 
+* Designed, built, and deployed several remote magnetometers data acquisition stations for PhD. 
+* Repaired electronic instruments and devices - extensive bench experience. 
+* Designed interface electronics between instruments, such as analog to digital devices. 
+* Conducted geophysical surveys that included EM, electrical, seismic, and potential field methods for mining   and environmental concerns. 
+
+GPS Knowledge and Experience 
+* Subject matter expert in physics, GPS technology, and algorithm development in Naval GPS post-flight   processing group. 
+* Created GPS technology class for Embry-Riddle extension campus - taught class twice with very good reviews   from faculty and students. 
+* Worked on airport GPS multi-path project to model wave scattering noise off of ground terrain. 
+
+Physics and Math Knowledge and Experience 
+* PhD in space physics, with specialty in planetary electromagnetic waves and the geomagnetic field. 
+* Knowledgeable in material properties, especially natural minerals and rocks. 
+* Contributed to designing and building radiometers and infrared hygrometers. 
+* Researched acoustic detection of fluid levels to monitor levels in borehole fracture tanks. 
+
+
+EMPLOYMENT HISTORY 
+Physicist, Computer Scientist, and Analyst (02/09-present) 
+US Naval Air Warfare Station, China Lake, CA
+
+Adjunct Professor in Navigation and Space Science (07/04-06/08)
+Embry-Riddle Aeronautical University, F.E. Warren Air Force Base, Cheyenne, WY, Schriever Air Force Base,   Colorado Springs, CO. 
+Metropolitan State College, Denver, CO
+Webster University, at Ball Aerospace Corp., Boulder, CO 
+
+Scientist and Engineer (05/04-05/05)
+Electromagnetic Applications, Inc., Lakewood, CO
+
+Consultant - Subject Matter Expert in Geophysics (10/02-10/03) 
+QuakeFinder, LLC, Palo Alto, CA
+
+Researcher and Systems Engineer (07/97-05/01)
+University of California at Los Angeles, 
+Institute of Geophysics and Planetary Physics, Los Angeles, CA 
+
+PROFESSIONAL ASSOCIATIONS 
+American Geophysical Union, American Institute of Physics 
+ 
+EDUCATION 
+PhD in Geophysical Engineering, Minor in physics
+Colorado School of Mines / UCLA, Los Angeles, CA 
+
+MS in Engineering Management & Aerospace Eng
+Florida Inst. of Technology, Melbourne, FL
+
+MS in Geophysical / Electrical Engineering
+University of Arizona, Tucson, AZ 
+
+BS in Geophysical Engineering, Minors: electrical engineering and geology
+Colorado School of Mines, Golden, CO 
+ 
+
+References available upon request

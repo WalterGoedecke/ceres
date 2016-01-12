@@ -1,0 +1,46 @@
+Bluehost - 69.89.31.182
+snowbear Arctodus1618#
+Port: 22
+
+cd pu*l/cg*
+ls -l
+
+SFTP on Unix side: 
+use dos2unix -n windowsfile.py unixfile.py
+to remove \r on each line. 
+
+MySQL 
+
+//Login:
+mysql -h localhost -u snowbear_walt -psmilodon
+
+//For proper database:
+use snowbear_clubs 
+
+//Show tables in database:
+show tables;
+
+select * from tblAmerica;
+select Number, clubname from tblAmerica;
+
+//Select before deleting, to be safe!
+select * from tblAmerica where Number > 4;
+delete from tblAmerica where Number > 4;
+
+describe tblAmerica;
+
+//Insert table value: 
+UPDATE tblUsers SET userEmail="trygveb@powertech.no" where username="Trygve";
+
+//Change character amount for column: 
+ALTER TABLE tblAmerica MODIFY otherInfo VARCHAR(2500);
+
+//Add column to table: 
+ALTER TABLE tblAmerica ADD doc VARCHAR(100) AFTER image2;
+
+#############################
+# Misc
+# # # # # # # # # # # # # # # 
+www.snowbears.org/django/phenocryst/phenocryst.fcgi
+#############################
+

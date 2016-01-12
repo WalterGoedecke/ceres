@@ -1,0 +1,109 @@
+Walter Goedecke, PhD, PE 
+3210 Dartmouth Ave
+Boulder, CO  80305 
+Tel: 303-494-3348                               walter[at]phenocryst.com, walter[at]snowbears.org
+
+HIGHLIGHTS  
+* Graduate studies and background in: 
+  - Physics - specialty in space physics and aerospace. 
+  - Geophysics - specialty in electrical methods, potential fields, and instrumentation. 
+  - Electrical engineering - specialty in electromagnetic scattering and wave propagation. 
+  - Engineering management. 
+* Subject matter expert in many math fields, including estimation, statistical and data analysis. 
+* Proficient with MatLab, Fortran, Python, MySQL, C#, C++, HTML and other scripts. 
+* Familiar with many other computer programs, such as Simulink, Java, and Perl. 
+* Registered Professional Engineer (PE) in the State of Colorado. 
+* Technical writing and communication skills. 
+* Taught classes to a variety of audiences, at their level of understanding. 
+* Excellent problem solving skills. 
+
+EXPERIENCE
+Web Design Projects 								(11/13-Present) 
+Boulder, CO 
+* Designing websites for disseminating information to select audiences and to the public, and allowing user participation through automated login accounts. 
+* Worked extensively with server-side MySQL database and controlling Python routines, also with and client-side Java-script aided HTML and CSS scripting. 
+* Ported MatLab programs and algorithms to C# for stand-alone functionality. 
+
+Physicist, Interdisciplinary Engineer, and Data Analyst 			(02/09-05/13) 
+US Naval Air Warfare Station, China Lake, CA
+* Knowledgeable with aircraft tracking systems, i.e., both real-time and post flight time-space-position-information (TSPI) display, storage, and analysis programs. 
+* Created and ran a quality assurance program for tracking instrument data in the test and evaluation group. 
+* Provided TSPI systems engineering improvements and technical solutions with current best practices and insights. 
+* Analyzed tracking and surveillance instrumentation datasets. 
+* Improved and streamlined existing analysis programs and methodologies. 
+* General subject matter expert in math, physics, and systems engineering. 
+* Designed data analysis flow plan, along with easy to use GUI analysis programs in MatLab, C#, HTML and VB script applets. 
+* Created methods and algorithms to track trajectory positions, and estimate multiple tracking instrument data with Kalman filtering techniques. 
+* Proficient in writing documentation and featuring it on websites. 
+* Developed proposals, charters, requirements, designs, and test documentation throughout the engineering lifecycle. 
+* 
+Conveyed progress of systems engineering activities and insight to configuration control boards, systems engineering meetings, and various technical exchanges to share information into ongoing tasks. 
+* Provided team leadership in the accomplishment of assigned tasks, projects, and programs. 
+
+Adjunct Professor 								(07/04-06/08)
+Embry-Riddle Aeronautical University
+F.E. Warren Air Force Base, Cheyenne, WY 
+Schriever Air Force Base, Colorado Springs, CO. 
+Metropolitan State College, Denver, CO
+Webster University, at Ball Aerospace Corp. 
+
+Teaching Highlights: 
+* Undergraduate classes in navigation and map use, including integrated GPS and GIS structure. 
+* Graduate classes in space applications; Earth observation and remote sensing; space mission and launch operations, and advanced GPS/GIS. 
+* Faculty course development award from the Wyoming NASA Space Grant Consortium to develop a GPS course for Embry-Riddle. 
+* Project development awards from the Wyoming NASA Space Grant Consortium and Embry-Riddle, to design and build a nano-satellite to demonstrate active orbital modification by including a thruster on it. 
+* Project development award from Embry-Riddle to design and build a navigation system with IMU for tracking launched payloads. Managed students to assist on project development. 
+* Served on graduate capstone project committees, advised students, and refereed results. 
+
+Scientist and Engineer 								(05/04-05/05)
+Electromagnetic Applications, Inc., Lakewood, CO
+* Investigated GPS multipath problems for FAA LAAS proto-system intended for auto-land feasibility and suggested solutions. Examined signal to noise characteristics from ground and built interference. Compared code and carrier errors (CMC) from numerous GPS satellites in an airport environment. 
+* Evaluated GPS antenna characteristics such as gain patterns and phase centers on linear and polarized models. Modeled GPS wave scattering on rough surface as random dipole distributions to evaluate errors and noise. 
+
+Consultant		                             				(10/02-10/03) QuakeFinder, LLC, Palo Alto, CA
+* Wrote proposal to NASA to build and deploy ELF/ULF magnetometers along fault zones to investigate tectonic events such as earthquake magneto-seismic emissions and possible ionospheric effects. 
+* Recommended ELF bands for a CubeSat magnetometer, and assisted in calibration for this satellite prior to launch. 
+
+
+Researcher and Systems Engineer                                                  (07/97-05/01)
+University of California at Los Angeles, 
+Institute of Geophysics and Planetary Physics, Los Angeles, CA 
+* Designed, built, and deployed several GPS-synchronized magnetometer data acquisition systems to observe global electromagnetic resonances. 
+* Planned and organized research and engineering for scientific goal of project. 
+* Expanded network of research collaborators to include NOAA Space Environment Center, the US Air Force Academy, Los Alamos National Labs, and two Eastern European research institutes. Negotiated with private landowners to host remote observatory systems. 
+* Programmed acquisition system and wrote a real-time signal monitor program. 
+* Set up computer networks for the acquisition systems to communicate to the Internet for fast data retrieval. Created data analysis routines in C++ and MatLab. Mentored groups to create additional routines. 
+* Compared results with spacecraft data. Instructed groups on use of hardware and software, and analyzed data for space physics and weather conditions. 
+
+ADDITIONAL NOTEWORTHY PROJECTS 
+* Cross-borehole EM detection of tunnels, including building model water tank for antennas. 
+* Acoustic detection of fluid levels to monitor levels in borehole fracture tanks. 
+* Conducted geophysical surveys that included EM, electrical, seismic, and potential field methods for mining and environmental concerns. 
+* Built radiometers and infrared hygrometers. 
+* Repaired electronic instrumentation and equipment. 
+* Wrote C++ program from Basic that translates an input language into another language. 
+* Wrote machine language program for microprocessor board to monitor printing press operations.  
+* Taught and assisted geophysics field class, Fortran, electrical engineering, and AutoCAD classes. 
+* Extensive geology and mineralogy experience from lapidary work. 
+* Managed a sole-proprietorship business and a partnership. 
+
+CERTIFICATIONS & SPECIAL TRAINING 
+Languages: German - advanced, Spanish - intermediate. 
+OSHA Hazardous Waste Operations and Emergency Response 40-Hour Training Program class 
+NavTech GPS Classes: fundamentals and Kalman filtering. 
+
+PROFESSIONAL ASSOCIATIONS 
+American Geophysical Union, American Institute of Physics 
+ 
+EDUCATION 
+PhD in Geophysical Engineering, Minor in physics
+Colorado School of Mines / UCLA, Los Angeles, CA 
+
+MS in Engineering Management & Aerospace Engineering
+Florida Inst. of Technology, Melbourne, FL
+
+MS in Geophysical / Electrical Engineering
+University of Arizona, Tucson, AZ 
+
+BS in Geophysical Engineering, Minors: electrical engineering and geology
+Colorado School of Mines, Golden, CO 
