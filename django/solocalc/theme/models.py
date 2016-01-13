@@ -20,7 +20,7 @@ import datetime
 
 # Import python settings, and defintion from app.
 from solocalc.settings import MEDIA_ROOT
-from theme import SfsLight
+from theme import SfsLight, PlotPrefs
 
 # Geocoders
 import pygeocoder, geocoder

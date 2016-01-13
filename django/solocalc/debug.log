@@ -3145,3 +3145,41 @@ Not Found: /calc/css/flot.css/
 Not Found: /calc/css/flot.css/
 Not Found: /calc/css/flot.css/
 Not Found: /theme/css/flot.css/
+Not Found: /theme/css/flot.css/
+Internal Server Error: /solarfs-form/
+Traceback (most recent call last):
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/core/handlers/base.py", line 125, in get_response
+    response = middleware_method(request, callback, callback_args, callback_kwargs)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/mezzanine/pages/middleware.py", line 99, in process_view
+    return view_func(request, *view_args, **view_kwargs)
+  File "/home/dv8000/virtualenv/solocalc/theme/views.py", line 56, in SolarFSform
+    pf.save()
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/forms/models.py", line 459, in save
+    construct=False)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/forms/models.py", line 105, in save_instance
+    instance.save()
+  File "/home/dv8000/virtualenv/solocalc/theme/models.py", line 293, in save
+    self.formatted_address = self.address2llh(self.address)
+  File "/home/dv8000/virtualenv/solocalc/theme/models.py", line 178, in address2llh
+    geoAddress = pygeocoder.Geocoder.geocode(self.address)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/pygeocoder.py", line 129, in geocode
+    return GeocoderResult(Geocoder.get_data(params=params))
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/pygeocoder.py", line 212, in get_data
+    raise GeocoderError(response_json['status'], response.url)
+pygeolib.GeocoderError: Error ZERO_RESULTS
+Query: https://maps.google.com/maps/api/geocode/json?bounds=&language=&components=&sensor=false&region=&address=
+Not Found: /favicon.ico/
+Not Found: /favicon.ico/
+Not Found: /theme/css/flot.css/
+Not Found: /theme/css/flot.css/
+Not Found: /theme/css/flot.css/
+Not Found: /theme/css/flot.css/
+Not Found: /theme/css/flot.css/
+Not Found: /calc/css/flot.css/
+Not Found: /calc/css/flot.css/
+Not Found: /calc/css/flot.css/
+Not Found: /calc/css/flot.css/
+Not Found: /calc/css/flot.css/
+Not Found: /theme/css/flot.css/
+Not Found: /theme/css/flot.css/
+Not Found: /calc/css/flot.css/
