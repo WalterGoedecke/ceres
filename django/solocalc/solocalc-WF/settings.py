@@ -214,7 +214,9 @@ STATICFILES_DIRS = (
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
     os.path.join(PROJECT_ROOT, 'theme/static/'),
-    os.path.join(PROJECT_ROOT, 'static/'),
+    os.path.join(PROJECT_ROOT, 'calc/static/'),
+    os.path.join(PROJECT_ROOT, 'calc/static/calc/'),
+    os.path.join(PROJECT_ROOT, 'static/'), 
 )
 
 # URL that handles the media served from MEDIA_ROOT. Make sure to use a
@@ -242,9 +244,11 @@ ROOT_URLCONF = "%s.urls" % PROJECT_APP
 # Don't forget to use absolute paths, not relative paths.
 TEMPLATE_DIRS = (
     os.path.join(PROJECT_ROOT, "theme/templates/"),
-    os.path.join(PROJECT_ROOT, "themne/templates/accounts"), # Need for 'include_strip' and 'ConstantIncludeNode'
-    os.path.join(PROJECT_ROOT, "theme/templates/pages"),
+    os.path.join(PROJECT_ROOT, "theme/templates/accounts"), # Need for 'include_strip' and 'ConstantIncludeNode'
+    os.path.join(PROJECT_ROOT, "theme/templates/pages/"),
     os.path.join(PROJECT_ROOT, "theme/templatetags/"),
+    os.path.join(PROJECT_ROOT, "calc/templates/"),
+    os.path.join(PROJECT_ROOT, "calc/templatetags/"),
     os.path.join(PROJECT_ROOT, "templates"),
 )
 
@@ -253,6 +257,7 @@ TEMPLATE_DIRS = (
 ################
 INSTALLED_APPS = (
     "theme",
+    "calc",
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
@@ -273,6 +278,7 @@ INSTALLED_APPS = (
     "mezzanine.twitter",
     "mezzanine.accounts",
     # "mezzanine.mobile",
+    #"theme.blog_mods",
 )
 
 # List of processors used by RequestContext to populate the context.

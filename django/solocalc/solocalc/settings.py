@@ -215,9 +215,7 @@ STATICFILES_DIRS = (
     # Don't forget to use absolute paths, not relative paths.
     os.path.join(PROJECT_ROOT, 'theme/static/'),
     os.path.join(PROJECT_ROOT, 'calc/static/'),
-
     os.path.join(PROJECT_ROOT, 'calc/static/calc/'),
-    
     os.path.join(PROJECT_ROOT, 'static/'), 
 )
 
@@ -395,6 +393,54 @@ LOGGING = {
     },
 }
 
-# Email
+#########
+# Email #
+#########
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+# Set recipients of error notifications. 
+ADMINS = (('Walter', 'walter@snowbears.org'), ('Walt', 'walter.goedecke@phenocryst.com'))
+
+# # # # # # # # #
+# Local host #
+# Set the host name of the SMTP server. 
 EMAIL_HOST = 'localhost'
+# Set the SMTP user name. 
+#EMAIL_HOST_USER = 'walter@snowbears.org'
+#Set the SMTP password. 
+#EMAIL_HOST_PASSWORD = 'Oxygen18'
+#EMAIL_USE_TLS = True
+# Set the "From" (origin) email address.
+#DEFAULT_FROM_EMAIL = 'walter@snowbears.org' #Works.
+#SERVER_EMAIL = 'walter@snowbears.org'
+
+# # # # # # # # #
+# Bluehost #
+# Set the host name of the SMTP server. 
+#EMAIL_HOST = 'box382.bluehost.com'
+# Set the SMTP user name. 
+#EMAIL_HOST_USER = 'walter@snowbears.org'
+#EMAIL_PORT = 26  #Bluehost port.
+#EMAIL_HOST_USER = 'walter@snowbears.org'
+#Set the SMTP password. 
+#EMAIL_HOST_PASSWORD = 'Oxygen18'
+#EMAIL_USE_TLS = True
+# Set the "From" (origin) email address.
+#DEFAULT_FROM_EMAIL = 'walter@snowbears.org' #Works.
+#SERVER_EMAIL = 'walter@snowbears.org'
+
+# # # # # # # # #
+# Webfaction host #
+
+# Set the host name of the SMTP server. 
+#EMAIL_HOST = 'smtp.webfaction.com'
+# Set the SMTP user name. 
+#EMAIL_HOST_USER = 'solarfs'
+#Set the SMTP password. 
+#EMAIL_HOST_PASSWORD = 'Carbon12'
+#EMAIL_USE_TLS = True
+# Set the "From" (origin) email address.
+#DEFAULT_FROM_EMAIL = 'walter@snowbears.org' #Works on Bluehost.
+#SERVER_EMAIL = 'walter@snowbears.org'
+
+#################
+
