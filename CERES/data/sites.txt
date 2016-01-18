@@ -1,0 +1,2 @@
+SolarVillage;(46.397, 24.907);Solar_Village
+TableMountain;(-105.237, 40.125);Table_Mountain

@@ -1,0 +1,27 @@
+# World Geodetic System Reference Ellipsoid (oblate spheroid)
+# equatorial radius    a = 6 378 137.0 meter   6 378 kilometer
+# polar radius         b = 6 356 752.3 meter   6 357 kilometer
+# geographic/geodetic latitude - equatorial plane and normal
+# geocentric latitude - equatorial plane and position from center
+# (x / a)^2 + (y / b)^2 = 1
+# x dx / a^2 + y dy / b^2 = 0
+# geocentric tan(lat) = y / x
+# geodetic tan(latNormal) = (y / b^2) / (x / a^2)
+#   = (a / b)^2 tan(lat)
+# tan(lat) = b^2 / a^2 tan(latNormal) = (1 - e^2) tan(latNormal)
+# Geoid (geopotential surface) +/- 200 meter from Reference Ellipsoid
+# Topography   Everest + 8 000 meter   Mariana Trench - 11 000 meter
+
+radiusEarth           = 6.37122e6
+radiusEquatorialEarth = 6.378137e6
+radiusPolarEarth      = 6.3567523e6 # meter
+
+circumferenceEarth = 2 * math.pi * radiusEarth
+areaEarth = 4 * math.pi * radiusEarth**2
+kilometerPerDegree = circumferenceEarth / 360.0 / 1000.0
+kilometerPerArcMinute = kilometerPerDegree / 60.0
+meterPerArcSecond = kilometerPerArcMinute / 60.0 * 1000.0
+
+massSun   = 1.989e30 # kilogram
+massEarth = 5.974e24
+massMoon  = 7.348e22

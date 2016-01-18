@@ -1,0 +1,25 @@
+CERES  EBAF
+  TOA  Outgoing             Longwave  Radiation  rlut
+  TOA  Outgoing             Shortwave Radiation  rsut
+  TOA  Outgoing  Clear-Sky  Longwave  Radiation  rlutcs
+  TOA  Outgoing  Clear-Sky  Shortwave Radiation  rsutcs
+CERES  EBAF-Surface
+  Surface  Downwelling             Longwave  Radiation  rlds
+  Surface  Upwelling               Longwave  Radiation  rlus
+  Surface  Downwelling             Shortwave Radiation  rsds
+  Surface  Upwelling               Shortwave Radiation  rsus
+  Surface  Downwelling  Clear-Sky  Longwave  Radiation  rldscs
+  Surface  Downwelling  Clear-Sky  Shortwave Radiation  rsdscs
+  Surface  Upwelling    Clear-Sky  Shortwave Radiation  rsuscs
+
+TOA Shortwave Zonal Plot
+  rsut
+  rsutcs
+
+TOA Longwave Zonal Plot
+  rlut
+  rlutcs
+
+Surface Shortwave Zonal Plot
+  rsds
+  rsdscs

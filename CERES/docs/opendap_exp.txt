@@ -1,0 +1,12 @@
+    toa_data = Dataset('../datasets/MERRA300.prod.assim.tavgM_2d_rad_Nx.201401.SUB.nc')
+    
+MERRA300.prod.assim.tavgM_2d_rad_Nx.201401   .SUB.nc
+MERRA201.prod.assim.tavg 1_2d_rad_Nx.20000101.SUB.nc
+
+toa_data = Dataset('../datasets/MERRA301.prod.assim.tavg1_2d_rad_Nx.20010101.SUB.nc')
+
+toa_data = Dataset('
+http://goldsmr2.sci.gsfc.nasa.gov/cgi-bin/dpool/HTTP_DpFileDownloadMERRA.pl?DATASET=MERRA_DP&FCP_DIR=/ftp/private/tmp/&APPLICATION=SUBSET_LATS4D&FILTER=SUBSET_LATS4D&SUB_LONMIN=-180&SUB_LONMAX=180&SUB_LATMAX=90&SUB_LATMIN=-90&OUTPUT_FORMAT=NetCDF&LOOKUPID_List=MAT1NXRAD&STARTYR=2001&STARTMON=01&STARTDAY=01&ENDYR=2001&ENDMON=01&ENDDAY=02&variable=lwtup&variable=swtdn&variable=swtnt&&meanValue=1/MERRA301.prod.assim.tavg1_2d_rad_Nx.20010101.SUB.nc
+')
+
+http://goldsmr2.sci.gsfc.nasa.gov/cgi-bin/dpool/HTTP_DpFileDownloadMERRA.pl?DATASET=MERRA_DP&FCP_DIR=/ftp/private/tmp/&APPLICATION=SUBSET_LATS4D&FILTER=SUBSET_LATS4D&SUB_LONMIN=-180&SUB_LONMAX=180&SUB_LATMAX=90&SUB_LATMIN=-90&OUTPUT_FORMAT=NetCDF&LOOKUPID_List=MAT1NXRAD&STARTYR=2001&STARTMON=01&STARTDAY=01&ENDYR=2001&ENDMON=01&ENDDAY=02&variable=lwtup&variable=swtdn&variable=swtnt&&meanValue=1/MERRA301.prod.assim.tavg1_2d_rad_Nx.20010101.SUB.nc
