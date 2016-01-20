@@ -216,6 +216,8 @@ STATICFILES_DIRS = (
     os.path.join(PROJECT_ROOT, 'theme/static/'),
     os.path.join(PROJECT_ROOT, 'calc/static/'),
     os.path.join(PROJECT_ROOT, 'calc/static/calc/'),
+    os.path.join(PROJECT_ROOT, 'dap/static/'),
+    os.path.join(PROJECT_ROOT, 'dap/static/calc/'),
     os.path.join(PROJECT_ROOT, 'static/'), 
 )
 

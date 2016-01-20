@@ -1,3 +1,6 @@
+import netCDF4 
+from netCDF4 import Dataset 
+
 from django.shortcuts import render
 # Create your views here.
 from django.shortcuts import render_to_response
@@ -229,12 +232,56 @@ def dapform(request):
         
         ####### End  display preparation.  #######  
             
+        year = last_calc.begin.split(',')[0].strip()
+        month = last_calc.begin.split(',')[1].strip()
+        year_month = year + month
+
+        # # # # # # # # # # # #
+        # Create file name. 
+        site_name = 'http://goldsmr4.sci.gsfc.nasa.gov/opendap/MERRA2_MONTHLY/M2TMNXRAD.5.12.4/'
+       
+        file_prefix = '/MERRA2_300.tavgM_2d_rad_Nx.'
+        file_suffix = '.nc4'
+        #file_name = 'MERRA2_300.tavgM_2d_rad_Nx.200101.nc4'
+        file_name = file_prefix + year_month + file_suffix
+        
+        #path_name = site_name + year + file_name
+        path_name = site_name + year + file_name
+        # # # # # # # # # # # #
+
+        # # # # # # # # # # # #
+        # Create data objects.
+        #from netCDF4 import Dataset 
+
+        #toa_data = Dataset('../datasets/CERES_EBAF-TOA_Ed2.8_Subset_201401-201412_solar-sw-lw-net.nc')
+        #toa_data = Dataset('../datasets/MERRA301.prod.assim.tavg1_2d_rad_Nx.20010101.SUB.nc')
+        #toa_data = Dataset('http://goldsmr4.sci.gsfc.nasa.gov/opendap/MERRA2_MONTHLY/M2TMNXRAD.5.12.4/2001/MERRA2_300.tavgM_2d_rad_Nx.200101.nc4')
+        toa_data = Dataset(path_name)
+        
+        # Set variables.
+        times = toa_data.variables['time'][:]
+        lats = toa_data.variables['lat'][:]
+        lons = toa_data.variables['lon'][:]
+        
+        # Short-wave incoming top of atmosphere radiation. 
+        sw_down = toa_data.variables['SWTDN'][:, :, :]
+        # Long wave outgoing top of atmosphere radiation. 
+        lw_up = toa_data.variables['LWTUP'][:, :, :]
+        # Short-wave net outgoing top of atmosphere all sky incoming radiation. 
+        sw_net = toa_data.variables['SWTNT'][:, :, :]
+        
+        timesSize = times.size
+        latsSize = lats.size
+        lonsSize = lons.size
+
         # Test variables.
         #special = [time_interval_hr, time_interval_day]
         #special = local_timezone_offset
-        special = len_eph
+        #special = year_month
+        special = path_name
+
         #extraspecial = [tick_size, tick_unit]
-        extraspecial = eph_seq_lines[0]
+        extraspecial = [timesSize, latsSize, lonsSize]
         
         return render_to_response("dap/pages/dapform.html", add_csrf(request, pf=pf, address_slug=address_slug, 
                                                          last_calc=last_calc, STATIC_URL=STATIC_URL, MEDIA_URL=MEDIA_URL, 
