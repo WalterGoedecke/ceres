@@ -3985,3 +3985,320 @@ Traceback (most recent call last):
 NameError: name 'Dataset' is not defined
 Not Found: /calc/css/flot.css/
 Not Found: /calc/css/flot.css/
+Not Found: /calc/css/flot.css/
+Internal Server Error: /dap-form/
+Traceback (most recent call last):
+  File "/home/walter/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/core/handlers/base.py", line 125, in get_response
+    response = middleware_method(request, callback, callback_args, callback_kwargs)
+  File "/home/walter/virtualenv/venv-py3.4/lib/python3.4/site-packages/mezzanine/pages/middleware.py", line 99, in process_view
+    return view_func(request, *view_args, **view_kwargs)
+  File "/home/walter/virtualenv/solocalc/dap/views.py", line 50, in dapform
+    pf.save()
+  File "/home/walter/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/forms/models.py", line 459, in save
+    construct=False)
+  File "/home/walter/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/forms/models.py", line 105, in save_instance
+    instance.save()
+  File "/home/walter/virtualenv/solocalc/dap/models.py", line 261, in save
+    self.ephemeris(self.begin, self.end, self.frequency)
+  File "/home/walter/virtualenv/solocalc/dap/models.py", line 120, in ephemeris
+    ephemSequence.plot()
+  File "/home/walter/virtualenv/venv-py3.4/lib/python3.4/site-packages/pandas/tools/plotting.py", line 3671, in __call__
+    sort_columns=sort_columns, **kwds)
+  File "/home/walter/virtualenv/venv-py3.4/lib/python3.4/site-packages/pandas/tools/plotting.py", line 2556, in plot_frame
+    **kwds)
+  File "/home/walter/virtualenv/venv-py3.4/lib/python3.4/site-packages/pandas/tools/plotting.py", line 2384, in _plot
+    plot_obj.generate()
+  File "/home/walter/virtualenv/venv-py3.4/lib/python3.4/site-packages/pandas/tools/plotting.py", line 986, in generate
+    self._setup_subplots()
+  File "/home/walter/virtualenv/venv-py3.4/lib/python3.4/site-packages/pandas/tools/plotting.py", line 1037, in _setup_subplots
+    fig = self.plt.figure(figsize=self.figsize)
+  File "/home/walter/virtualenv/venv-py3.4/lib/python3.4/site-packages/matplotlib/pyplot.py", line 527, in figure
+    **kwargs)
+  File "/home/walter/virtualenv/venv-py3.4/lib/python3.4/site-packages/matplotlib/backends/backend_tkagg.py", line 84, in new_figure_manager
+    return new_figure_manager_given_figure(num, figure)
+  File "/home/walter/virtualenv/venv-py3.4/lib/python3.4/site-packages/matplotlib/backends/backend_tkagg.py", line 101, in new_figure_manager_given_figure
+    icon_img = Tk.PhotoImage(file=icon_fname)
+  File "/usr/lib/python3.4/tkinter/__init__.py", line 3424, in __init__
+    Image.__init__(self, 'photo', name, cnf, master, **kw)
+  File "/usr/lib/python3.4/tkinter/__init__.py", line 3380, in __init__
+    self.tk.call(('image', 'create', imgtype, name,) + options)
+RuntimeError: main thread is not in main loop
+Internal Server Error: /dap-form/
+Traceback (most recent call last):
+  File "/home/walter/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/core/handlers/base.py", line 125, in get_response
+    response = middleware_method(request, callback, callback_args, callback_kwargs)
+  File "/home/walter/virtualenv/venv-py3.4/lib/python3.4/site-packages/mezzanine/pages/middleware.py", line 99, in process_view
+    return view_func(request, *view_args, **view_kwargs)
+  File "/home/walter/virtualenv/solocalc/dap/views.py", line 50, in dapform
+    pf.save()
+  File "/home/walter/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/forms/models.py", line 459, in save
+    construct=False)
+  File "/home/walter/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/forms/models.py", line 105, in save_instance
+    instance.save()
+  File "/home/walter/virtualenv/solocalc/dap/models.py", line 261, in save
+    self.ephemeris(self.begin, self.end, self.frequency)
+  File "/home/walter/virtualenv/solocalc/dap/models.py", line 120, in ephemeris
+    ephemSequence.plot()
+  File "/home/walter/virtualenv/venv-py3.4/lib/python3.4/site-packages/pandas/tools/plotting.py", line 3671, in __call__
+    sort_columns=sort_columns, **kwds)
+  File "/home/walter/virtualenv/venv-py3.4/lib/python3.4/site-packages/pandas/tools/plotting.py", line 2556, in plot_frame
+    **kwds)
+  File "/home/walter/virtualenv/venv-py3.4/lib/python3.4/site-packages/pandas/tools/plotting.py", line 2384, in _plot
+    plot_obj.generate()
+  File "/home/walter/virtualenv/venv-py3.4/lib/python3.4/site-packages/pandas/tools/plotting.py", line 986, in generate
+    self._setup_subplots()
+  File "/home/walter/virtualenv/venv-py3.4/lib/python3.4/site-packages/pandas/tools/plotting.py", line 1037, in _setup_subplots
+    fig = self.plt.figure(figsize=self.figsize)
+  File "/home/walter/virtualenv/venv-py3.4/lib/python3.4/site-packages/matplotlib/pyplot.py", line 527, in figure
+    **kwargs)
+  File "/home/walter/virtualenv/venv-py3.4/lib/python3.4/site-packages/matplotlib/backends/backend_tkagg.py", line 84, in new_figure_manager
+    return new_figure_manager_given_figure(num, figure)
+  File "/home/walter/virtualenv/venv-py3.4/lib/python3.4/site-packages/matplotlib/backends/backend_tkagg.py", line 101, in new_figure_manager_given_figure
+    icon_img = Tk.PhotoImage(file=icon_fname)
+  File "/usr/lib/python3.4/tkinter/__init__.py", line 3424, in __init__
+    Image.__init__(self, 'photo', name, cnf, master, **kw)
+  File "/usr/lib/python3.4/tkinter/__init__.py", line 3380, in __init__
+    self.tk.call(('image', 'create', imgtype, name,) + options)
+RuntimeError: main thread is not in main loop
+Internal Server Error: /dap-form/
+Traceback (most recent call last):
+  File "/home/walter/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/core/handlers/base.py", line 125, in get_response
+    response = middleware_method(request, callback, callback_args, callback_kwargs)
+  File "/home/walter/virtualenv/venv-py3.4/lib/python3.4/site-packages/mezzanine/pages/middleware.py", line 99, in process_view
+    return view_func(request, *view_args, **view_kwargs)
+  File "/home/walter/virtualenv/solocalc/dap/views.py", line 50, in dapform
+    pf.save()
+  File "/home/walter/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/forms/models.py", line 459, in save
+    construct=False)
+  File "/home/walter/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/forms/models.py", line 105, in save_instance
+    instance.save()
+  File "/home/walter/virtualenv/solocalc/dap/models.py", line 261, in save
+    self.ephemeris(self.begin, self.end, self.frequency)
+  File "/home/walter/virtualenv/solocalc/dap/models.py", line 120, in ephemeris
+    ephemSequence.plot()
+  File "/home/walter/virtualenv/venv-py3.4/lib/python3.4/site-packages/pandas/tools/plotting.py", line 3671, in __call__
+    sort_columns=sort_columns, **kwds)
+  File "/home/walter/virtualenv/venv-py3.4/lib/python3.4/site-packages/pandas/tools/plotting.py", line 2556, in plot_frame
+    **kwds)
+  File "/home/walter/virtualenv/venv-py3.4/lib/python3.4/site-packages/pandas/tools/plotting.py", line 2384, in _plot
+    plot_obj.generate()
+  File "/home/walter/virtualenv/venv-py3.4/lib/python3.4/site-packages/pandas/tools/plotting.py", line 986, in generate
+    self._setup_subplots()
+  File "/home/walter/virtualenv/venv-py3.4/lib/python3.4/site-packages/pandas/tools/plotting.py", line 1037, in _setup_subplots
+    fig = self.plt.figure(figsize=self.figsize)
+  File "/home/walter/virtualenv/venv-py3.4/lib/python3.4/site-packages/matplotlib/pyplot.py", line 527, in figure
+    **kwargs)
+  File "/home/walter/virtualenv/venv-py3.4/lib/python3.4/site-packages/matplotlib/backends/backend_tkagg.py", line 84, in new_figure_manager
+    return new_figure_manager_given_figure(num, figure)
+  File "/home/walter/virtualenv/venv-py3.4/lib/python3.4/site-packages/matplotlib/backends/backend_tkagg.py", line 101, in new_figure_manager_given_figure
+    icon_img = Tk.PhotoImage(file=icon_fname)
+  File "/usr/lib/python3.4/tkinter/__init__.py", line 3424, in __init__
+    Image.__init__(self, 'photo', name, cnf, master, **kw)
+  File "/usr/lib/python3.4/tkinter/__init__.py", line 3380, in __init__
+    self.tk.call(('image', 'create', imgtype, name,) + options)
+RuntimeError: main thread is not in main loop
+Not Found: /calc/css/flot.css/
+Not Found: /calc/css/flot.css/
+Internal Server Error: /dap-form/
+Traceback (most recent call last):
+  File "/home/walter/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/core/handlers/base.py", line 125, in get_response
+    response = middleware_method(request, callback, callback_args, callback_kwargs)
+  File "/home/walter/virtualenv/venv-py3.4/lib/python3.4/site-packages/mezzanine/pages/middleware.py", line 99, in process_view
+    return view_func(request, *view_args, **view_kwargs)
+  File "/home/walter/virtualenv/solocalc/dap/views.py", line 51, in dapform
+    pf.save()
+  File "/home/walter/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/forms/models.py", line 459, in save
+    construct=False)
+  File "/home/walter/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/forms/models.py", line 105, in save_instance
+    instance.save()
+  File "/home/walter/virtualenv/solocalc/dap/models.py", line 281, in save
+    self.DapProcess(self.begin)
+  File "/home/walter/virtualenv/solocalc/dap/models.py", line 194, in DapProcess
+    times = toa_data.variables['time'][:]
+  File "netCDF4/_netCDF4.pyx", line 3634, in netCDF4._netCDF4.Variable.__getitem__ (netCDF4/_netCDF4.c:36459)
+  File "netCDF4/_netCDF4.pyx", line 4326, in netCDF4._netCDF4.Variable._get (netCDF4/_netCDF4.c:46346)
+RuntimeError: NetCDF: I/O failure
+Not Found: /calc/css/flot.css/
+Internal Server Error: /dap-form/
+Traceback (most recent call last):
+  File "/home/walter/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/core/handlers/base.py", line 125, in get_response
+    response = middleware_method(request, callback, callback_args, callback_kwargs)
+  File "/home/walter/virtualenv/venv-py3.4/lib/python3.4/site-packages/mezzanine/pages/middleware.py", line 99, in process_view
+    return view_func(request, *view_args, **view_kwargs)
+  File "/home/walter/virtualenv/solocalc/dap/views.py", line 51, in dapform
+    pf.save()
+  File "/home/walter/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/forms/models.py", line 459, in save
+    construct=False)
+  File "/home/walter/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/forms/models.py", line 105, in save_instance
+    instance.save()
+  File "/home/walter/virtualenv/solocalc/dap/models.py", line 279, in save
+    self.ephemeris(self.begin, self.end, self.frequency)
+  File "/home/walter/virtualenv/solocalc/dap/models.py", line 120, in ephemeris
+    ephemSequence.plot()
+  File "/home/walter/virtualenv/venv-py3.4/lib/python3.4/site-packages/pandas/tools/plotting.py", line 3671, in __call__
+    sort_columns=sort_columns, **kwds)
+  File "/home/walter/virtualenv/venv-py3.4/lib/python3.4/site-packages/pandas/tools/plotting.py", line 2556, in plot_frame
+    **kwds)
+  File "/home/walter/virtualenv/venv-py3.4/lib/python3.4/site-packages/pandas/tools/plotting.py", line 2384, in _plot
+    plot_obj.generate()
+  File "/home/walter/virtualenv/venv-py3.4/lib/python3.4/site-packages/pandas/tools/plotting.py", line 986, in generate
+    self._setup_subplots()
+  File "/home/walter/virtualenv/venv-py3.4/lib/python3.4/site-packages/pandas/tools/plotting.py", line 1037, in _setup_subplots
+    fig = self.plt.figure(figsize=self.figsize)
+  File "/home/walter/virtualenv/venv-py3.4/lib/python3.4/site-packages/matplotlib/pyplot.py", line 527, in figure
+    **kwargs)
+  File "/home/walter/virtualenv/venv-py3.4/lib/python3.4/site-packages/matplotlib/backends/backend_tkagg.py", line 84, in new_figure_manager
+    return new_figure_manager_given_figure(num, figure)
+  File "/home/walter/virtualenv/venv-py3.4/lib/python3.4/site-packages/matplotlib/backends/backend_tkagg.py", line 101, in new_figure_manager_given_figure
+    icon_img = Tk.PhotoImage(file=icon_fname)
+  File "/usr/lib/python3.4/tkinter/__init__.py", line 3424, in __init__
+    Image.__init__(self, 'photo', name, cnf, master, **kw)
+  File "/usr/lib/python3.4/tkinter/__init__.py", line 3380, in __init__
+    self.tk.call(('image', 'create', imgtype, name,) + options)
+_tkinter.TclError: NULL main window
+Internal Server Error: /dap-form/
+Traceback (most recent call last):
+  File "/home/walter/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/core/handlers/base.py", line 125, in get_response
+    response = middleware_method(request, callback, callback_args, callback_kwargs)
+  File "/home/walter/virtualenv/venv-py3.4/lib/python3.4/site-packages/mezzanine/pages/middleware.py", line 99, in process_view
+    return view_func(request, *view_args, **view_kwargs)
+  File "/home/walter/virtualenv/solocalc/dap/views.py", line 51, in dapform
+    pf.save()
+  File "/home/walter/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/forms/models.py", line 459, in save
+    construct=False)
+  File "/home/walter/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/forms/models.py", line 105, in save_instance
+    instance.save()
+  File "/home/walter/virtualenv/solocalc/dap/models.py", line 283, in save
+    self.DapProcess(self.begin)
+  File "/home/walter/virtualenv/solocalc/dap/models.py", line 225, in DapProcess
+    fig = plt.figure()
+NameError: name 'plt' is not defined
+Internal Server Error: /dap-form/
+Traceback (most recent call last):
+  File "/home/walter/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/core/handlers/base.py", line 125, in get_response
+    response = middleware_method(request, callback, callback_args, callback_kwargs)
+  File "/home/walter/virtualenv/venv-py3.4/lib/python3.4/site-packages/mezzanine/pages/middleware.py", line 99, in process_view
+    return view_func(request, *view_args, **view_kwargs)
+  File "/home/walter/virtualenv/solocalc/dap/views.py", line 51, in dapform
+    pf.save()
+  File "/home/walter/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/forms/models.py", line 459, in save
+    construct=False)
+  File "/home/walter/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/forms/models.py", line 105, in save_instance
+    instance.save()
+  File "/home/walter/virtualenv/solocalc/dap/models.py", line 285, in save
+    self.ephemeris(self.begin, self.end, self.frequency)
+  File "/home/walter/virtualenv/solocalc/dap/models.py", line 130, in ephemeris
+    pyplot.savefig(plot_path)
+NameError: name 'pyplot' is not defined
+Internal Server Error: /dap-form/
+Traceback (most recent call last):
+  File "/home/walter/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/core/handlers/base.py", line 125, in get_response
+    response = middleware_method(request, callback, callback_args, callback_kwargs)
+  File "/home/walter/virtualenv/venv-py3.4/lib/python3.4/site-packages/mezzanine/pages/middleware.py", line 99, in process_view
+    return view_func(request, *view_args, **view_kwargs)
+  File "/home/walter/virtualenv/solocalc/dap/views.py", line 51, in dapform
+    pf.save()
+  File "/home/walter/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/forms/models.py", line 459, in save
+    construct=False)
+  File "/home/walter/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/forms/models.py", line 105, in save_instance
+    instance.save()
+  File "/home/walter/virtualenv/solocalc/dap/models.py", line 285, in save
+    self.ephemeris(self.begin, self.end, self.frequency)
+  File "/home/walter/virtualenv/solocalc/dap/models.py", line 130, in ephemeris
+    pyplot.savefig(plot_path)
+NameError: name 'pyplot' is not defined
+Not Found: /calc/css/flot.css/
+Internal Server Error: /dap-form/
+Traceback (most recent call last):
+  File "/home/walter/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/core/handlers/base.py", line 125, in get_response
+    response = middleware_method(request, callback, callback_args, callback_kwargs)
+  File "/home/walter/virtualenv/venv-py3.4/lib/python3.4/site-packages/mezzanine/pages/middleware.py", line 99, in process_view
+    return view_func(request, *view_args, **view_kwargs)
+  File "/home/walter/virtualenv/solocalc/dap/views.py", line 51, in dapform
+    pf.save()
+  File "/home/walter/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/forms/models.py", line 459, in save
+    construct=False)
+  File "/home/walter/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/forms/models.py", line 105, in save_instance
+    instance.save()
+  File "/home/walter/virtualenv/solocalc/dap/models.py", line 291, in save
+    self.DapProcess(self.begin)
+  File "/home/walter/virtualenv/solocalc/dap/models.py", line 234, in DapProcess
+    m = Basemap(projection='kav7', lon_0=0, resolution='c')
+NameError: name 'Basemap' is not defined
+Internal Server Error: /dap-form/
+Traceback (most recent call last):
+  File "/home/walter/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/core/handlers/base.py", line 125, in get_response
+    response = middleware_method(request, callback, callback_args, callback_kwargs)
+  File "/home/walter/virtualenv/venv-py3.4/lib/python3.4/site-packages/mezzanine/pages/middleware.py", line 99, in process_view
+    return view_func(request, *view_args, **view_kwargs)
+  File "/home/walter/virtualenv/solocalc/dap/views.py", line 51, in dapform
+    pf.save()
+  File "/home/walter/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/forms/models.py", line 459, in save
+    construct=False)
+  File "/home/walter/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/forms/models.py", line 105, in save_instance
+    instance.save()
+  File "/home/walter/virtualenv/solocalc/dap/models.py", line 292, in save
+    self.DapProcess(self.begin)
+  File "/home/walter/virtualenv/solocalc/dap/models.py", line 235, in DapProcess
+    m = Basemap(projection='kav7', lon_0=0, resolution='c')
+NameError: name 'Basemap' is not defined
+Not Found: /calc/css/flot.css/
+Internal Server Error: /dap-form/
+Traceback (most recent call last):
+  File "/home/walter/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/core/handlers/base.py", line 125, in get_response
+    response = middleware_method(request, callback, callback_args, callback_kwargs)
+  File "/home/walter/virtualenv/venv-py3.4/lib/python3.4/site-packages/mezzanine/pages/middleware.py", line 99, in process_view
+    return view_func(request, *view_args, **view_kwargs)
+  File "/home/walter/virtualenv/solocalc/dap/views.py", line 51, in dapform
+    pf.save()
+  File "/home/walter/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/forms/models.py", line 459, in save
+    construct=False)
+  File "/home/walter/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/forms/models.py", line 105, in save_instance
+    instance.save()
+  File "/home/walter/virtualenv/solocalc/dap/models.py", line 293, in save
+    self.DapProcess(self.begin)
+  File "/home/walter/virtualenv/solocalc/dap/models.py", line 236, in DapProcess
+    m = Basemap(projection='kav7', lon_0=0, resolution='None')
+NameError: name 'Basemap' is not defined
+Internal Server Error: /dap-form/
+Traceback (most recent call last):
+  File "/home/walter/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/core/handlers/base.py", line 125, in get_response
+    response = middleware_method(request, callback, callback_args, callback_kwargs)
+  File "/home/walter/virtualenv/venv-py3.4/lib/python3.4/site-packages/mezzanine/pages/middleware.py", line 99, in process_view
+    return view_func(request, *view_args, **view_kwargs)
+  File "/home/walter/virtualenv/solocalc/dap/views.py", line 51, in dapform
+    pf.save()
+  File "/home/walter/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/forms/models.py", line 459, in save
+    construct=False)
+  File "/home/walter/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/forms/models.py", line 105, in save_instance
+    instance.save()
+  File "/home/walter/virtualenv/solocalc/dap/models.py", line 293, in save
+    self.DapProcess(self.begin)
+  File "/home/walter/virtualenv/solocalc/dap/models.py", line 236, in DapProcess
+    m = Basemap(projection='kav7', lon_0=0, resolution='None')
+  File "/home/walter/virtualenv/venv-py3.4/lib/python3.4/site-packages/mpl_toolkits/basemap/__init__.py", line 1031, in __init__
+    raise ValueError("boundary resolution must be one of 'c','l','i','h' or 'f'")
+ValueError: boundary resolution must be one of 'c','l','i','h' or 'f'
+Internal Server Error: /dap-form/
+Traceback (most recent call last):
+  File "/home/walter/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/core/handlers/base.py", line 125, in get_response
+    response = middleware_method(request, callback, callback_args, callback_kwargs)
+  File "/home/walter/virtualenv/venv-py3.4/lib/python3.4/site-packages/mezzanine/pages/middleware.py", line 99, in process_view
+    return view_func(request, *view_args, **view_kwargs)
+  File "/home/walter/virtualenv/solocalc/dap/views.py", line 51, in dapform
+    pf.save()
+  File "/home/walter/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/forms/models.py", line 459, in save
+    construct=False)
+  File "/home/walter/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/forms/models.py", line 105, in save_instance
+    instance.save()
+  File "/home/walter/virtualenv/solocalc/dap/models.py", line 293, in save
+    self.DapProcess(self.begin)
+  File "/home/walter/virtualenv/solocalc/dap/models.py", line 210, in DapProcess
+    sw_net = toa_data.variables['SWTNT'][:, :, :]
+  File "netCDF4/_netCDF4.pyx", line 3634, in netCDF4._netCDF4.Variable.__getitem__ (netCDF4/_netCDF4.c:36459)
+  File "netCDF4/_netCDF4.pyx", line 4326, in netCDF4._netCDF4.Variable._get (netCDF4/_netCDF4.c:46346)
+RuntimeError: NetCDF: I/O failure
+Not Found: /calc/css/flot.css/
+Not Found: /calc/css/flot.css/
+Not Found: /calc/css/flot.css/
+Not Found: /calc/css/flot.css/

@@ -1,3 +1,8 @@
+# Matplotlib routines.
+# Must be at top of models; otherwise, tcl error!
+import matplotlib
+matplotlib.use('Agg') # Must have here - not after from matplotlib.~ commands. 
+
 from django.db import models
 from django.contrib import admin
 ###############################
@@ -16,13 +21,16 @@ import pygeocoder, geocoder
 # Pandas et al.
 import pandas, pvlib
 from pvlib.location import Location 
-# Matplotlib routinesl.
-import matplotlib
-matplotlib.use('Agg') # Must have here - not after from matplotlib.~ commands. 
+
 #from matplotlib.backends.backend_agg import FigureCanvasAgg as FigureCanvas
 from matplotlib.backends.backend_agg import FigureCanvasAgg
 from matplotlib.figure import Figure
 from matplotlib import pyplot
+import numpy as np
+
+# Import mapping functions. 
+from mpl_toolkits.basemap import Basemap
+
 # OPeNDAP netCDF4.
 import netCDF4 
 from netCDF4 import Dataset 
@@ -206,6 +214,29 @@ class Calculation(models.Model):
         latsSize = lats.size
         lonsSize = lons.size
 
+        # # # # # # # # # # # #
+        # Calculate and plot the albedo: the ratio of the outgoing to incoming sw radiation. 
+        #l_variable = [[[2]*3]*4]*5
+        albedo = [[0]*lonsSize]*latsSize
+        
+        # i = lat, j = lon
+        for i in range(0, latsSize):
+            #albedo[i] = [None if y == 0 else x/y for x, y in zip(sw_out[i], sw_in[i])]
+            #albedo[i] = [x-y for x, y in zip(sw_down[i], sw_net[i])]
+            albedo[i] = sw_down[0, i] - sw_net[0, i]
+        # # # # # # # # # # # #
+
+        # # # # # # # # # # # #
+        # create figure, axes instances.
+        #fig = plt.figure()
+        fig = pyplot.figure()
+        ax = fig.add_axes([0.05,0.05,0.9,0.9])
+
+        # Create Basemap instance.
+        m = Basemap(projection='kav7', lon_0=0, resolution='c')
+        #m = Basemap(projection='kav7', lon_0=0, resolution='l')
+
+        # # # # # # # # # # # #
         self.dap_process_temp = [path_name, timesSize, latsSize, lonsSize]
         ##################
         # Solar ephemeris.

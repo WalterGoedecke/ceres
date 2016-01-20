@@ -1,6 +1,3 @@
-import netCDF4 
-from netCDF4 import Dataset 
-
 from django.shortcuts import render
 # Create your views here.
 from django.shortcuts import render_to_response
@@ -14,6 +11,10 @@ from django.forms import ModelForm, Textarea
 
 import datetime, time # Convert year, month, day, &c., to seconds since 1970. 
 from dateutil.tz import * # For local time zone determination. 
+
+# For OPeNDAP NetCDF data access.  
+import netCDF4 
+from netCDF4 import Dataset 
 
 # ModelForm must be in views, not model. 
 from django import forms
