@@ -249,6 +249,8 @@ TEMPLATE_DIRS = (
     os.path.join(PROJECT_ROOT, "theme/templatetags/"),
     os.path.join(PROJECT_ROOT, "calc/templates/"),
     os.path.join(PROJECT_ROOT, "calc/templatetags/"),
+    os.path.join(PROJECT_ROOT, "dap/templates/"),
+    os.path.join(PROJECT_ROOT, "dap/templatetags/"),
     os.path.join(PROJECT_ROOT, "templates"),
 )
 
@@ -258,6 +260,7 @@ TEMPLATE_DIRS = (
 INSTALLED_APPS = (
     "theme",
     "calc",
+    "dap",
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",

@@ -19,8 +19,13 @@ import matplotlib.pyplot as plt
 # # Import netcdf dataset and extract variables.
 # # # # # # # # # # # #
 #toa_data = Dataset('../datasets/CERES_EBAF-TOA_Ed2.8_Subset_201401-201412_solar-sw-lw-net.nc')
-#toa_data = Dataset('../datasets/MERRA301.prod.assim.tavg1_2d_rad_Nx.20010101.SUB.nc')
-toa_data = Dataset('http://goldsmr2.sci.gsfc.nasa.gov/cgi-bin/dpool/HTTP_DpFileDownloadMERRA.pl?DATASET=MERRA_DP&FCP_DIR=/ftp/private/tmp/&APPLICATION=SUBSET_LATS4D&FILTER=SUBSET_LATS4D&SUB_LONMIN=-180&SUB_LONMAX=180&SUB_LATMAX=90&SUB_LATMIN=-90&OUTPUT_FORMAT=NetCDF&LOOKUPID_List=MAT1NXRAD&STARTYR=2001&STARTMON=01&STARTDAY=01&ENDYR=2001&ENDMON=01&ENDDAY=02&variable=lwtup&variable=swtdn&variable=swtnt&&meanValue=1/MERRA301.prod.assim.tavg1_2d_rad_Nx.20010101.SUB.nc')
+toa_data = Dataset('../datasets/MERRA301.prod.assim.tavg1_2d_rad_Nx.20010101.SUB.nc')
+#toa_data = Dataset('http://goldsmr2.sci.gsfc.nasa.gov/cgi-bin/dpool/HTTP_DpFileDownloadMERRA.pl?DATASET=MERRA_DP&FCP_DIR=/ftp/private/tmp/&APPLICATION=SUBSET_LATS4D&FILTER=SUBSET_LATS4D&SUB_LONMIN=-180&SUB_LONMAX=180&SUB_LATMAX=90&SUB_LATMIN=-90&OUTPUT_FORMAT=NetCDF&LOOKUPID_List=MAT1NXRAD&STARTYR=2001&STARTMON=01&STARTDAY=01&ENDYR=2001&ENDMON=01&ENDDAY=02&variable=lwtup&variable=swtdn&variable=swtnt&&meanValue=1/MERRA301.prod.assim.tavg1_2d_rad_Nx.20010101.SUB.nc')
+
+#toa_data = Dataset('http://127.0.0.1:8000/static/media/docs/MERRA301.prod.assim.tavg1_2d_rad_Nx.20010101.SUB.nc')
+#toa_data = Dataset('127.0.0.1:8000/static/media/docs/MERRA301.prod.assim.tavg1_2d_rad_Nx.20010101.SUB.nc')
+
+#toa_data = Dataset('http://goldsmr2.sci.gsfc.nasa.gov/daac-bin/OTF/HTTP_services.cgi?FILENAME=%2Fdata%2Fs4pa%2FMERRA%2FMAT1NXRAD.5.2.0%2F2001%2F01%2FMERRA301.prod.assim.tavg1_2d_rad_Nx.20010101.hdf&FORMAT=TmV0Q0RGLw&BBOX=-90%2C-180%2C90%2C180&LABEL=MERRA301.prod.assim.tavg1_2d_rad_Nx.20010101.SUB.nc&FLAGS=1&SHORTNAME=MAT1NXRAD&SERVICE=SUBSET_LATS4D&LAYERS=&VERSION=1.02&VARIABLES=lwtup%2Cswtdn%2Cswtnt')
 
 # Set variables.
 times = toa_data.variables['time'][:]
@@ -38,8 +43,8 @@ timesSize = times.size
 latsSize = lats.size
 lonsSize = lons.size
 
-print('times: %i\t lats: %i\t lons: %i\t sw_all: %i\t solar: %i\n' % \
-    (timesSize, latsSize, lonsSize, sw_all.size, solar.size))
+print('times: %i\t lats: %i\t lons: %i\t sw_down: %i\n' % \
+    (timesSize, latsSize, lonsSize, sw_down.size))
 
 #######################
 # Calculate the short and long wave input and outputs.

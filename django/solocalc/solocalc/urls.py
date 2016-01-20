@@ -10,6 +10,7 @@ admin.autodiscover()
 
 from theme.views import *
 from calc.views import *
+from dap.views import *
 
 # Add the urlpatterns for any custom Django applications here.
 # You can also change the ``home`` view to add your own functionality
@@ -40,6 +41,7 @@ urlpatterns += patterns('',
     #url("^$", direct_to_template, {"template": "index.html"}, name="home"),
     url("^solarfs-form/$", SolarFSform, name="SolarFSform"),
     url("^calculation-form/$", calcform, name="calcform"),
+    url("^dap-form/$", dapform, name="dapform"),
         
 
     # HOMEPAGE AS AN EDITABLE PAGE IN THE PAGE TREE
