@@ -42,8 +42,8 @@ from netCDF4 import Dataset
 # New models for SolarFS form. 
 # # # # # # # # # # # # # # # # 
 class Calculation(models.Model):
-    # Geocode variables. 
-    address = models.TextField(max_length=120, blank=True, null=True, verbose_name='Address')
+    # Geocode variables.
+    address = models.TextField(max_length=120, blank=True, null=True, verbose_name='Address', default='3210 Dartmouth Ave, Boulder, CO')
     address_slug = models.SlugField(max_length=120, blank=True, null=True)
     formatted_address = models.TextField(max_length=120, null=True, blank=True)
     coordinates = models.CharField(max_length=80, blank=True, null=True, verbose_name='latitude, longitude')
@@ -62,13 +62,14 @@ class Calculation(models.Model):
     statistics = models.TextField(max_length=300, null=True, blank=True)
     irradiance_sequence = models.TextField(max_length=6000, null=True, blank=True)
     # dap_process variable. 
-    dap_process_temp = models.TextField(max_length=60, null=True, blank=True)
+    #dap_process_temp = models.TextField(max_length=60, null=True, blank=True)
     # Solar panel specs.  
     panel_azimuth = models.FloatField(max_length=20, default=180, blank=True, null=True, verbose_name='Panel azimuth (degrees from north)')
     panel_tilt = models.FloatField(max_length=20, default=30, blank=True, null=True, verbose_name='Panel tilt (degrees from vertical)')
     doc =  models.CharField(max_length=80, blank=True, null=True)
     pix1 =  models.CharField(max_length=80, blank=True, null=True)
     pix2 =  models.CharField(max_length=80, blank=True, null=True)
+    pix3 =  models.CharField(max_length=80, blank=True, null=True)
 
     # Creates a slug name. 
     prepopulated_fields = {
@@ -191,8 +192,6 @@ class Calculation(models.Model):
 
         # # # # # # # # # # # #
         # Create data objects.
-        #from netCDF4 import Dataset 
-
         #toa_data = Dataset('../datasets/CERES_EBAF-TOA_Ed2.8_Subset_201401-201412_solar-sw-lw-net.nc')
         #toa_data = Dataset('../datasets/MERRA301.prod.assim.tavg1_2d_rad_Nx.20010101.SUB.nc')
         #toa_data = Dataset('http://goldsmr4.sci.gsfc.nasa.gov/opendap/MERRA2_MONTHLY/M2TMNXRAD.5.12.4/2001/MERRA2_300.tavgM_2d_rad_Nx.200101.nc4')
@@ -209,23 +208,48 @@ class Calculation(models.Model):
         lw_up = toa_data.variables['LWTUP'][:, :, :]
         # Short-wave net outgoing top of atmosphere all sky incoming radiation. 
         sw_net = toa_data.variables['SWTNT'][:, :, :]
-        
+
+        # Create shortwave outgoing radiation. 
+        sw_up = sw_down - sw_net
+
         timesSize = times.size
         latsSize = lats.size
         lonsSize = lons.size
 
         # # # # # # # # # # # #
         # Calculate and plot the albedo: the ratio of the outgoing to incoming sw radiation. 
-        #l_variable = [[[2]*3]*4]*5
-        albedo = [[0]*lonsSize]*latsSize
+        #3d array example (3x4x5 with values set at 2): l_variable = [[[2]*3]*4]*5
+        # 2d mxn array example: a = [[init_value]*n for x in xrange(m)]
+        albedo = [[0]*lonsSize]*latsSize # 2d array, lonsSize x latsSize
+        #albedo = sw_up
         
-        # i = lat, j = lon
+        #i = lat, j = lon
+        #for i in range(0, latsSize):
+            #albedo[0, i] = [None if y == 0 else x/y for x, y in zip(sw_up[0, i], sw_down[0, i])]
+            #albedo[:, i] = [None if y == 0 else x/y for x, y in zip(sw_up[0, :, i], sw_down[0, :, i])]
+            #albedo[i] = [None if y == 0 else x/y for x, y in zip(sw_up[0, :, i], sw_down[0, :, i])]
+            #albedo[0, i] = [x-y for x, y in zip(sw_down[0, i], sw_net[0, i])] # Works.
+            #albedo[0, i] = sw_down[0, i] - sw_net[0, i] # Works.
+            #albedo[i] = sw_down[i] - sw_net[i] # Works.
+
+        sw_in = [[0]*lonsSize]*latsSize
+        sw_out = [[0]*lonsSize]*latsSize
         for i in range(0, latsSize):
+            sw_in[i] = sw_down[0, i]
+            sw_out[i] = sw_up[0, i]
             #albedo[i] = [None if y == 0 else x/y for x, y in zip(sw_out[i], sw_in[i])]
             #albedo[i] = [x-y for x, y in zip(sw_down[i], sw_net[i])]
-            albedo[i] = sw_down[0, i] - sw_net[0, i]
-        # # # # # # # # # # # #
 
+#         for i in range(0, latsSize):
+#             #sw_in[i] = sw_down[0, i]
+#             #sw_out[i] = sw_up[0, i]
+#             albedo[i] = [None if y == 0 else x/y for x, y in zip(sw_out[i], sw_in[i])]
+#             #albedo[i] = [x-y for x, y in zip(sw_down[i], sw_net[i])]
+#             if sw_in[i] == 0:
+#                 albedo[i] = 0
+#             else:
+#                 albedo[i] = sw_out[i]/sw_in[i]
+                
         # # # # # # # # # # # #
         # create figure, axes instances.
         #fig = plt.figure()
@@ -236,23 +260,163 @@ class Calculation(models.Model):
         m = Basemap(projection='kav7', lon_0=0, resolution='c')
         #m = Basemap(projection='kav7', lon_0=0, resolution='l')
 
+        # draw line around map projection limb.
+        # color background of map projection region.
+        # missing values over land will show up this color.
+        #m.drawmapboundary(fill_color='0.3')
+        m.drawmapboundary()
+        m.drawcoastlines()
+        m.drawcountries()
+        
+        # draw parallels and meridians, but don't bother labelling them.
+        m.drawparallels(np.arange(-90.,99.,30.))
+        m.drawmeridians(np.arange(-180.,180.,60.))
+
+        # Plot datapoints.
+        #x, y = m(lons, lats)
+        # Plot meshgrid.
+        meshlons, meshlats = np.meshgrid(lons, lats)
+
+        #solars = m.pcolormesh(meshlons, meshlats, albedo, shading='flat', cmap=pyplot.cm.jet, \
+        #    latlon=True)
+        solars = m.pcolormesh(meshlons, meshlats, sw_out, shading='flat', cmap=pyplot.cm.jet, \
+            latlon=True)
+            
+        # add colorbar
+        cb = m.colorbar(solars, "bottom", size="5%", pad="2%")
+        #cb.set_label('Albedo (0 - 1.0)')
+        cb.set_label('Radiative Flux $(W/m^2)$')
+        
+        title = 'World Albedo Average for ' + month + '/' + year
+        ax.set_title(title)
+        #pyplot.show()
+        
+        # Save figure. 
+        fig.savefig("/home/dv8000/virtualenv/temp/MERRA-world_albedo-kav7_proj.png")
+        
         # # # # # # # # # # # #
-        self.dap_process_temp = [path_name, timesSize, latsSize, lonsSize]
+        # Create plot figure file. 
+        #ephemSequence.plot()
+        pix1_name = 'MERRA-world_albedo-kav7_proj_' + year_month + '.png' 
+        self.pix1 = pix1_name
+        plot_path = MEDIA_ROOT + 'plots/' + pix1_name
+        pyplot.savefig(plot_path)
         ##################
-        # Solar ephemeris.
-        # # # # # # # # # # # # # 
-#         ephemSequence = pvlib.solarposition.pyephem(
-#             timeSequence, location).drop(
-#                 ['apparent_elevation', 'apparent_azimuth', 
-#                 'apparent_zenith', 'elevation'], axis=1)
-#         self.ephem_sequence = ephemSequence
-#         # Create plot figure file. 
-#         ephemSequence.plot()
-#         pix1_name = 'ephem_' + self.address_slug + '_' + self.begin_slug + '.png' 
-#         self.pix1 = pix1_name
-#         plot_path = MEDIA_ROOT + 'plots/' + pix1_name
-#         pyplot.savefig(plot_path)
-        ##################
+
+        #######################
+        # Calculate the long-wave upward radiation.
+        # # # # # # # # # # # #
+        lw_out = [[0]*lonsSize]*latsSize
+        for i in range(0, latsSize):
+            #albedo[i] = [None if y == 0 else x/y for x, y in zip(sw_out[i], sw_in[i])]
+            #albedo[i] = [x-y for x, y in zip(sw_down[i], sw_net[i])]
+            lw_out[i] = lw_up[0, i]
+               
+        # # # # # # # # # # # #
+        
+        # Plot the emitted lw radiation averaged for the year. 
+        # # # # # # # # # # # #
+        # create figure, axes instances.
+        fig = pyplot.figure()
+        ax = fig.add_axes([0.05,0.05,0.9,0.9])
+        # create Basemap instance.
+        # coastlines not used, so resolution set to None to skip
+        # continent processing (this speeds things up a bit)
+        m = Basemap(projection='kav7', lon_0=0, resolution='c')
+        # draw line around map projection limb.
+        # color background of map projection region.
+        # missing values over land will show up this color.
+        #m.drawmapboundary(fill_color='0.3')
+        m.drawmapboundary()
+        m.drawcoastlines()
+        m.drawcountries()
+        
+        # draw parallels and meridians, but don't bother labelling them.
+        m.drawparallels(np.arange(-90.,99.,30.))
+        m.drawmeridians(np.arange(-180.,180.,60.))
+        
+        lw_out_plot = m.pcolormesh(meshlons, meshlats, lw_out, shading='flat', cmap=pyplot.cm.jet, \
+            latlon=True)
+            
+        # add colorbar
+        cb = m.colorbar(lw_out_plot, "bottom", size="5%", pad="2%")
+        cb.set_label('Radiative Flux $(W/m^2)$')
+        
+        # # # # # # # # # # # #
+        # Plot some points. 
+        #Boulder
+        #x1, y1 = m(-105, 40)
+        #L-20
+        #x2, y2 = m(-117.63, 35.7)
+        #m.plot(x1, y1, 'b.', markersize=8)
+        #m.plot(x2, y2, 'c.', markersize=8)
+                
+        title = 'World Long Wave Emittivity, Average for ' + month + '/' + year
+        ax.set_title(title)
+        #plt.show()
+        
+        # Create plot figure file. 
+        # Save figure. 
+        #fig.savefig("../images/MERRA-world-lw_out_-kav7_proj.png")
+        pix2_name = 'MERRA-world-lw_out_-kav7_proj_' + year_month + '.png' 
+        self.pix2 = pix2_name
+        plot_path = MEDIA_ROOT + 'plots/' + pix2_name
+        pyplot.savefig(plot_path)
+        
+        #######################
+
+        #######################
+        # Calculate the net short-wave inward radiation.
+        # # # # # # # # # # # #
+        net_in = [[0]*lonsSize]*latsSize
+        for i in range(0, latsSize):
+            #albedo[i] = [None if y == 0 else x/y for x, y in zip(sw_out[i], sw_in[i])]
+            #albedo[i] = [x-y for x, y in zip(sw_down[i], sw_net[i])]
+            net_in[i] = sw_net[0, i]
+               
+        # # # # # # # # # # # #
+        
+        # Plot the net absorbed sw & lw radiation averaged for the year. 
+        # # # # # # # # # # # #
+        # create figure, axes instances.
+        fig = pyplot.figure()
+        ax = fig.add_axes([0.05,0.05,0.9,0.9])
+        # create Basemap instance.
+        # coastlines not used, so resolution set to None to skip
+        # continent processing (this speeds things up a bit)
+        m = Basemap(projection='kav7', lon_0=0, resolution='c')
+        # draw line around map projection limb.
+        # color background of map projection region.
+        # missing values over land will show up this color.
+        #m.drawmapboundary(fill_color='0.3')
+        m.drawmapboundary()
+        m.drawcoastlines()
+        m.drawcountries()
+        
+        # draw parallels and meridians, but don't bother labelling them.
+        m.drawparallels(np.arange(-90.,99.,30.))
+        m.drawmeridians(np.arange(-180.,180.,60.))
+        
+        net_in_plot = m.pcolormesh(meshlons, meshlats, net_in, shading='flat', cmap=pyplot.cm.jet, \
+            latlon=True)
+            
+        # add colorbar
+        cb = m.colorbar(net_in_plot, "bottom", size="5%", pad="2%")
+        cb.set_label('Radiative Flux $(W/m^2)$')
+        
+        title = 'Net Incomming Short Wave Solar Flux\n Average for ' + month + '/' + year
+        ax.set_title(title)
+        #plt.show()
+        
+        # Save figure. 
+        #fig.savefig("../images/MERRA-world-net_in-kav7_proj.png")
+        #fig.savefig("../images/MERRA-world-lw_out_-kav7_proj.png")
+        pix3_name = 'MERRA-world-net_in-kav7_proj_' + year_month + '.png' 
+        self.pix3 = pix3_name
+        plot_path = MEDIA_ROOT + 'plots/' + pix3_name
+        pyplot.savefig(plot_path)
+        
+        #######################
 
         return (year, month, path_name, timesSize)
 
@@ -276,7 +440,7 @@ class Calculation(models.Model):
         f.write('Statistics:\n %s\n\n' % self.statistics)
         f.write('Irradiance:\n %s\n\n' % self.irradiance_sequence)
         #### #### ####
-        f.write('Dap Process:\n %s\n\n' % self.dap_process_temp)
+        #f.write('Dap Process:\n %s\n\n' % self.dap_process_temp)
         #### #### ####
         f.close()
         return

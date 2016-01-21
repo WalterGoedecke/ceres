@@ -4302,3 +4302,667 @@ Not Found: /calc/css/flot.css/
 Not Found: /calc/css/flot.css/
 Not Found: /calc/css/flot.css/
 Not Found: /calc/css/flot.css/
+Not Found: /calc/css/flot.css/
+Not Found: /calc/css/flot.css/
+Not Found: /calc/css/flot.css/
+Internal Server Error: /dap-form/
+Traceback (most recent call last):
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/core/handlers/base.py", line 125, in get_response
+    response = middleware_method(request, callback, callback_args, callback_kwargs)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/mezzanine/pages/middleware.py", line 99, in process_view
+    return view_func(request, *view_args, **view_kwargs)
+  File "/home/dv8000/virtualenv/solocalc/dap/views.py", line 51, in dapform
+    pf.save()
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/forms/models.py", line 459, in save
+    construct=False)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/forms/models.py", line 105, in save_instance
+    instance.save()
+  File "/home/dv8000/virtualenv/solocalc/dap/models.py", line 320, in save
+    self.DapProcess(self.begin)
+  File "/home/dv8000/virtualenv/solocalc/dap/models.py", line 256, in DapProcess
+    solars = m.pcolormesh(meshlons, meshlats, albedo, shading='flat', cmap=plt.cm.jet, \
+NameError: name 'plt' is not defined
+Not Found: /favicon.ico/
+Not Found: /calc/css/flot.css/
+Not Found: /calc/css/flot.css/
+Not Found: /calc/css/flot.css/
+Internal Server Error: /dap-form/
+Traceback (most recent call last):
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/core/handlers/base.py", line 125, in get_response
+    response = middleware_method(request, callback, callback_args, callback_kwargs)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/mezzanine/pages/middleware.py", line 99, in process_view
+    return view_func(request, *view_args, **view_kwargs)
+  File "/home/dv8000/virtualenv/solocalc/dap/views.py", line 51, in dapform
+    pf.save()
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/forms/models.py", line 459, in save
+    construct=False)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/forms/models.py", line 105, in save_instance
+    instance.save()
+  File "/home/dv8000/virtualenv/solocalc/dap/models.py", line 375, in save
+    self.DapProcess(self.begin)
+  File "/home/dv8000/virtualenv/solocalc/dap/models.py", line 290, in DapProcess
+    fig = plt.figure()
+NameError: name 'plt' is not defined
+Internal Server Error: /dap-form/
+Traceback (most recent call last):
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/core/handlers/base.py", line 125, in get_response
+    response = middleware_method(request, callback, callback_args, callback_kwargs)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/mezzanine/pages/middleware.py", line 99, in process_view
+    return view_func(request, *view_args, **view_kwargs)
+  File "/home/dv8000/virtualenv/solocalc/dap/views.py", line 51, in dapform
+    pf.save()
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/forms/models.py", line 459, in save
+    construct=False)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/forms/models.py", line 105, in save_instance
+    instance.save()
+  File "/home/dv8000/virtualenv/solocalc/dap/models.py", line 375, in save
+    self.DapProcess(self.begin)
+  File "/home/dv8000/virtualenv/solocalc/dap/models.py", line 290, in DapProcess
+    fig = pylot.figure()
+NameError: name 'pylot' is not defined
+Internal Server Error: /dap-form/
+Traceback (most recent call last):
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/core/handlers/base.py", line 125, in get_response
+    response = middleware_method(request, callback, callback_args, callback_kwargs)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/mezzanine/pages/middleware.py", line 99, in process_view
+    return view_func(request, *view_args, **view_kwargs)
+  File "/home/dv8000/virtualenv/solocalc/dap/views.py", line 51, in dapform
+    pf.save()
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/forms/models.py", line 459, in save
+    construct=False)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/forms/models.py", line 105, in save_instance
+    instance.save()
+  File "/home/dv8000/virtualenv/solocalc/dap/models.py", line 375, in save
+    self.DapProcess(self.begin)
+  File "/home/dv8000/virtualenv/solocalc/dap/models.py", line 326, in DapProcess
+    plt.show()
+NameError: name 'plt' is not defined
+Internal Server Error: /dap-form/
+Traceback (most recent call last):
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/core/handlers/base.py", line 125, in get_response
+    response = middleware_method(request, callback, callback_args, callback_kwargs)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/mezzanine/pages/middleware.py", line 99, in process_view
+    return view_func(request, *view_args, **view_kwargs)
+  File "/home/dv8000/virtualenv/solocalc/dap/views.py", line 51, in dapform
+    pf.save()
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/forms/models.py", line 459, in save
+    construct=False)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/forms/models.py", line 105, in save_instance
+    instance.save()
+  File "/home/dv8000/virtualenv/solocalc/dap/models.py", line 377, in save
+    self.write_data()
+  File "/home/dv8000/virtualenv/solocalc/dap/models.py", line 360, in write_data
+    f.write('Dap Process:\n %s\n\n' % self.dap_process_temp)
+AttributeError: 'Calculation' object has no attribute 'dap_process_temp'
+Not Found: /calc/css/flot.css/
+Not Found: /calc/css/flot.css/
+Not Found: /calc/css/flot.css/
+Not Found: /calc/css/flot.css/
+Not Found: /calc/css/flot.css/
+Not Found: /calc/css/flot.css/
+Not Found: /calc/css/flot.css/
+Not Found: /calc/css/flot.css/
+Not Found: /calc/css/flot.css/
+Not Found: /calc/css/flot.css/
+Internal Server Error: /dap-form/
+Traceback (most recent call last):
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/core/handlers/base.py", line 125, in get_response
+    response = middleware_method(request, callback, callback_args, callback_kwargs)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/mezzanine/pages/middleware.py", line 99, in process_view
+    return view_func(request, *view_args, **view_kwargs)
+  File "/home/dv8000/virtualenv/solocalc/dap/views.py", line 51, in dapform
+    pf.save()
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/forms/models.py", line 459, in save
+    construct=False)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/forms/models.py", line 105, in save_instance
+    instance.save()
+  File "/home/dv8000/virtualenv/solocalc/dap/models.py", line 427, in save
+    self.ephemeris(self.begin, self.end, self.frequency)
+  File "/home/dv8000/virtualenv/solocalc/dap/models.py", line 110, in ephemeris
+    intEnd = [int(x) for x in strEnd]
+  File "/home/dv8000/virtualenv/solocalc/dap/models.py", line 110, in <listcomp>
+    intEnd = [int(x) for x in strEnd]
+ValueError: invalid literal for int() with base 10: ''
+Not Found: /favicon.ico/
+Not Found: /calc/css/flot.css/
+Not Found: /calc/css/flot.css/
+Not Found: /calc/css/flot.css/
+Not Found: /calc/css/flot.css/
+Not Found: /calc/css/flot.css/
+Not Found: /calc/css/flot.css/
+Internal Server Error: /dap-form/
+Traceback (most recent call last):
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/core/handlers/base.py", line 125, in get_response
+    response = middleware_method(request, callback, callback_args, callback_kwargs)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/mezzanine/pages/middleware.py", line 99, in process_view
+    return view_func(request, *view_args, **view_kwargs)
+  File "/home/dv8000/virtualenv/solocalc/dap/views.py", line 50, in dapform
+    pf.save()
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/forms/models.py", line 459, in save
+    construct=False)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/forms/models.py", line 105, in save_instance
+    instance.save()
+  File "/home/dv8000/virtualenv/solocalc/dap/models.py", line 425, in save
+    self.formatted_address = self.address2llh(self.address)
+  File "/home/dv8000/virtualenv/solocalc/dap/models.py", line 85, in address2llh
+    geoAddress = pygeocoder.Geocoder.geocode(self.address)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/pygeocoder.py", line 129, in geocode
+    return GeocoderResult(Geocoder.get_data(params=params))
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/pygeocoder.py", line 212, in get_data
+    raise GeocoderError(response_json['status'], response.url)
+pygeolib.GeocoderError: Error ZERO_RESULTS
+Query: https://maps.google.com/maps/api/geocode/json?components=&sensor=false&bounds=&language=&region=
+Not Found: /calc/css/flot.css/
+Not Found: /calc/css/flot.css/
+Not Found: /calc/css/flot.css/
+Not Found: /calc/css/flot.css/
+Internal Server Error: /dap-form/
+Traceback (most recent call last):
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/core/handlers/base.py", line 125, in get_response
+    response = middleware_method(request, callback, callback_args, callback_kwargs)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/mezzanine/pages/middleware.py", line 99, in process_view
+    return view_func(request, *view_args, **view_kwargs)
+  File "/home/dv8000/virtualenv/solocalc/dap/views.py", line 279, in dapform
+    special = local_timezone_offset
+NameError: name 'local_timezone_offset' is not defined
+Not Found: /calc/css/flot.css/
+Not Found: /calc/css/flot.css/
+Not Found: /calc/css/flot.css/
+Internal Server Error: /dap-form/
+Traceback (most recent call last):
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/core/handlers/base.py", line 125, in get_response
+    response = middleware_method(request, callback, callback_args, callback_kwargs)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/mezzanine/pages/middleware.py", line 99, in process_view
+    return view_func(request, *view_args, **view_kwargs)
+  File "/home/dv8000/virtualenv/solocalc/dap/views.py", line 50, in dapform
+    pf.save()
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/forms/models.py", line 459, in save
+    construct=False)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/forms/models.py", line 105, in save_instance
+    instance.save()
+  File "/home/dv8000/virtualenv/solocalc/dap/models.py", line 434, in save
+    self.DapProcess(self.begin)
+  File "/home/dv8000/virtualenv/solocalc/dap/models.py", line 227, in DapProcess
+    albedo[i] = [None if y == 0 else x/y for x, y in zip(sw_up[i], sw_down[i])]
+  File "/home/dv8000/virtualenv/solocalc/dap/models.py", line 227, in <listcomp>
+    albedo[i] = [None if y == 0 else x/y for x, y in zip(sw_up[i], sw_down[i])]
+ValueError: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()
+Internal Server Error: /dap-form/
+Traceback (most recent call last):
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/core/handlers/base.py", line 125, in get_response
+    response = middleware_method(request, callback, callback_args, callback_kwargs)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/mezzanine/pages/middleware.py", line 99, in process_view
+    return view_func(request, *view_args, **view_kwargs)
+  File "/home/dv8000/virtualenv/solocalc/dap/views.py", line 50, in dapform
+    pf.save()
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/forms/models.py", line 459, in save
+    construct=False)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/forms/models.py", line 105, in save_instance
+    instance.save()
+  File "/home/dv8000/virtualenv/solocalc/dap/models.py", line 434, in save
+    self.DapProcess(self.begin)
+  File "/home/dv8000/virtualenv/solocalc/dap/models.py", line 228, in DapProcess
+    albedo[i] = [x-y for x, y in zip(sw_down[i], sw_net[i])]
+IndexError: index 1 is out of bounds for axis 0 with size 1
+Not Found: /calc/css/flot.css/
+Not Found: /calc/css/flot.css/
+Internal Server Error: /dap-form/
+Traceback (most recent call last):
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/numpy/ma/core.py", line 6214, in min
+    return obj.min(axis=axis, fill_value=fill_value, out=out)
+TypeError: _amin() got an unexpected keyword argument 'fill_value'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/core/handlers/base.py", line 125, in get_response
+    response = middleware_method(request, callback, callback_args, callback_kwargs)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/mezzanine/pages/middleware.py", line 99, in process_view
+    return view_func(request, *view_args, **view_kwargs)
+  File "/home/dv8000/virtualenv/solocalc/dap/views.py", line 50, in dapform
+    pf.save()
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/forms/models.py", line 459, in save
+    construct=False)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/forms/models.py", line 105, in save_instance
+    instance.save()
+  File "/home/dv8000/virtualenv/solocalc/dap/models.py", line 433, in save
+    self.DapProcess(self.begin)
+  File "/home/dv8000/virtualenv/solocalc/dap/models.py", line 258, in DapProcess
+    latlon=True)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/mpl_toolkits/basemap/__init__.py", line 521, in with_transform
+    return plotfunc(self,x,y,data,*args,**kwargs)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/mpl_toolkits/basemap/__init__.py", line 3418, in pcolormesh
+    ret =  ax.pcolormesh(x,y,data,**kwargs)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/matplotlib/axes/_axes.py", line 5116, in pcolormesh
+    collection.autoscale_None()
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/matplotlib/cm.py", line 335, in autoscale_None
+    self.norm.autoscale_None(self._A)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/matplotlib/colors.py", line 954, in autoscale_None
+    self.vmin = ma.min(A)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/numpy/ma/core.py", line 6218, in min
+    return asanyarray(obj).min(axis=axis, fill_value=fill_value, out=out)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/numpy/ma/core.py", line 5408, in min
+    axis=axis, out=out).view(type(self))
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/numpy/core/_methods.py", line 29, in _amin
+    return umr_minimum(a, axis, None, out, keepdims)
+TypeError: unorderable types: float() <= NoneType()
+Not Found: /calc/css/flot.css/
+Not Found: /calc/css/flot.css/
+Internal Server Error: /dap-form/
+Traceback (most recent call last):
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/numpy/ma/core.py", line 6214, in min
+    return obj.min(axis=axis, fill_value=fill_value, out=out)
+TypeError: _amin() got an unexpected keyword argument 'fill_value'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/core/handlers/base.py", line 125, in get_response
+    response = middleware_method(request, callback, callback_args, callback_kwargs)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/mezzanine/pages/middleware.py", line 99, in process_view
+    return view_func(request, *view_args, **view_kwargs)
+  File "/home/dv8000/virtualenv/solocalc/dap/views.py", line 50, in dapform
+    pf.save()
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/forms/models.py", line 459, in save
+    construct=False)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/forms/models.py", line 105, in save_instance
+    instance.save()
+  File "/home/dv8000/virtualenv/solocalc/dap/models.py", line 433, in save
+    self.DapProcess(self.begin)
+  File "/home/dv8000/virtualenv/solocalc/dap/models.py", line 258, in DapProcess
+    latlon=True)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/mpl_toolkits/basemap/__init__.py", line 521, in with_transform
+    return plotfunc(self,x,y,data,*args,**kwargs)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/mpl_toolkits/basemap/__init__.py", line 3418, in pcolormesh
+    ret =  ax.pcolormesh(x,y,data,**kwargs)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/matplotlib/axes/_axes.py", line 5116, in pcolormesh
+    collection.autoscale_None()
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/matplotlib/cm.py", line 335, in autoscale_None
+    self.norm.autoscale_None(self._A)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/matplotlib/colors.py", line 954, in autoscale_None
+    self.vmin = ma.min(A)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/numpy/ma/core.py", line 6218, in min
+    return asanyarray(obj).min(axis=axis, fill_value=fill_value, out=out)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/numpy/ma/core.py", line 5408, in min
+    axis=axis, out=out).view(type(self))
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/numpy/core/_methods.py", line 29, in _amin
+    return umr_minimum(a, axis, None, out, keepdims)
+TypeError: unorderable types: float() <= NoneType()
+Internal Server Error: /dap-form/
+Traceback (most recent call last):
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/numpy/ma/core.py", line 6214, in min
+    return obj.min(axis=axis, fill_value=fill_value, out=out)
+TypeError: _amin() got an unexpected keyword argument 'fill_value'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/core/handlers/base.py", line 125, in get_response
+    response = middleware_method(request, callback, callback_args, callback_kwargs)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/mezzanine/pages/middleware.py", line 99, in process_view
+    return view_func(request, *view_args, **view_kwargs)
+  File "/home/dv8000/virtualenv/solocalc/dap/views.py", line 50, in dapform
+    pf.save()
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/forms/models.py", line 459, in save
+    construct=False)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/forms/models.py", line 105, in save_instance
+    instance.save()
+  File "/home/dv8000/virtualenv/solocalc/dap/models.py", line 434, in save
+    self.DapProcess(self.begin)
+  File "/home/dv8000/virtualenv/solocalc/dap/models.py", line 259, in DapProcess
+    latlon=True)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/mpl_toolkits/basemap/__init__.py", line 521, in with_transform
+    return plotfunc(self,x,y,data,*args,**kwargs)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/mpl_toolkits/basemap/__init__.py", line 3418, in pcolormesh
+    ret =  ax.pcolormesh(x,y,data,**kwargs)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/matplotlib/axes/_axes.py", line 5116, in pcolormesh
+    collection.autoscale_None()
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/matplotlib/cm.py", line 335, in autoscale_None
+    self.norm.autoscale_None(self._A)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/matplotlib/colors.py", line 954, in autoscale_None
+    self.vmin = ma.min(A)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/numpy/ma/core.py", line 6218, in min
+    return asanyarray(obj).min(axis=axis, fill_value=fill_value, out=out)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/numpy/ma/core.py", line 5408, in min
+    axis=axis, out=out).view(type(self))
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/numpy/core/_methods.py", line 29, in _amin
+    return umr_minimum(a, axis, None, out, keepdims)
+TypeError: unorderable types: float() <= NoneType()
+Internal Server Error: /dap-form/
+Traceback (most recent call last):
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/core/handlers/base.py", line 125, in get_response
+    response = middleware_method(request, callback, callback_args, callback_kwargs)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/mezzanine/pages/middleware.py", line 99, in process_view
+    return view_func(request, *view_args, **view_kwargs)
+  File "/home/dv8000/virtualenv/solocalc/dap/views.py", line 50, in dapform
+    pf.save()
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/forms/models.py", line 459, in save
+    construct=False)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/forms/models.py", line 105, in save_instance
+    instance.save()
+  File "/home/dv8000/virtualenv/solocalc/dap/models.py", line 434, in save
+    self.DapProcess(self.begin)
+  File "/home/dv8000/virtualenv/solocalc/dap/models.py", line 227, in DapProcess
+    albedo[:, i] = [None if y == 0 else x/y for x, y in zip(lw_up[0, :, i], sw_down[0, :, i])]
+TypeError: list indices must be integers, not tuple
+Internal Server Error: /dap-form/
+Traceback (most recent call last):
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/core/handlers/base.py", line 125, in get_response
+    response = middleware_method(request, callback, callback_args, callback_kwargs)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/mezzanine/pages/middleware.py", line 99, in process_view
+    return view_func(request, *view_args, **view_kwargs)
+  File "/home/dv8000/virtualenv/solocalc/dap/views.py", line 50, in dapform
+    pf.save()
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/forms/models.py", line 459, in save
+    construct=False)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/forms/models.py", line 105, in save_instance
+    instance.save()
+  File "/home/dv8000/virtualenv/solocalc/dap/models.py", line 433, in save
+    self.DapProcess(self.begin)
+  File "/home/dv8000/virtualenv/solocalc/dap/models.py", line 226, in DapProcess
+    albedo[0, i] = [None if y == 0 else x/y for x, y in zip(sw_up[0, i], sw_down[0, i])]
+TypeError: list indices must be integers, not tuple
+Internal Server Error: /dap-form/
+Traceback (most recent call last):
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/core/handlers/base.py", line 125, in get_response
+    response = middleware_method(request, callback, callback_args, callback_kwargs)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/mezzanine/pages/middleware.py", line 99, in process_view
+    return view_func(request, *view_args, **view_kwargs)
+  File "/home/dv8000/virtualenv/solocalc/dap/views.py", line 50, in dapform
+    pf.save()
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/forms/models.py", line 459, in save
+    construct=False)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/forms/models.py", line 105, in save_instance
+    instance.save()
+  File "/home/dv8000/virtualenv/solocalc/dap/models.py", line 434, in save
+    self.DapProcess(self.begin)
+  File "/home/dv8000/virtualenv/solocalc/dap/models.py", line 227, in DapProcess
+    albedo[:, i] = [None if y == 0 else x/y for x, y in zip(sw_up[0, :, i], sw_down[0, :, i])]
+TypeError: list indices must be integers, not tuple
+Internal Server Error: /dap-form/
+Traceback (most recent call last):
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/core/handlers/base.py", line 125, in get_response
+    response = middleware_method(request, callback, callback_args, callback_kwargs)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/mezzanine/pages/middleware.py", line 99, in process_view
+    return view_func(request, *view_args, **view_kwargs)
+  File "/home/dv8000/virtualenv/solocalc/dap/views.py", line 50, in dapform
+    pf.save()
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/forms/models.py", line 459, in save
+    construct=False)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/forms/models.py", line 105, in save_instance
+    instance.save()
+  File "/home/dv8000/virtualenv/solocalc/dap/models.py", line 436, in save
+    self.DapProcess(self.begin)
+  File "/home/dv8000/virtualenv/solocalc/dap/models.py", line 224, in DapProcess
+    albedo = [[[0]*lonsSize] for x in xrange(latsSize)]
+NameError: name 'xrange' is not defined
+Not Found: /calc/css/flot.css/
+Internal Server Error: /dap-form/
+Traceback (most recent call last):
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/core/handlers/base.py", line 125, in get_response
+    response = middleware_method(request, callback, callback_args, callback_kwargs)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/mezzanine/pages/middleware.py", line 99, in process_view
+    return view_func(request, *view_args, **view_kwargs)
+  File "/home/dv8000/virtualenv/solocalc/dap/views.py", line 50, in dapform
+    pf.save()
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/forms/models.py", line 459, in save
+    construct=False)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/forms/models.py", line 105, in save_instance
+    instance.save()
+  File "/home/dv8000/virtualenv/solocalc/dap/models.py", line 436, in save
+    self.DapProcess(self.begin)
+  File "/home/dv8000/virtualenv/solocalc/dap/models.py", line 229, in DapProcess
+    albedo[:, i] = [None if y == 0 else x/y for x, y in zip(sw_up[0, :, i], sw_down[0, :, i])]
+TypeError: list indices must be integers, not tuple
+Internal Server Error: /dap-form/
+Traceback (most recent call last):
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/core/handlers/base.py", line 125, in get_response
+    response = middleware_method(request, callback, callback_args, callback_kwargs)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/mezzanine/pages/middleware.py", line 99, in process_view
+    return view_func(request, *view_args, **view_kwargs)
+  File "/home/dv8000/virtualenv/solocalc/dap/views.py", line 50, in dapform
+    pf.save()
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/forms/models.py", line 459, in save
+    construct=False)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/forms/models.py", line 105, in save_instance
+    instance.save()
+  File "/home/dv8000/virtualenv/solocalc/dap/models.py", line 436, in save
+    self.DapProcess(self.begin)
+  File "/home/dv8000/virtualenv/solocalc/dap/models.py", line 261, in DapProcess
+    latlon=True)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/mpl_toolkits/basemap/__init__.py", line 521, in with_transform
+    return plotfunc(self,x,y,data,*args,**kwargs)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/mpl_toolkits/basemap/__init__.py", line 3418, in pcolormesh
+    ret =  ax.pcolormesh(x,y,data,**kwargs)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/matplotlib/axes/_axes.py", line 5089, in pcolormesh
+    X, Y, C = self._pcolorargs('pcolormesh', *args, allmatch=allmatch)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/matplotlib/axes/_axes.py", line 4718, in _pcolorargs
+    C.shape, Nx, Ny, funcname))
+TypeError: Dimensions of C (361, 361) are incompatible with X (576) and/or Y (361); see help(pcolormesh)
+Not Found: /calc/css/flot.css/
+Not Found: /calc/css/flot.css/
+Not Found: /calc/css/flot.css/
+Not Found: /calc/css/flot.css/
+Not Found: /calc/css/flot.css/
+Not Found: /calc/css/flot.css/
+Not Found: /calc/css/flot.css/
+Not Found: /calc/css/flot.css/
+Not Found: /calc/css/flot.css/
+Not Found: /calc/css/flot.css/
+Not Found: /calc/css/flot.css/
+Not Found: /calc/css/flot.css/
+Not Found: /calc/css/flot.css/
+Not Found: /calc/css/flot.css/
+Internal Server Error: /dap-form/
+Traceback (most recent call last):
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/core/handlers/base.py", line 125, in get_response
+    response = middleware_method(request, callback, callback_args, callback_kwargs)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/mezzanine/pages/middleware.py", line 99, in process_view
+    return view_func(request, *view_args, **view_kwargs)
+  File "/home/dv8000/virtualenv/solocalc/dap/views.py", line 50, in dapform
+    pf.save()
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/forms/models.py", line 459, in save
+    construct=False)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/forms/models.py", line 105, in save_instance
+    instance.save()
+  File "/home/dv8000/virtualenv/solocalc/dap/models.py", line 446, in save
+    self.DapProcess(self.begin)
+  File "/home/dv8000/virtualenv/solocalc/dap/models.py", line 231, in DapProcess
+    albedo[0, i] = [x-y for x, y in zip(sw_down[0, i], sw_net[0, i])] # Works.
+TypeError: list indices must be integers, not tuple
+Not Found: /favicon.ico/
+Internal Server Error: /dap-form/
+Traceback (most recent call last):
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/core/handlers/base.py", line 125, in get_response
+    response = middleware_method(request, callback, callback_args, callback_kwargs)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/mezzanine/pages/middleware.py", line 99, in process_view
+    return view_func(request, *view_args, **view_kwargs)
+  File "/home/dv8000/virtualenv/solocalc/dap/views.py", line 50, in dapform
+    pf.save()
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/forms/models.py", line 459, in save
+    construct=False)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/forms/models.py", line 105, in save_instance
+    instance.save()
+  File "/home/dv8000/virtualenv/solocalc/dap/models.py", line 446, in save
+    self.DapProcess(self.begin)
+  File "/home/dv8000/virtualenv/solocalc/dap/models.py", line 233, in DapProcess
+    albedo[i] = sw_down[i] - sw_net[i] # Works.
+IndexError: index 1 is out of bounds for axis 0 with size 1
+Internal Server Error: /dap-form/
+Traceback (most recent call last):
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/core/handlers/base.py", line 125, in get_response
+    response = middleware_method(request, callback, callback_args, callback_kwargs)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/mezzanine/pages/middleware.py", line 99, in process_view
+    return view_func(request, *view_args, **view_kwargs)
+  File "/home/dv8000/virtualenv/solocalc/dap/views.py", line 50, in dapform
+    pf.save()
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/forms/models.py", line 459, in save
+    construct=False)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/forms/models.py", line 105, in save_instance
+    instance.save()
+  File "/home/dv8000/virtualenv/solocalc/dap/models.py", line 446, in save
+    self.DapProcess(self.begin)
+  File "/home/dv8000/virtualenv/solocalc/dap/models.py", line 269, in DapProcess
+    latlon=True)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/mpl_toolkits/basemap/__init__.py", line 521, in with_transform
+    return plotfunc(self,x,y,data,*args,**kwargs)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/mpl_toolkits/basemap/__init__.py", line 3418, in pcolormesh
+    ret =  ax.pcolormesh(x,y,data,**kwargs)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/matplotlib/axes/_axes.py", line 5089, in pcolormesh
+    X, Y, C = self._pcolorargs('pcolormesh', *args, allmatch=allmatch)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/matplotlib/axes/_axes.py", line 4718, in _pcolorargs
+    C.shape, Nx, Ny, funcname))
+TypeError: Dimensions of C (361, 361) are incompatible with X (576) and/or Y (361); see help(pcolormesh)
+Internal Server Error: /dap-form/
+Traceback (most recent call last):
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/core/handlers/base.py", line 125, in get_response
+    response = middleware_method(request, callback, callback_args, callback_kwargs)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/mezzanine/pages/middleware.py", line 99, in process_view
+    return view_func(request, *view_args, **view_kwargs)
+  File "/home/dv8000/virtualenv/solocalc/dap/views.py", line 50, in dapform
+    pf.save()
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/forms/models.py", line 459, in save
+    construct=False)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/forms/models.py", line 105, in save_instance
+    instance.save()
+  File "/home/dv8000/virtualenv/solocalc/dap/models.py", line 446, in save
+    self.DapProcess(self.begin)
+  File "/home/dv8000/virtualenv/solocalc/dap/models.py", line 233, in DapProcess
+    albedo[i] = sw_down[i] - sw_net[i] # Works.
+IndexError: index 1 is out of bounds for axis 0 with size 1
+Internal Server Error: /dap-form/
+Traceback (most recent call last):
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/core/handlers/base.py", line 125, in get_response
+    response = middleware_method(request, callback, callback_args, callback_kwargs)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/mezzanine/pages/middleware.py", line 99, in process_view
+    return view_func(request, *view_args, **view_kwargs)
+  File "/home/dv8000/virtualenv/solocalc/dap/views.py", line 50, in dapform
+    pf.save()
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/forms/models.py", line 459, in save
+    construct=False)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/forms/models.py", line 105, in save_instance
+    instance.save()
+  File "/home/dv8000/virtualenv/solocalc/dap/models.py", line 446, in save
+    self.DapProcess(self.begin)
+  File "/home/dv8000/virtualenv/solocalc/dap/models.py", line 233, in DapProcess
+    albedo[i] = sw_down[i] - sw_net[i] # Works.
+IndexError: index 1 is out of bounds for axis 0 with size 1
+Not Found: /calc/css/flot.css/
+Internal Server Error: /dap-form/
+Traceback (most recent call last):
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/core/handlers/base.py", line 125, in get_response
+    response = middleware_method(request, callback, callback_args, callback_kwargs)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/mezzanine/pages/middleware.py", line 99, in process_view
+    return view_func(request, *view_args, **view_kwargs)
+  File "/home/dv8000/virtualenv/solocalc/dap/views.py", line 50, in dapform
+    pf.save()
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/forms/models.py", line 459, in save
+    construct=False)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/forms/models.py", line 105, in save_instance
+    instance.save()
+  File "/home/dv8000/virtualenv/solocalc/dap/models.py", line 447, in save
+    self.DapProcess(self.begin)
+  File "/home/dv8000/virtualenv/solocalc/dap/models.py", line 239, in DapProcess
+    sw_in[i] = sw_down[0, i]
+NameError: name 'sw_in' is not defined
+Not Found: /calc/css/flot.css/
+Not Found: /calc/css/flot.css/
+Internal Server Error: /dap-form/
+Traceback (most recent call last):
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/numpy/ma/core.py", line 6214, in min
+    return obj.min(axis=axis, fill_value=fill_value, out=out)
+TypeError: _amin() got an unexpected keyword argument 'fill_value'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/core/handlers/base.py", line 125, in get_response
+    response = middleware_method(request, callback, callback_args, callback_kwargs)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/mezzanine/pages/middleware.py", line 99, in process_view
+    return view_func(request, *view_args, **view_kwargs)
+  File "/home/dv8000/virtualenv/solocalc/dap/views.py", line 50, in dapform
+    pf.save()
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/forms/models.py", line 459, in save
+    construct=False)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/forms/models.py", line 105, in save_instance
+    instance.save()
+  File "/home/dv8000/virtualenv/solocalc/dap/models.py", line 448, in save
+    self.DapProcess(self.begin)
+  File "/home/dv8000/virtualenv/solocalc/dap/models.py", line 271, in DapProcess
+    latlon=True)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/mpl_toolkits/basemap/__init__.py", line 521, in with_transform
+    return plotfunc(self,x,y,data,*args,**kwargs)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/mpl_toolkits/basemap/__init__.py", line 3418, in pcolormesh
+    ret =  ax.pcolormesh(x,y,data,**kwargs)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/matplotlib/axes/_axes.py", line 5116, in pcolormesh
+    collection.autoscale_None()
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/matplotlib/cm.py", line 335, in autoscale_None
+    self.norm.autoscale_None(self._A)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/matplotlib/colors.py", line 954, in autoscale_None
+    self.vmin = ma.min(A)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/numpy/ma/core.py", line 6218, in min
+    return asanyarray(obj).min(axis=axis, fill_value=fill_value, out=out)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/numpy/ma/core.py", line 5408, in min
+    axis=axis, out=out).view(type(self))
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/numpy/core/_methods.py", line 29, in _amin
+    return umr_minimum(a, axis, None, out, keepdims)
+TypeError: unorderable types: float() <= NoneType()
+Internal Server Error: /dap-form/
+Traceback (most recent call last):
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/numpy/ma/core.py", line 6214, in min
+    return obj.min(axis=axis, fill_value=fill_value, out=out)
+TypeError: _amin() got an unexpected keyword argument 'fill_value'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/core/handlers/base.py", line 125, in get_response
+    response = middleware_method(request, callback, callback_args, callback_kwargs)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/mezzanine/pages/middleware.py", line 99, in process_view
+    return view_func(request, *view_args, **view_kwargs)
+  File "/home/dv8000/virtualenv/solocalc/dap/views.py", line 50, in dapform
+    pf.save()
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/forms/models.py", line 459, in save
+    construct=False)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/forms/models.py", line 105, in save_instance
+    instance.save()
+  File "/home/dv8000/virtualenv/solocalc/dap/models.py", line 453, in save
+    self.DapProcess(self.begin)
+  File "/home/dv8000/virtualenv/solocalc/dap/models.py", line 276, in DapProcess
+    latlon=True)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/mpl_toolkits/basemap/__init__.py", line 521, in with_transform
+    return plotfunc(self,x,y,data,*args,**kwargs)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/mpl_toolkits/basemap/__init__.py", line 3418, in pcolormesh
+    ret =  ax.pcolormesh(x,y,data,**kwargs)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/matplotlib/axes/_axes.py", line 5116, in pcolormesh
+    collection.autoscale_None()
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/matplotlib/cm.py", line 335, in autoscale_None
+    self.norm.autoscale_None(self._A)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/matplotlib/colors.py", line 954, in autoscale_None
+    self.vmin = ma.min(A)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/numpy/ma/core.py", line 6218, in min
+    return asanyarray(obj).min(axis=axis, fill_value=fill_value, out=out)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/numpy/ma/core.py", line 5408, in min
+    axis=axis, out=out).view(type(self))
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/numpy/core/_methods.py", line 29, in _amin
+    return umr_minimum(a, axis, None, out, keepdims)
+TypeError: unorderable types: float() <= NoneType()
+Internal Server Error: /dap-form/
+Traceback (most recent call last):
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/core/handlers/base.py", line 125, in get_response
+    response = middleware_method(request, callback, callback_args, callback_kwargs)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/mezzanine/pages/middleware.py", line 99, in process_view
+    return view_func(request, *view_args, **view_kwargs)
+  File "/home/dv8000/virtualenv/solocalc/dap/views.py", line 50, in dapform
+    pf.save()
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/forms/models.py", line 459, in save
+    construct=False)
+  File "/home/dv8000/virtualenv/venv-py3.4/lib/python3.4/site-packages/django/forms/models.py", line 105, in save_instance
+    instance.save()
+  File "/home/dv8000/virtualenv/solocalc/dap/models.py", line 458, in save
+    self.DapProcess(self.begin)
+  File "/home/dv8000/virtualenv/solocalc/dap/models.py", line 248, in DapProcess
+    if sw_in[i] == 0:
+ValueError: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()
+Not Found: /calc/css/flot.css/
+Not Found: /calc/css/flot.css/

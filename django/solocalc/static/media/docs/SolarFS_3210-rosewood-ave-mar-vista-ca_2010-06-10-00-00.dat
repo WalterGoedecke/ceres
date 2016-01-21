@@ -314,6 +314,3 @@ Irradiance:
 2010-06-10 23:50:00-06:00    0.000000    0.000000    0.000000   -0.000000
 2010-06-11 00:00:00-06:00    0.000000    0.000000    0.000000   -0.000000
 
-Dap Process:
- ['http://goldsmr4.sci.gsfc.nasa.gov/opendap/MERRA2_MONTHLY/M2TMNXRAD.5.12.4/2010/MERRA2_300.tavgM_2d_rad_Nx.201006.nc4', 1, 361, 576]
-
